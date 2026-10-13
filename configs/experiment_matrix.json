@@ -1,0 +1,18 @@
+{
+  "candidate": "EvidenceChain-RAG v0.1.0",
+  "variants": {
+    "baseline": {"retrieval": "LightRAG mix top_k=8", "claim_verification": false},
+    "adaptive": {"retrieval": "naive 4 then optionally mix 8", "claim_verification": false},
+    "verify": {"retrieval": "LightRAG mix top_k=8", "claim_verification": true},
+    "full": {"retrieval": "naive 4 then optionally mix 8", "claim_verification": true}
+  },
+  "shared_controls": [
+    "One corpus and frozen ingest metadata per run",
+    "Same LLM model and deterministic decoding",
+    "Same NLI model and validation-tuned thresholds",
+    "Same query holdout and metrics",
+    "Benchmark models and dataset revisions recorded",
+    "Report cache state and startup/warmup details for latency"
+  ],
+  "pending": "MUST run real experiments before award claims"
+}

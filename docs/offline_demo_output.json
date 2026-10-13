@@ -1,0 +1,55 @@
+{
+  "question": "星桥项目于哪一年在什么城市启动？",
+  "variant": "full",
+  "answer": "星桥项目于2023年在南京启动，研究方向是城市洪涝监测。",
+  "candidate_answer": "星桥项目于2023年在南京启动，研究方向是城市洪涝监测。",
+  "abstained": false,
+  "claims": [
+    "星桥项目于2023年在南京启动，研究方向是城市洪涝监测。"
+  ],
+  "citation_ids": [
+    "E1"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "content": "星桥项目于2023年在南京启动，研究方向是城市洪涝监测。",
+      "source": "case-01"
+    },
+    {
+      "evidence_id": "E2",
+      "content": "星桥项目的核心技术是使用图神经网络处理实时水位传感器数据。",
+      "source": "case-02"
+    },
+    {
+      "evidence_id": "E3",
+      "content": "城市洪涝监测通常综合利用降雨量、排水能力和实时水位数据。",
+      "source": "case-03"
+    }
+  ],
+  "retrieval": {
+    "risk": 0.12,
+    "coverage": 0.7333333333333333,
+    "calls": 1,
+    "modes": [
+      "naive"
+    ],
+    "contexts_seen": 3
+  },
+  "verification": {
+    "accepted": true,
+    "coverage": 1.0,
+    "verdicts": [
+      {
+        "claim": "星桥项目于2023年在南京启动，研究方向是城市洪涝监测。",
+        "label": "supported",
+        "support_score": 0.97,
+        "contradiction_score": 0.03,
+        "support_id": "E1",
+        "contradiction_id": "E2"
+      }
+    ],
+    "reason": "all-supported"
+  },
+  "latency_ms": 1.08
+}

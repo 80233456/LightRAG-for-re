@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-10-14",
+  "LightRAG": {
+    "repo": "https://github.com/HKUDS/LightRAG",
+    "main_commit_sha_when_checked": "4d0afc1bc36e6a34d4a5895b68efe9413748627a",
+    "verified_api": ["ainsert", "aquery_data", "initialize_storages", "finalize_storages", "QueryParam", "ollama_model_complete", "ollama_embed"]
+  },
+  "MultiHopRAG_authors_repo": {
+    "repo": "https://github.com/yixuantt/MultiHop-RAG",
+    "main_commit_sha_when_checked": "c1c1287aa60a94acf9c4d20c891c9cd611a0f6e8"
+  },
+  "note": "Run pip freeze and record Hugging Face dataset revisions before official experiments. Package release versions may not map one-to-one to these repository commits."
+}
