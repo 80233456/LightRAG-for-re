@@ -161,7 +161,7 @@ python scripts/eval_multihop.py --backend lightrag --portion test --split-file c
 3. 固定同一 LLM、embedding、NLI 与数据划分；报告中写明**缓存命中和启动条件**。
 4. 阈值 `SUPPORT_THRESHOLD`、`CONTRADICTION_THRESHOLD` 仅从验证集选取；勿在测试集试错。
 5. 提供原作者引用。项目源码许可不覆盖外部数据与模型，请检查各自 license。
-6. 10月30日前交付最小真实系统、初步四组结果和一份完整报告。模型没有跑通时，不得使用 `demo` 结果替代。
+6. 10月15日为团队实际提交截止日：优先交付可运行项目、技术报告和实测证据；若真实实验未完成，明确如实标注。模型没有跑通时，不得使用 `demo` 结果替代。
 
 ## 上游与公开数据来源
 
@@ -173,3 +173,10 @@ python scripts/eval_multihop.py --backend lightrag --portion test --split-file c
 - Ollama：https://ollama.com/
 
 本仓库中 `src/evidencechain` 是独立研发的适配与算法候选实现，不宣称其上游工作属于团队原创。正式作品须遵守当届赛项的提交材料、引用披露与使用许可规则。
+
+
+## 2026-10-15 紧急提交文件
+
+- 可直接修改的技术报告初稿：[`docs/technical_report_submission_draft.md`](docs/technical_report_submission_draft.md)
+- 当天交付检查清单：[`docs/submission_checklist.md`](docs/submission_checklist.md)
+- 注意：真实模型推理、数据集成绩和实际比赛提交仍须在参赛团队机器和报名系统验证。
