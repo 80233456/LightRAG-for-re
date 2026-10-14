@@ -24,7 +24,13 @@ def test_nli_device_environment_reaches_scorer(monkeypatch):
 
 
 def test_identical_question_and_evidence_reuses_candidate():
-    from scripts.eval_multihop import CachedGenerator
+    import importlib.util
+    from pathlib import Path
+    path = Path(__file__).resolve().parents[1] / "scripts" / "eval_multihop.py"
+    spec = importlib.util.spec_from_file_location("eval_multihop_cache_test", path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    CachedGenerator = mod.CachedGenerator
     from evidencechain.schema import Evidence
 
     class CountingGenerator:
