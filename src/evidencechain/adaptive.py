@@ -1,8 +1,10 @@
-"""Original candidate module A: budgeted, uncertainty-triggered retrieval expansion.
+"""Budgeted adaptive expansion that keeps the original mix@8 baseline intact.
 
-    This is a deterministic research prototype, not a trained or globally optimal policy.
+Heuristic policy, not a learned multihop classifier; requires new blind tests.
 """
 from dataclasses import dataclass
+import re
+
 from .schema import Evidence, overlap
 from .retrievers import Retriever
 
@@ -14,25 +16,42 @@ class RetrievalTrace:
     calls: int
     modes: tuple[str, ...]
     contexts_seen: int
+    requested_top_k: tuple[int, ...] = ()
 
 
 class AdaptiveController:
-    CUES = ("比较", "之间", "分别", "为什么", "如何", "共同", "哪些", "根据", "同时",
-            "compare", "between", "both", "which", "according", "relationship", "after", "before")
+    """Preserve the first mix@8 results; expand to mix@16 for likely missing hops."""
+    STRONG_CUES = ("比较", "之间", "分别", "为什么", "如何", "共同", "哪些", "同时",
+                   "compare", "between", "both", "whose", "whom", "respectively",
+                   "relationship", "according to", "before", "after", "followed by")
+    CHAIN_PATTERNS = (
+        re.compile(r"\b(?:who|which|what)\b.{8,}\b(?:who|whose|that|which|where|and)\b", re.I),
+        re.compile(r"\bof\b.{2,80}\bof\b", re.I),
+        re.compile(r"\b(?:who|which|what)\b.{8,}[;,].{8,}", re.I),
+        re.compile(r"(?:谁|哪|何|什么).{1,35}(?:的|之后|之前).{1,25}(?:的|所|导致)")
+    )
 
-    def __init__(self, risk_threshold: float = 0.43, coverage_threshold: float = 0.30,
-                 first_k: int = 4, expand_k: int = 8, final_k: int = 8):
+    def __init__(self, risk_threshold: float = 0.50, coverage_threshold: float = 0.30,
+                 first_k: int = 8, expand_k: int = 16, final_k: int = 12,
+                 baseline_k: int = 8):
+        if min(first_k, expand_k, final_k, baseline_k) <= 0:
+            raise ValueError("retrieval sizes must be positive")
+        if final_k < first_k:
+            raise ValueError("final_k must not discard first-pass evidence")
         self.risk_threshold = risk_threshold
         self.coverage_threshold = coverage_threshold
         self.first_k = first_k
         self.expand_k = expand_k
         self.final_k = final_k
+        self.baseline_k = baseline_k
 
     def prior_risk(self, question: str) -> float:
-        low = question.lower()
-        matched = sum(cue in low for cue in self.CUES)
-        return min(1.0, 0.12 + min(0.42, 0.22 * matched) +
-                   (0.18 if len(question) > 90 else 0.0) +
+        low = question.casefold()
+        count = sum(cue in low for cue in self.STRONG_CUES)
+        structured = any(p.search(question) for p in self.CHAIN_PATTERNS)
+        return min(1.0, 0.12 + min(0.36, 0.18 * count) +
+                   (0.30 if structured else 0.0) +
+                   (0.16 if len(question) > 100 else 0.0) +
                    (0.12 if question.count("?") + question.count("？") > 1 else 0.0))
 
     @staticmethod
@@ -50,14 +69,15 @@ class AdaptiveController:
 
     async def run(self, retriever: Retriever, question: str, adaptive: bool = True):
         if not adaptive:
-            evs = await retriever.search(question, mode="mix", top_k=self.final_k)
+            evs = await retriever.search(question, mode="mix", top_k=self.baseline_k)
             return evs, RetrievalTrace(0.0, overlap(question, " ".join(e.content for e in evs)),
-                                       1, ("mix",), len(evs))
-        first = await retriever.search(question, mode="naive", top_k=self.first_k)
+                                       1, ("mix",), len(evs), (self.baseline_k,))
+        first = await retriever.search(question, mode="mix", top_k=self.first_k)
         coverage = overlap(question, " ".join(e.content for e in first))
         risk = self.prior_risk(question)
         if coverage < self.coverage_threshold or risk >= self.risk_threshold:
             more = await retriever.search(question, mode="mix", top_k=self.expand_k)
             evs = self._merge(first, more, self.final_k)
-            return evs, RetrievalTrace(risk, coverage, 2, ("naive", "mix"), len(first)+len(more))
-        return first[:self.final_k], RetrievalTrace(risk, coverage, 1, ("naive",), len(first))
+            return evs, RetrievalTrace(risk, coverage, 2, ("mix", "mix"),
+                                       len(first) + len(more), (self.first_k, self.expand_k))
+        return first, RetrievalTrace(risk, coverage, 1, ("mix",), len(first), (self.first_k,))
