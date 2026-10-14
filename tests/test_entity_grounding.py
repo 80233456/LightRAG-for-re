@@ -71,3 +71,11 @@ def test_anonymous_contradiction_still_rejected():
         ["北境王国的首都不是北京。"], [Evidence("1", "北境王国的首都是北京。", "demo")]
     )
     assert not output["accepted"]
+
+
+def test_verifier_inspects_expanded_evidence_beyond_first_eight():
+    ev = [Evidence(str(i), "An unrelated passage about other topics.", f"source-{i}") for i in range(1, 9)]
+    ev.append(Evidence("9", "Project Aster-01-7255 was launched in 2022 in Yarrowport.", "right"))
+    result = EvidenceVerifier(ModelLikeScorer()).check([CLAIM], ev)
+    assert result["accepted"]
+    assert result["verdicts"][0]["support_id"] == "9"

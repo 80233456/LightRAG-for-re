@@ -138,7 +138,7 @@ class ClaimVerdict:
 
 class EvidenceVerifier:
     def __init__(self, scorer: PairScorer, support_threshold: float = 0.78,
-                 contradiction_threshold: float = 0.70, max_evidence: int = 8,
+                 contradiction_threshold: float = 0.70, max_evidence: int = 12,
                  windows_per_evidence: int = 5):
         self.scorer = scorer
         self.support_threshold = support_threshold
