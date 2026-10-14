@@ -18,6 +18,8 @@ def test_wrong_answer_and_negative_mentions_blocked():
     assert answer_anchored_in_claims('Nanjing', ['The project was not in Beijing, but in Nanjing.'])
     assert not answer_anchored_in_claims('北京', ['星桥项目不是在北京启动，而是在南京启动。'])
     assert not answer_anchored_in_claims('North', ['Northampton is the answer.'])
+    assert not answer_anchored_in_claims('2023', ['The launch was not in 2023.'])
+    assert answer_anchored_in_claims('2023', ['The project launched in 2023年.'])
 
 
 class WrongAnswerGenerator:

@@ -21,14 +21,17 @@ def _normalize(text: str) -> str:
 def _valid_mention(piece: str, claim: str) -> bool:
     if not piece or not claim:
         return False
-    edge = r"(?<![\w])" + re.escape(piece) + r"(?![\w])" if re.fullmatch(r"[a-z0-9_ -]+", piece, re.I) else re.escape(piece)
+    if piece.isdigit():
+        edge = r"(?<![a-z0-9_])" + re.escape(piece) + r"(?![a-z0-9_])"
+    elif re.fullmatch(r"[a-z0-9_ -]+", piece, re.I):
+        edge = r"(?<![\w])" + re.escape(piece) + r"(?![\w])"
+    else:
+        edge = re.escape(piece)
     pattern = re.compile(edge, re.I)
     for found in pattern.finditer(claim):
         prefix = claim[max(0, found.start() - 44):found.start()]
         if not _ENGLISH_NEGATION.search(prefix) and not _CHINESE_NEGATION.search(prefix[-12:]):
             return True
-    if piece.isdigit():
-        return bool(re.search(r"(?<!\d)" + re.escape(piece) + r"(?!\d)", claim))
     return False
 
 
