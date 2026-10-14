@@ -16,6 +16,13 @@ class Settings:
     support_threshold: float
     contradiction_threshold: float
     nli_device: str = "cpu"
+    llm_provider: str = "ollama"
+    llm_base_url: str = "https://api.deepseek.com"
+    llm_api_key: str = ""
+    embedding_backend: str = "ollama"
+    embedding_device: str = "cuda"
+    api_usage_log: str = ""
+    llm_max_async: int = 2
 
 
 def settings_from_env() -> Settings:
@@ -32,4 +39,11 @@ def settings_from_env() -> Settings:
         support_threshold=float(os.getenv("SUPPORT_THRESHOLD", "0.78")),
         contradiction_threshold=float(os.getenv("CONTRADICTION_THRESHOLD", "0.70")),
         nli_device=os.getenv("NLI_DEVICE", "cpu"),
+        llm_provider=os.getenv("LLM_PROVIDER", "ollama"),
+        llm_base_url=os.getenv("LLM_BASE_URL", "https://api.deepseek.com"),
+        llm_api_key=os.getenv("LLM_API_KEY", ""),
+        embedding_backend=os.getenv("EMBEDDING_BACKEND", "ollama"),
+        embedding_device=os.getenv("EMBEDDING_DEVICE", "cuda"),
+        api_usage_log=os.getenv("API_USAGE_LOG", ""),
+        llm_max_async=int(os.getenv("LLM_MAX_ASYNC", "2")),
     )

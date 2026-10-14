@@ -1,6 +1,6 @@
 from .config import Settings
 from .retrievers import DemoRetriever, LightRAGRetriever
-from .generation import DemoGenerator, OllamaGenerator
+from .generation import DemoGenerator, OllamaGenerator, DeepSeekGenerator
 from .verifier import EvidenceVerifier, LexicalScorer, NLIModelScorer
 from .pipeline import EvidenceChain
 
@@ -22,7 +22,12 @@ async def make_chain(settings: Settings, backend: str = "demo", verifier: str | 
         generator = DemoGenerator()
     elif backend == "lightrag":
         retriever = await LightRAGRetriever(settings).start()
-        generator = OllamaGenerator(settings.host, settings.llm_model, settings.timeout)
+        if settings.llm_provider == "deepseek":
+            generator = DeepSeekGenerator(settings)
+        elif settings.llm_provider == "ollama":
+            generator = OllamaGenerator(settings.host, settings.llm_model, settings.timeout)
+        else:
+            raise ValueError("LLM_PROVIDER must be ollama or deepseek")
     else:
         raise ValueError("backend must be demo or lightrag")
     return EvidenceChain(retriever, generator, make_verifier(settings, verifier))
