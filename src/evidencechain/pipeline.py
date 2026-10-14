@@ -7,6 +7,7 @@ from .adaptive import AdaptiveController
 from .generation import Generator
 from .retrievers import Retriever
 from .verifier import EvidenceVerifier
+from .answer_guard import answer_anchored_in_claims
 
 VARIANTS = ("baseline", "adaptive", "verify", "full")
 
@@ -30,11 +31,21 @@ class EvidenceChain:
         claims = prediction["claims"]
         verified = variant in ("verify", "full")
         report = self.verifier.check(claims, evidences) if verified else None
+        # Grounded claims alone must not license a contradictory answer.
+        answer_claim_consistent = answer_anchored_in_claims(raw_answer, claims) if verified else None
+        if report is not None:
+            report["answer_claim_consistent"] = answer_claim_consistent
+            if not answer_claim_consistent:
+                report["reason"] = "answer-claim-mismatch"
+                report["accepted"] = False
         accepted = bool(raw_answer) and (not verified or bool(report["accepted"]))
         cited_ids = []
         if report and accepted:
             cited_ids = list(dict.fromkeys(
-                v["support_id"] for v in report["verdicts"] if v["support_id"]
+                source_id
+                for verdict in report["verdicts"]
+                for source_id in (verdict.get("support_ids") or
+                                  ([verdict["support_id"]] if verdict["support_id"] else []))
             ))
         return {
             "question": question,

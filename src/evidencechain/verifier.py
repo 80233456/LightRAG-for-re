@@ -5,6 +5,7 @@ on a validation set for any research comparison, and report uncalibrated scores 
 """
 from __future__ import annotations
 from dataclasses import dataclass, asdict
+from itertools import product
 from typing import Protocol
 import re
 
@@ -131,6 +132,8 @@ class ClaimVerdict:
     support_id: str | None
     contradiction_id: str | None
     ignored_unrelated_contradictions: int = 0
+    support_ids: tuple[str, ...] = ()
+    contradiction_ids: tuple[str, ...] = ()
 
     def as_dict(self):
         return asdict(self)
@@ -151,16 +154,44 @@ class EvidenceVerifier:
         if not claims or not evidence:
             return {"accepted": False, "coverage": 0.0, "verdicts": [], "reason": "no claims/evidence"}
 
-        pairs: list[tuple[int, str, str]] = []
+        # For multi-ID claims, combine small relevant spans from independent
+        # sources instead of requiring every ID inside a single document.
+        # ID co-occurrence is NOT sufficient: the NLI scorer must entail
+        # the actual relational statement.
+        pairs: list[tuple[int, tuple[str, ...], str]] = []
         premises: list[str] = []
         hypotheses: list[str] = []
         anchors = [entity_anchors(claim) for claim in claims]
         for ci, claim in enumerate(claims):
-            for ev in evidence:
-                for chunk in _windows(ev.content, claim, self.windows_per_evidence):
-                    pairs.append((ci, ev.evidence_id, chunk))
-                    premises.append(chunk)
-                    hypotheses.append(claim)
+            ids, _ = anchors[ci]
+            candidate_windows = []
+            if len(ids) >= 2:
+                per_anchor = []
+                for identifier in ids:
+                    options = []
+                    for ev in evidence:
+                        for chunk in _windows(ev.content, identifier, self.windows_per_evidence):
+                            options.append((ev.evidence_id, chunk))
+                    options.sort(key=lambda item: -overlap(claim, item[1]))
+                    if not options:
+                        per_anchor = []
+                        break
+                    per_anchor.append(options[:2])
+                if per_anchor:
+                    for combination in product(*per_anchor):
+                        ids_used = tuple(dict.fromkeys(item[0] for item in combination))
+                        fragments = list(dict.fromkeys(item[1] for item in combination))
+                        candidate_windows.append((ids_used, "\n".join(fragments)))
+                        if len(candidate_windows) >= 12:
+                            break
+            else:
+                for ev in evidence:
+                    for chunk in _windows(ev.content, claim, self.windows_per_evidence):
+                        candidate_windows.append(((ev.evidence_id,), chunk))
+            for source_ids, chunk in candidate_windows:
+                pairs.append((ci, source_ids, chunk))
+                premises.append(chunk)
+                hypotheses.append(claim)
         scores = self.scorer.score(premises, hypotheses)
         if len(scores) != len(pairs):
             raise ValueError("NLI scorer returned wrong number of pairs")
@@ -171,18 +202,18 @@ class EvidenceVerifier:
             supports = []
             refutations = []
             ignored = 0
-            for (pair_ci, ev_id, chunk), (support_score, contradiction_score) in zip(pairs, scores):
+            for (pair_ci, source_ids, chunk), (support_score, contradiction_score) in zip(pairs, scores):
                 if pair_ci != ci:
                     continue
                 same_entity = _has_exact_anchor(chunk, ids, name)
                 if not ids or same_entity:
-                    supports.append((ev_id, support_score))
+                    supports.append((source_ids, support_score))
                 if same_entity:
-                    refutations.append((ev_id, contradiction_score))
+                    refutations.append((source_ids, contradiction_score))
                 elif contradiction_score >= self.contradiction_threshold:
                     ignored += 1
-            support = max(supports, key=lambda x: x[1], default=(None, 0.0))
-            contra = max(refutations, key=lambda x: x[1], default=(None, 0.0))
+            support = max(supports, key=lambda x: x[1], default=((), 0.0))
+            contra = max(refutations, key=lambda x: x[1], default=((), 0.0))
             if support[1] >= self.support_threshold and contra[1] >= self.contradiction_threshold:
                 label = "conflict"
             elif contra[1] >= self.contradiction_threshold:
@@ -191,8 +222,11 @@ class EvidenceVerifier:
                 label = "supported"
             else:
                 label = "insufficient"
-            verdicts.append(ClaimVerdict(claim, label, round(support[1], 5),
-                                         round(contra[1], 5), support[0], contra[0], ignored))
+            verdicts.append(ClaimVerdict(
+                claim, label, round(support[1], 5), round(contra[1], 5),
+                support[0][0] if support[0] else None,
+                contra[0][0] if contra[0] else None,
+                ignored, support[0], contra[0]))
         supported = sum(v.label == "supported" for v in verdicts)
         accepted = supported == len(verdicts)
         return {"accepted": accepted, "coverage": supported / len(verdicts),
