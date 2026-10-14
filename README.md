@@ -101,7 +101,7 @@ EvidenceChain-RAG/
 **A：风险感知检索控制** → `src/evidencechain/adaptive.py`
 
 - baseline：`mix` 模式，最多取 8 个 chunk。
-- adaptive：先 `naive` 取 4 个；若问题有多跳/比较信号或首轮检索覆盖度偏低，再 `mix` 扩展，去重后最多保留 8 个。
+- adaptive（修复后）：先 `mix` 取 8 条，遇到疑似多跳或覆盖不足时扩展为 `mix@16`，去重后最多保留 12 条；检索收益仍待真实模型盲测。
 - 记录 `modes, calls, risk, coverage, contexts_seen`，用于**质量–成本**消融。
 - 当前仅为规则控制器。投稿级算法新颖性和收益尚未通过对比证明。
 
@@ -113,6 +113,8 @@ EvidenceChain-RAG/
 - 分数不是概率校准后的可靠性概率。claim 生成的遗漏可能使验证器漏检，应单独评估。
 
 详细设计在 `docs/algorithm_design.md`。
+
+**算法修复、评估方式与已知局限：** [修复记录](docs/repair_2026_10_14.md) · [下一轮评估方案](docs/next_round_eval.md)。旧实验包的离线审计可运行 `python scripts/offline_audit_archive.py <zip文件路径> --output results/offline_audit.json`。旧分数不代表修复后性能。
 
 ## RAGBench：支持判断实验（不可报告为 QA 准确率）
 
