@@ -15,6 +15,7 @@ class Settings:
     nli_model: str
     support_threshold: float
     contradiction_threshold: float
+    nli_device: str = "cpu"
 
 
 def settings_from_env() -> Settings:
@@ -30,4 +31,5 @@ def settings_from_env() -> Settings:
         nli_model=os.getenv("NLI_MODEL", "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"),
         support_threshold=float(os.getenv("SUPPORT_THRESHOLD", "0.78")),
         contradiction_threshold=float(os.getenv("CONTRADICTION_THRESHOLD", "0.70")),
+        nli_device=os.getenv("NLI_DEVICE", "cpu"),
     )

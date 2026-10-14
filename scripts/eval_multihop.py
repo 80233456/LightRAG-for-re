@@ -40,6 +40,26 @@ def gold_facts(row):
             if isinstance(item, dict) and item.get("fact")]
 
 
+
+class CachedGenerator:
+    """Share candidates for exactly identical question + ordered evidence.
+
+    Verifier ablations must judge the same candidate, not separate LLM draws.
+    Cached answers remain scoped to this evaluation invocation.
+    """
+
+    def __init__(self, delegate):
+        self.delegate = delegate
+        self.cache = {}
+
+    async def generate(self, question, evidence):
+        key = (question, tuple((e.evidence_id, e.source, e.content) for e in evidence))
+        if key not in self.cache:
+            self.cache[key] = await self.delegate.generate(question, evidence)
+        result = self.cache[key]
+        return {"answer": result["answer"], "claims": list(result["claims"])}
+
+
 async def run(args):
     from datasets import load_dataset
     if args.limit_queries <= 0:
@@ -60,6 +80,7 @@ async def run(args):
     selected = [questions[i] for i in indices[:args.limit_queries]]
     settings = settings_from_env()
     chain = await make_chain(settings, args.backend, args.verifier)
+    chain.generator = CachedGenerator(chain.generator)
     variants = VARIANTS if args.variant == "all" else (args.variant,)
     records = []
     try:

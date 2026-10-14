@@ -25,6 +25,15 @@ def prepare_record(row: dict, max_docs: int):
     return split_claims(response, limit=12), evs
 
 
+
+def support_label(row: dict) -> bool | None:
+    """Use the RAGBench adherence_score field; never coerce text to bool."""
+    value = row.get("adherence_score", row.get("overall_supported"))
+    if value is not None and not isinstance(value, bool):
+        raise ValueError("RAGBench support target must be boolean")
+    return value
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--config", default="covidqa")
@@ -42,14 +51,15 @@ def main():
     verifier = make_verifier(settings_from_env(), args.verifier)
     gold, predictions, detail = [], [], []
     for row in rows:
-        if row.get("overall_supported") is None:
+        label = support_label(row)
+        if label is None:
             continue
         claims, evidence = prepare_record(row, args.max_docs)
         t = perf_counter()
         judged = verifier.check(claims, evidence)
         pred = bool(judged["accepted"])
         predictions.append(pred)
-        gold.append(bool(row["overall_supported"]))
+        gold.append(label)
         detail.append({"id": row.get("id"), "gold": gold[-1], "predicted": pred,
                        "claims": claims, "verification": judged,
                        "latency_ms": round((perf_counter()-t)*1000, 2)})

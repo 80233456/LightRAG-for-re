@@ -10,7 +10,7 @@ def make_verifier(settings: Settings, backend: str | None = None):
     if backend == "lexical":
         scorer = LexicalScorer()
     elif backend == "nli":
-        scorer = NLIModelScorer(settings.nli_model)
+        scorer = NLIModelScorer(settings.nli_model, device=settings.nli_device)
     else:
         raise ValueError("verifier backend must be lexical or nli")
     return EvidenceVerifier(scorer, settings.support_threshold, settings.contradiction_threshold)
