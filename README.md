@@ -1,201 +1,161 @@
-# EvidenceChain-RAG · 证据链可信问答系统
+# 观微证据链 · EvidenceChain-RAG
 
-## 最新源码与参赛成果
+**让多跳问答从找到材料走向证据闭环。**
 
-河南大学 **观微算法队**：韩昌达、张中瑜、李嘉栋。
+河南大学 · **观微算法队**
 
-本次更新包含父文档证据重组、独立原子事实核验、三值逻辑组合和一次有界修复。真实实验使用 DeepSeek API，服务器运行嵌入、重排与检索程序。冻结后的同批 100 题测试中，基础方案完全匹配率为 55%，完整流程为 86%；改进候选分支为 88%。各分支原始结果均保留，便于对照验证器的收益与取舍。
+韩昌达　张中瑜　李嘉栋
 
-- [参赛成果总览](artifacts/README.md)
-- [成果佐证材料（含核心源码）](artifacts/evidence/观微证据链项目成果佐证材料.pdf)
-- [完整源码压缩包](artifacts/evidence/selected_source.tar.gz)
-- [中文参赛报告（PDF）](artifacts/report/观微证据链参赛报告.pdf)
-- [三分钟项目介绍（MP4）](artifacts/video/观微证据链三分钟项目介绍.mp4)
-- [离线网页演示](artifacts/video/观微证据链三分钟介绍.html)（下载后用浏览器打开）
-- [逐题成绩与实验记录](artifacts/experiments/20261015/results/)
-- [优化算法与运行方式](docs/corrective_v2.md)
+面向跨文档、多来源的复杂问答，本项目基于 LightRAG 构建证据检索、语境重组、事实核验与答案纠正流程。系统不仅输出答案，还保留原文引用、候选变化与执行轨迹，让回答可以沿着证据逐步核查。
 
-以下保留原始基础方案说明。最新优化入口为 `scripts/ask_corrective.py`，不会自动替换旧入口；本轮结果以成果目录中的冻结记录为准。
+真实实验采用 **DeepSeek API + 本地 BGE 嵌入与重排 + 图谱检索**，服务器无需加载本地问答大模型。在609篇真实新闻构成的知识库上，冻结方案后的100题留出测试中，完整流程完全匹配率由基础方案的 **55% 提升至86%**。
 
-面向 2026 年全球校园人工智能算法精英大赛的独立参赛研发骨架。基于 **HKUDS LightRAG** 的结构化检索 SDK，添加两个**待实验验证的候选方法**：`AdaptiveController`（预算控制）与 `EvidenceVerifier`（声明级支持/冲突验证、选择性拒答）。
+## 成果入口
 
-> **重要：本仓库是初赛用研发骨架，不是已证明具备国奖性能的成品。** `demo` 是离线假检索/假生成，仅用于 CI 与模块冒烟；所有论文/比赛性能数字必须来自 `lightrag + Ollama + NLI` 的真实实验。
+| 材料 | 查看与下载 |
+| --- | --- |
+| 完整参赛报告 | [PDF](artifacts/report/观微证据链参赛报告.pdf) · [离线网页](artifacts/report/观微证据链参赛报告.html) |
+| 成果佐证材料 | [33页PDF，含974行核心源码](artifacts/evidence/观微证据链项目成果佐证材料.pdf) |
+| 完整源码 | [冻结实验源码压缩包](artifacts/evidence/selected_source.tar.gz) |
+| 参赛附件 | [佐证附件包：源码、日志、报告与演示](artifacts/evidence/观微算法队参赛佐证附件包.zip) |
+| 三分钟介绍 | [1080P视频](artifacts/video/观微证据链三分钟项目介绍.mp4) · [离线交互网页](artifacts/video/观微证据链三分钟介绍.html) |
+| 实验原始记录 | [逐题成绩](artifacts/experiments/20261015/results/per_question_scores.csv) · [实验报告](artifacts/experiments/20261015/results/v2_report_zh.md) |
+| 图表与素材 | [机制图、数据图](artifacts/report/图表/) · [成果总览](artifacts/README.md) |
 
-## 一分钟启动（离线，不下模型）
+网页文件已内嵌图形与声音，下载后用浏览器打开；GitHub文件页不直接运行HTML。视频时长180秒，1920×1080、30帧，使用中文合成男声并内置同步字幕。
+
+## 方法设计
+
+![证据链整体架构](artifacts/report/图表/机制一_总体结构.png)
+
+针对证据截断、同源片段重复挤占和否定关系混淆，系统分为三个环节：
+
+1. **多路检索与语境重组。** 融合关键词、图谱和向量召回，使用倒数排名融合与交叉编码器重排；按原文偏移展开父文档，恢复时间、主体和归因等限定信息。
+2. **独立事实核验与逻辑组合。** 将复杂问题拆为源限定事实命题，在不展示候选答案的条件下检查事实，再用真、假、未知三值逻辑组合结果，区分题干真假与答案极性。
+3. **有界纠正与证据留存。** 对缺失证据执行至多一次补充修复，保留初始上下文、原候选、最终答案和决定性引用，输出可追溯记录。
+
+主要实现位于 [父文档检索](src/evidencechain/parent_retrieval.py)、[事实核验](src/evidencechain/facet_verifier.py)、[三值逻辑](src/evidencechain/boolean_verifier.py)和[纠正主流程](src/evidencechain/corrective.py)。[算法细节与预算约束](docs/corrective_v2.md)另行记录。
+
+## 实测结果
+
+开发集24题、验证集40题；最终方案冻结后，在全新100题上运行五组同题对照。下表完全匹配率均以全部100题为分母，未删除拒答或格式错误样本。
+
+| 方案 | 完全匹配率 | 词元F1 | 已作答精度 | 非空错答 |
+| --- | ---: | ---: | ---: | ---: |
+| 基础方案 | 55.00% | 55.74% | 86.00% | 7题 |
+| 上一轮补检索 | 57.00% | 57.74% | 84.91% | 8题 |
+| 改进候选，不加验证 | **88.00%** | **88.80%** | 88.37% | 10题 |
+| 验证与逻辑纠正 | 86.00% | 86.80% | 90.24% | 8题 |
+| 完整流程 | **86.00%** | **86.80%** | **90.24%** | **8题** |
+
+![总体问答性能](artifacts/report/图表/数据一_总体性能.png)
+
+完整流程相对基础方案净增31道正确答案；跨来源比较题由14.81%提升至77.78%，时间关系题由40%提升至80%。独立验证集完整流程完全匹配率为87.50%。
+
+验证器的取舍也保留在结果中：相对改进候选，它新增答对3题、丢失5题，非空错答从10题降至8题。整体提分来自召回、上下文和结构化生成的组合，不单独归因于验证器。
+
+本轮结果来自 MultiHop-RAG 新闻问答的自建冻结留出集，不是官方全量榜单分数，也不代表 RAGBench 成绩。[100题原始记录](artifacts/experiments/20261015/results/test/)与[评分审计](artifacts/experiments/20261015/results/audit_and_comparison.json)均已公开。
+
+## 部署与运行
+
+### 安装与工程测试
+
+使用 Python 3.11或3.12。在仓库根目录执行：
 
 ```bash
-# 在项目根目录，推荐 Python 3.11
 python -m venv .venv
-# macOS/Linux
 source .venv/bin/activate
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install -e '.[test]'
-cp .env.example .env   # Windows: copy .env.example .env
-python scripts/run_demo.py ask --backend demo --variant full
+# Windows PowerShell 改用：.venv\Scripts\Activate.ps1
+python -m pip install -e '.[test]' rank-bm25==0.2.2 numpy
 python -m pytest -q
 ```
 
-离线 `demo` 模式自动加载 `data/demo/documents.jsonl`。预期能输出 `question / answer / candidate_answer / evidence / verification / retrieval / latency_ms` 等 JSON 字段。此结果不能用于参赛论文跑分。
-
-## 接入真实 LightRAG（推荐 Ubuntu + NVIDIA GPU）
+工程测试 **104项通过**。不调用真实模型的离线流程检查可执行：
 
 ```bash
-# 安装 Ollama：https://ollama.com/download 并启动其服务
-ollama pull qwen2.5:7b
-ollama pull bge-m3
-# 安装项目的真实检索扩展
-python -m pip install -e '.[real,test]'
+python scripts/run_demo.py ask --backend demo --variant full
+```
+
+离线演示用于检查接口，不计入上表的真实模型成绩。
+
+### 真实模型配置
+
+```bash
+python -m pip install -e '.[real,local,test]'
 cp .env.example .env
-python scripts/check_environment.py
-
-# 建立持久化索引（首次可能较慢，需要模型做实体关系抽取）
-python scripts/run_demo.py ingest --backend lightrag --docs data/demo/documents.jsonl
-# 查询已存在的持久化索引
-python scripts/run_demo.py ask --backend lightrag --variant baseline --question '星桥项目于哪一年在什么城市启动？'
-python scripts/run_demo.py ask --backend lightrag --variant full --question '星桥项目于哪一年在什么城市启动？' --verifier lexical
+# Windows PowerShell 改用：Copy-Item .env.example .env
 ```
 
-需要模型层级的证据判断时安装并使用 `NLI`：
+在私有 `.env` 中设置以下参数，覆盖模板中的同名项：
+
+```dotenv
+LLM_PROVIDER=deepseek
+LLM_MODEL=deepseek-flash
+LLM_BASE_URL=https://api.deepseek.com
+LLM_API_KEY=YOUR_PRIVATE_KEY
+EMBEDDING_BACKEND=sentence_transformers
+EMBEDDING_MODEL=BAAI/bge-m3
+EMBEDDING_DEVICE=cuda
+EMBEDDING_DIM=1024
+LIGHTRAG_WORKDIR=./data/lightrag_store
+API_USAGE_LOG=results/api_usage.jsonl
+LLM_MAX_ASYNC=2
+```
+
+`deepseek-flash` 为本次实验实际响应记录的模型标识；运行时应确认自己的接口账户可访问该模型。嵌入与重排模型需提前下载，密钥只保留在未跟踪的 `.env` 或环境变量中。
+
+### 文档入库与优化问答
+
+先准备同一批父文档与图谱索引。入库文件为每行一个对象的JSONL，包含 `id` 和 `text`；父语料为JSON数组，包含相同 `id` 和对应的 `body`（或 `text`），可附标题、作者、来源、时间与链接。两份数据的文档编号必须一致。
 
 ```bash
-python -m pip install -e '.[nli]'
-python scripts/run_demo.py ask --backend lightrag --variant full --verifier nli --question '星桥项目于哪一年在什么城市启动？'
+python scripts/run_demo.py ingest --backend lightrag --docs /path/to/documents.jsonl
+
+python scripts/ask_corrective.py 'Your question' \
+  --corpus /path/to/corpus.json \
+  --reranker /path/to/bge-reranker-v2-m3 \
+  --variant full
 ```
 
-`lexical` 只是开发模式的规则验证，绝对不要用该成绩宣称语义可信性。NLI 模型约 279M 参数，CPU 也能跑但较慢；阈值需要在独立验证集上调整，不得按测试集调阈值。
+优化入口支持 `context_only`、`verify`、`full` 三种分支，输出答案、原候选、证据、引用与验证记录。`scripts/run_demo.py` 保留旧流程；运行最新优化时使用 `scripts/ask_corrective.py`。更换嵌入模型或维度时，应新建索引目录并重新入库。
 
-若显存不够，可尝试 `ollama pull qwen2.5:3b` 并把 `.env` 的 `LLM_MODEL` 改为 `qwen2.5:3b`。所有对照组必须使用同一生成模型。
+## 工程与资源佐证
 
-**禁止中途更改 embedding 模型维度然后继续使用同一个索引目录**：改变 embedding 模型/维度应新建 `LIGHTRAG_WORKDIR`，重新索引并记录版本。
+| 项目 | 保存的结果 |
+| --- | --- |
+| 真实实验环境 | RTX 4090；Python 3.12.3；LightRAG 1.5.7；PyTorch 2.7.0 |
+| 工程测试 | 104 / 104通过 |
+| 真实接口构造反例检查 | 25 / 25通过 |
+| 验证与测试显存采样峰值 | 5245 MiB，约5.12 GiB |
+| 评分记录 | 独立验证／测试700条，含开发共1180条 |
+| 实际接口响应日志 | 1386条 |
 
-## 项目目录
+显存按约1秒间隔进行设备级采样，范围为本轮验证与测试，不包含首次图谱入库和更早的开发阶段。25项接口检查验证的是构造反例逻辑，不作为数据集问答准确率。
+
+冻结协议、数据划分、逐题答案、引用偏移、失败尝试及资源日志位于 [实验成果目录](artifacts/experiments/20261015/)。历史实验驱动保留原服务器路径，迁移时需调整路径，并沿用相同语料、索引、模型修订和配置。[成果文件校验清单](artifacts/manifest.json)提供SHA256。
+
+## 仓库结构
 
 ```text
-EvidenceChain-RAG/
-├── .env.example
-├── .gitignore
-├── .github/workflows/tests.yml
-├── README.md
-├── LICENSE
-├── pyproject.toml
-├── configs/
-│   ├── experiment_matrix.json
-│   ├── upstream_revisions.json
-│   └── multihop_split_indices.json  # 已冻结的随机种子划分
-├── data/
-│   └── demo/documents.jsonl
-├── docs/
-│   ├── algorithm_design.md
-│   ├── technical_report_outline.md
-│   └── submission_checklist.md
-├── results/                       # 真实评测后写入 JSON，不附虚构数据
-├── scripts/
-│   ├── run_demo.py                # 离线/真实模型CLI
-│   ├── check_environment.py
-│   ├── make_holdout.py
-│   ├── eval_ragbench.py
-│   └── eval_multihop.py
-├── src/evidencechain/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── schema.py
-│   ├── retrievers.py            # DemoRetriever / LightRAGRetriever
-│   ├── generation.py           # DemoGenerator / OllamaGenerator
-│   ├── adaptive.py             # 候选创新点 A
-│   ├── verifier.py             # 候选创新点 B
-│   ├── pipeline.py             # baseline / adaptive / verify / full
-│   ├── factory.py
-│   └── metrics.py
-└── tests/
-    ├── test_adaptive.py
-    ├── test_metrics.py
-    ├── test_pipeline.py
-    └── test_verifier.py
+src/evidencechain/       检索、父文档重组、事实核验、逻辑组合与纠正
+scripts/                 问答、入库及评测命令行入口
+experiments/             冻结实验驱动与反例检查
+tests/                   工程测试
+docs/                    算法细节、历史设计与修复记录
+artifacts/report/        参赛报告、机制图与数据图
+artifacts/video/         三分钟视频、网页、配音、字幕与制作源码
+artifacts/evidence/      含核心源码的佐证PDF、完整附件与源码压缩包
+artifacts/experiments/   原始成绩、运行日志、冻结协议与审计记录
 ```
 
-## 两个候选算法的实现位置
+## 开源基础与许可
 
-**A：风险感知检索控制** → `src/evidencechain/adaptive.py`
+项目在上游检索框架与开源模型基础上，完成证据组织、应用层核验和纠正流程的实现。原框架、模型与数据集分别遵循其自身许可。
 
-- baseline：`mix` 模式，最多取 8 个 chunk。
-- adaptive（修复后）：先 `mix` 取 8 条，遇到疑似多跳或覆盖不足时扩展为 `mix@16`，去重后最多保留 12 条；检索收益仍待真实模型盲测。
-- 记录 `modes, calls, risk, coverage, contexts_seen`，用于**质量–成本**消融。
-- 当前仅为规则控制器。投稿级算法新颖性和收益尚未通过对比证明。
+- [LightRAG](https://github.com/HKUDS/LightRAG)：图谱与向量检索基础。
+- [BGE-M3](https://huggingface.co/BAAI/bge-m3)与[BGE重排模型](https://huggingface.co/BAAI/bge-reranker-v2-m3)：嵌入与相关性重排。
+- [MultiHop-RAG](https://huggingface.co/datasets/yixuantt/MultiHopRAG)：本轮多跳新闻问答数据来源。
+- [CRAG](https://arxiv.org/abs/2401.15884)、[CoVe](https://arxiv.org/abs/2309.11495)：纠错路由与独立核验思路参考。
+- [RAGBench](https://huggingface.co/datasets/galileo-ai/ragbench)：仓库保留其支持判断评测入口，与本轮问答分数分开报告。
 
-**B：声明级证据验证** → `src/evidencechain/verifier.py`
-
-- LLM 返回 JSON：`answer` 和 1–3 条可检验的 `claims`。
-- 将检索证据拆成适度窗口，计算各声明相对各证据的 `entailment` 和 `contradiction` 分数。
-- `supported / refuted / conflict / insufficient` 四类；**所有声明被支持才发布答案**，否则拒答并保留审计记录。
-- 分数不是概率校准后的可靠性概率。claim 生成的遗漏可能使验证器漏检，应单独评估。
-
-详细设计在 `docs/algorithm_design.md`。
-
-**算法修复、评估方式与已知局限：** [修复记录](docs/repair_2026_10_14.md) · [下一轮评估方案](docs/next_round_eval.md)。旧实验包的离线审计可运行 `python scripts/offline_audit_archive.py <zip文件路径> --output results/offline_audit.json`。旧分数不代表修复后性能。
-
-## RAGBench：支持判断实验（不可报告为 QA 准确率）
-
-使用原始 `documents + response` 及 `overall_supported`，计算二分类 Accuracy / Precision / Recall / F1、错误接受率。建议先用验证集测试流程，再锁定阈值只评估测试集一次。
-
-```bash
-python -m pip install -e '.[eval,nli]'
-# 快速流程检查（lexical，科学实验中不可作为模型算法成果）
-python scripts/eval_ragbench.py --config covidqa --split validation --limit 30 --verifier lexical --output results/ragbench_smoke.json
-# 真实 NLI 验证实验（建议使用固定样本序列和验证集调阈值）
-python scripts/eval_ragbench.py --config covidqa --split validation --limit 100 --verifier nli --output results/ragbench_val.json
-# 阈值冻结后测试；limit 设置为该 config 的全部行数才可称完整测试
-python scripts/eval_ragbench.py --config covidqa --split test --limit 100000 --verifier nli --output results/ragbench_test.json
-```
-
-需要注意：RAGBench 由多个子数据集组成，不同 config 的样本数量与标签覆盖不同，不应拼凑成一个数据集指标。
-
-## MultiHop-RAG：多文档问答和证据匹配实验
-
-使用 Hugging Face 上的 **两个配置**：`corpus` 与 `MultiHopRAG`。正式实验**完整 corpus 必须入库**，并固定提问索引（数据卡没有独立的官方 `test` split）。
-
-```bash
-# 1. 冻结问题划分（先于调整算法/看测试结果）
-python scripts/make_holdout.py --n 2556 --seed 20261014
-
-# 2. 先用 20 个问题检查评测入口，建立完整语料索引
-python scripts/eval_multihop.py --backend lightrag --index --portion pilot --limit-queries 20 --variant all --verifier nli --output results/multihop_pilot.json
-
-# 3. 验证集（不要加 --index，重用已持久化索引）
-python scripts/eval_multihop.py --backend lightrag --portion validation --split-file configs/multihop_split_indices.json --limit-queries 511 --variant all --verifier nli --output results/multihop_val.json
-
-# 4. 测试集，冻结配置后再进行（limit >= 测试题数）
-python scripts/eval_multihop.py --backend lightrag --portion test --split-file configs/multihop_split_indices.json --limit-queries 10000 --variant all --verifier nli --output results/multihop_test.json
-```
-
-如想**仅排障**，可 `--backend demo --max-corpus 20 --portion pilot --limit-queries 5 --verifier lexical`；这会更改检索语料，**绝不用于正式对比**。
-
-返回的 `fact_recall_at_selected_k` 是按规范化原文子串计算的**证据事实匹配代理指标**（strict match），不等于语义层面 Recall@K。另记录 EM、token F1、拒答覆盖率、检索次数和探索性的平均时延。测试集不得被用于选择阈值或调参。
-
-**注意速度**：图谱入库涉及 LLM 实体抽取，上百文档可能耗时很久。必须尽早启动完整索引，并预留重试、断点恢复和验收时间。
-
-## 实验质量底线
-
-1. 先 `python -m pytest -q`，再真实运行所有版本。
-2. 记录 `pip freeze`、`ollama list`、GPU/CPU、Python 和 LightRAG commit；保存每组详细 JSON。
-3. 固定同一 LLM、embedding、NLI 与数据划分；报告中写明**缓存命中和启动条件**。
-4. 阈值 `SUPPORT_THRESHOLD`、`CONTRADICTION_THRESHOLD` 仅从验证集选取；勿在测试集试错。
-5. 提供原作者引用。项目源码许可不覆盖外部数据与模型，请检查各自 license。
-6. 10月15日为团队实际提交截止日：优先交付可运行项目、技术报告和实测证据；若真实实验未完成，明确如实标注。模型没有跑通时，不得使用 `demo` 结果替代。
-
-## 上游与公开数据来源
-
-- LightRAG（MIT）：https://github.com/HKUDS/LightRAG
-- LightRAG Python SDK docs：https://github.com/HKUDS/LightRAG/blob/main/docs/ProgramingWithCore.md
-- RAGBench（CC BY 4.0）：https://huggingface.co/datasets/galileo-ai/ragbench
-- MultiHop-RAG（ODC-BY）：https://huggingface.co/datasets/yixuantt/MultiHopRAG
-- mDeBERTa NLI：https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
-- Ollama：https://ollama.com/
-
-本仓库中 `src/evidencechain` 是独立研发的适配与算法候选实现，不宣称其上游工作属于团队原创。正式作品须遵守当届赛项的提交材料、引用披露与使用许可规则。
-
-
-## 2026-10-15 紧急提交文件
-
-- 可直接修改的技术报告初稿：[`docs/technical_report_submission_draft.md`](docs/technical_report_submission_draft.md)
-- 当天交付检查清单：[`docs/submission_checklist.md`](docs/submission_checklist.md)
-- 注意：真实模型推理、数据集成绩和实际比赛提交仍须在参赛团队机器和报名系统验证。
+本仓库源码采用 [MIT许可证](LICENSE)。
