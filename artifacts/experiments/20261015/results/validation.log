@@ -1,0 +1,2208 @@
+INFO: [] Loaded graph from /root/autodl-tmp/evidencechain_v2_20261015/index/graph_chunk_entity_relation.graphml with 28423 nodes, 43733 edges
+INFO:nano-vectordb:Load (28423, 1024) data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/root/autodl-tmp/evidencechain_v2_20261015/index/vdb_entities.json'} 28423 data
+INFO:nano-vectordb:Load (43733, 1024) data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/root/autodl-tmp/evidencechain_v2_20261015/index/vdb_relationships.json'} 43733 data
+INFO:nano-vectordb:Load (1650, 1024) data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/root/autodl-tmp/evidencechain_v2_20261015/index/vdb_chunks.json'} 1650 data
+INFO: Role LLM Configuration (initialized):
+INFO:  - extract: None/None, host=None, max_async=2, timeout=240
+INFO:  - keyword: None/None, host=None, max_async=2, timeout=240
+INFO:  - query: None/None, host=None, max_async=2, timeout=240
+INFO:  - vlm: None/None, host=None, max_async=2, timeout=240
+INFO: [] Process 3640 KV load full_docs with 609 records
+INFO: [] Process 3640 KV load text_chunks with 1650 records
+INFO: [] Process 3640 KV load full_entities with 609 records
+INFO: [] Process 3640 KV load full_relations with 609 records
+INFO: [] Process 3640 KV load entity_chunks with 28423 records
+INFO: [] Process 3640 KV load relation_chunks with 43733 records
+INFO: [] Process 3640 KV load llm_response_cache with 5399 records
+INFO: [] Process 3640 doc status load doc_status with 610 records
+INFO:sentence_transformers.base.model:No modules.json found for /root/autodl-tmp/evidencechain_v2_20261015/models/bge-reranker-v2-m3, initializing a new CrossEncoder model.
+INFO: keyword LLM func: 2 new workers initialized (Timeouts: Func: 240s, Worker: 480s, Health Check: 495s)
+INFO:  == LLM cache == saving: mix:keywords:02988666c4ff76aef60e5cc5ae33fff9
+INFO: Embedding func: 1 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+INFO: Query nodes: Eras Tour, Arrowhead Stadium, Travis Kelce, The Independent - Life and Style (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 104 relations
+INFO: Query edges: celebrity relationship, music tour, privacy, public outings (top_k:8, cosine:0.2)
+INFO: Global query: 10 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 17 entities, 111 relations, 8 vector chunks
+INFO: After truncation: 17 entities, 111 relations
+INFO: Selecting 42 from 76 entity-related chunks by vector similarity
+INFO: Find 11 additional chunks in 6 relations (deduplicated 33)
+INFO: Selecting 11 from 11 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 61 -> 53 (deduplicated 8)
+INFO: Final context: 17 entities, 111 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E4/2 R2/2 E6/3 R1/3 E6/4 R2/4
+validation 1 / 40 baseline em 0.0 abstained True
+validation 1 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Eras Tour, Arrowhead Stadium, Travis Kelce, The Independent - Life and Style (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 334 relations
+INFO: Query edges: celebrity relationship, music tour, privacy, public outings (top_k:24, cosine:0.2)
+INFO: Global query: 24 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 42 entities, 342 relations, 24 vector chunks
+INFO: After truncation: 25 entities, 114 relations
+INFO: Selecting 62 from 109 entity-related chunks by vector similarity
+INFO: Find 13 additional chunks in 10 relations (deduplicated 39)
+INFO: Selecting 13 from 13 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 99 -> 76 (deduplicated 23)
+INFO: Final context: 25 entities, 114 relations, 12 chunks
+INFO: Final chunks S+F/O: E10/1 R1/1 E6/2 R2/2 E7/3 R1/3 E8/4 R1/4 E4/5 R1/5 E7/6 R10/6
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 30 chunks
+validation 1 / 40 v2_context em 1.0 abstained False
+validation 1 / 40 v2_verify em 1.0 abstained False
+validation 1 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:bad9c0d4291ecc57bf238f149f30ec98
+INFO: Query nodes: Sporting News, Tyreek Hill, 2,000-plus receiving yards, December 5, 2023, December 7, 2023, league's leading receiver (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 44 relations
+INFO: Query edges: change in portrayal of performance, media coverage comparison (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 52 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 52 relations
+INFO: Selecting 55 from 169 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 23)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 70 -> 64 (deduplicated 6)
+INFO: Final context: 22 entities, 52 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R3/1 E1/2 R4/2 E1/3 R2/3 E1/4 R1/4
+validation 2 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:89be689f7b15016b94e7c6d0d9dc9626
+INFO: Query nodes: Tyreek Hill, 2,000-plus receiving yards, December 5 2023 (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 27 relations
+INFO: Query edges: sports news, NFL receiving yards milestone (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 32 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 32 relations
+INFO: Selecting 47 from 86 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 4 relations (deduplicated 22)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 62 -> 56 (deduplicated 6)
+INFO: Final context: 19 entities, 32 relations, 8 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 C1/2 E2/2 R1/2 E1/3 R4/3 C1/4
+INFO:  == LLM cache == saving: mix:keywords:7d2868d28c8383f73f31614f3d22f6eb
+INFO: Query nodes: Tyreek Hill, league's leading receiver, December 7 2023 (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 82 relations
+INFO: Query edges: sports news, NFL receiving statistics (top_k:8, cosine:0.2)
+INFO: Global query: 10 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 18 entities, 90 relations, 8 vector chunks
+INFO: After truncation: 18 entities, 90 relations
+INFO: Selecting 45 from 224 entity-related chunks by vector similarity
+INFO: Find 24 additional chunks in 15 relations (deduplicated 20)
+INFO: Selecting 24 from 24 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 77 -> 72 (deduplicated 5)
+INFO: Final context: 18 entities, 90 relations, 8 chunks
+INFO: Final chunks S+F/O: E3/1 R4/1 E2/2 R1/2 E2/3 R1/3 C1/4 E3/4
+validation 2 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Sporting News, Tyreek Hill, 2,000-plus receiving yards, December 5, 2023, December 7, 2023, league's leading receiver (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 119 relations
+INFO: Query edges: change in portrayal of performance, media coverage comparison (top_k:24, cosine:0.2)
+INFO: Global query: 39 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 63 entities, 143 relations, 24 vector chunks
+INFO: After truncation: 37 entities, 143 relations
+INFO: Selecting 92 from 203 entity-related chunks by vector similarity
+INFO: Find 33 additional chunks in 26 relations (deduplicated 43)
+INFO: Selecting 33 from 33 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 149 -> 131 (deduplicated 18)
+INFO: Final context: 37 entities, 143 relations, 15 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E2/2 R1/2 E1/3 R3/3 E2/4 R1/4 E1/5 R5/5 E1/6 R1/6 C1/7 E3/7 R1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 26 chunks
+validation 2 / 40 v2_context em 0.0 abstained False
+validation 2 / 40 v2_verify em 0.0 abstained False
+validation 2 / 40 v2_full em 0.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:5927daa4e649936b7d237fcf990ed7fe
+INFO: Query nodes: The Verge, September 26, 2023, Apple, Google Search deal, valid alternative, TechCrunch, November 13, 2023, Google, $26.3 billion, 2021, default search engine, platforms (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 381 relations
+INFO: Query edges: Apple Google Search deal, default search engine status, rationale consistency, aggressive spending (top_k:8, cosine:0.2)
+INFO: Global query: 8 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 14 entities, 382 relations, 8 vector chunks
+INFO: After truncation: 9 entities, 134 relations
+INFO: Selecting 22 from 220 entity-related chunks by vector similarity
+INFO: Find 84 additional chunks in 51 relations (deduplicated 22)
+INFO: Selecting 84 from 84 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 114 -> 106 (deduplicated 8)
+INFO: Final context: 9 entities, 134 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E2/2 R5/2 E3/3 R7/3 E4/4 R2/4
+validation 3 / 40 baseline em 0.0 abstained False
+validation 3 / 40 previous_recovery em 0.0 abstained False
+INFO: Query nodes: The Verge, September 26, 2023, Apple, Google Search deal, valid alternative, TechCrunch, November 13, 2023, Google, $26.3 billion, 2021, default search engine, platforms (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 433 relations
+INFO: Query edges: Apple Google Search deal, default search engine status, rationale consistency, aggressive spending (top_k:24, cosine:0.2)
+INFO: Global query: 27 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 40 entities, 439 relations, 24 vector chunks
+INFO: After truncation: 9 entities, 136 relations
+INFO: Selecting 22 from 220 entity-related chunks by vector similarity
+INFO: Find 83 additional chunks in 52 relations (deduplicated 22)
+INFO: Selecting 83 from 83 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 129 -> 107 (deduplicated 22)
+INFO: Final context: 9 entities, 136 relations, 15 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E2/2 R5/2 E3/3 R5/3 E4/4 R2/4 E3/5 R5/5 E3/6 R4/6 E2/7 R1/7 E2/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 3 / 40 v2_context em 1.0 abstained False
+validation 3 / 40 v2_verify em 1.0 abstained False
+validation 3 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:b6045828684885e45855e84f5fe7f8f4
+INFO: Query nodes: Bloomberg article, Reuters report, Asia, upcoming year (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 72 relations
+INFO: Query edges: economic strategies, defense policies, regional influence in Asia, GDP growth forecast, military exercise (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 80 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 80 relations
+INFO: Selecting 47 from 143 entity-related chunks by vector similarity
+INFO: Find 38 additional chunks in 36 relations (deduplicated 20)
+INFO: Selecting 38 from 38 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 93 -> 85 (deduplicated 8)
+INFO: Final context: 19 entities, 80 relations, 8 chunks
+INFO: Final chunks S+F/O: E4/1 R1/1 E6/2 R3/2 E2/3 R1/3 E3/4 R1/4
+validation 4 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:f63c9928269d070ce8c2fd25b7dfcd54
+INFO: Query nodes: Bloomberg article, Asia (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 49 relations
+INFO: Query edges: GDP growth forecast, regional influence (top_k:8, cosine:0.2)
+INFO: Global query: 10 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 18 entities, 57 relations, 8 vector chunks
+INFO: After truncation: 15 entities, 57 relations
+INFO: Selecting 37 from 201 entity-related chunks by vector similarity
+INFO: Find 30 additional chunks in 29 relations (deduplicated 7)
+INFO: Selecting 30 from 30 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 75 -> 69 (deduplicated 6)
+INFO: Final context: 15 entities, 57 relations, 8 chunks
+INFO: Final chunks S+F/O: E7/1 R2/1 E2/2 R8/2 E1/3 R1/3 E1/4 R1/4
+INFO:  == LLM cache == saving: mix:keywords:3260b35a05a332240c7958526fc34ec7
+INFO: Query nodes: Reuters, Asia (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 18 relations
+INFO: Query edges: military exercise, regional influence (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 26 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 26 relations
+INFO: Selecting 55 from 159 entity-related chunks by vector similarity
+INFO: Find 13 additional chunks in 12 relations (deduplicated 10)
+INFO: Selecting 13 from 13 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 76 -> 69 (deduplicated 7)
+INFO: Final context: 22 entities, 26 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R2/1 E1/2 R1/2 E3/3 R2/3 C1/4 E4/4
+validation 4 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: Bloomberg article, Reuters report, Asia, upcoming year (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 109 relations
+INFO: Query edges: economic strategies, defense policies, regional influence in Asia, GDP growth forecast, military exercise (top_k:24, cosine:0.2)
+INFO: Global query: 35 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 58 entities, 132 relations, 24 vector chunks
+INFO: After truncation: 30 entities, 132 relations
+INFO: Selecting 75 from 179 entity-related chunks by vector similarity
+INFO: Find 44 additional chunks in 43 relations (deduplicated 42)
+INFO: Selecting 44 from 44 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 143 -> 124 (deduplicated 19)
+INFO: Final context: 30 entities, 132 relations, 18 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E9/2 R1/2 E2/3 R1/3 E3/4 R4/4 E3/5 R1/5 E1/6 R1/6 E1/7 R2/7 E2/8 R1/8 C1/9 E1/9
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 30 chunks
+validation 4 / 40 v2_context em 1.0 abstained True
+validation 4 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:fc213773269aacfb1fe436e9987fa36b
+INFO: Query nodes: Bloomberg article (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 203 relations
+INFO: Query edges: economic strategies, GDP growth forecast (top_k:16, cosine:0.2)
+INFO: Global query: 23 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 39 entities, 219 relations, 16 vector chunks
+INFO: After truncation: 26 entities, 186 relations
+INFO: Selecting 65 from 140 entity-related chunks by vector similarity
+INFO: Find 106 additional chunks in 97 relations (deduplicated 26)
+INFO: Selecting 106 from 106 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 187 -> 173 (deduplicated 14)
+INFO: Final context: 26 entities, 186 relations, 14 chunks
+INFO: Final chunks S+F/O: E6/1 R2/1 E2/2 R1/2 E7/3 R1/3 E2/4 R3/4 E1/5 R1/5 E2/6 R1/6 E2/7 R1/7
+INFO:  == LLM cache == saving: mix:keywords:b1274d6fc4d0a9cc55a3ae4d7517df2c
+INFO: Query nodes: Reuters, upcoming year (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 41 relations
+INFO: Query edges: defense policies, military exercise (top_k:16, cosine:0.2)
+INFO: Global query: 28 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 44 entities, 57 relations, 16 vector chunks
+INFO: After truncation: 36 entities, 57 relations
+INFO: Selecting 90 from 108 entity-related chunks by vector similarity
+INFO: Find 11 additional chunks in 11 relations (deduplicated 30)
+INFO: Selecting 11 from 11 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 117 -> 106 (deduplicated 11)
+INFO: Final context: 36 entities, 57 relations, 16 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E2/2 R1/2 C1/3 E5/3 R1/3 E3/4 R1/4 E1/5 R1/5 E3/6 R1/6 C1/7 E2/7 R1/7
+validation 4 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:521f7c0128429b5ce5a3fd7700fcc97a
+INFO: Query nodes: FTX, TechCrunch, The Verge, white horse of crypto, billions of customer funds, personal gain (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 286 relations
+INFO: Query edges: FTX, crypto fraud trial, customer funds misuse, prosecution fraud allegations (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 17 entities, 289 relations, 8 vector chunks
+INFO: After truncation: 17 entities, 165 relations
+INFO: Selecting 42 from 153 entity-related chunks by vector similarity
+INFO: Find 101 additional chunks in 91 relations (deduplicated 36)
+INFO: Selecting 101 from 101 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 151 -> 143 (deduplicated 8)
+INFO: Final context: 17 entities, 165 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E3/2 R1/2 E5/3 R1/3 E1/4 R2/4
+validation 5 / 40 baseline em 1.0 abstained False
+validation 5 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: FTX, TechCrunch, The Verge, white horse of crypto, billions of customer funds, personal gain (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 510 relations
+INFO: Query edges: FTX, crypto fraud trial, customer funds misuse, prosecution fraud allegations (top_k:24, cosine:0.2)
+INFO: Global query: 22 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 40 entities, 521 relations, 24 vector chunks
+INFO: After truncation: 25 entities, 164 relations
+INFO: Selecting 62 from 160 entity-related chunks by vector similarity
+INFO: Find 83 additional chunks in 73 relations (deduplicated 51)
+INFO: Selecting 83 from 83 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 169 -> 145 (deduplicated 24)
+INFO: Final context: 25 entities, 164 relations, 14 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E3/2 R1/2 E6/3 R1/3 E3/4 R1/4 E1/5 R1/5 E2/6 R1/6 E7/7 R1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 28 chunks
+validation 5 / 40 v2_context em 1.0 abstained False
+validation 5 / 40 v2_verify em 1.0 abstained False
+validation 5 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:1d2f905f9c013034f3877e3fcb771862
+INFO: Query nodes: Sporting News, welcome bonuses with specific requirements, NBA Rookie of the Year, betting lines (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 73 relations
+INFO: Query edges: sports betting platforms, welcome bonuses, NBA Rookie of the Year betting lines (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 14 entities, 73 relations, 8 vector chunks
+INFO: After truncation: 14 entities, 73 relations
+INFO: Selecting 35 from 46 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 73 relations
+INFO: Round-robin merged chunks: 43 -> 35 (deduplicated 8)
+INFO: Final context: 14 entities, 73 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 E6/2 E5/3 E4/4 E1/5 E2/6 E4/7 E1/8
+validation 6 / 40 baseline em 1.0 abstained False
+validation 6 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Sporting News, welcome bonuses with specific requirements, NBA Rookie of the Year, betting lines (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 309 relations
+INFO: Query edges: sports betting platforms, welcome bonuses, NBA Rookie of the Year betting lines (top_k:24, cosine:0.2)
+INFO: Global query: 28 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 37 entities, 310 relations, 24 vector chunks
+INFO: After truncation: 30 entities, 178 relations
+INFO: Selecting 75 from 133 entity-related chunks by vector similarity
+INFO: Find 53 additional chunks in 45 relations (deduplicated 64)
+INFO: Selecting 53 from 53 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 152 -> 128 (deduplicated 24)
+INFO: Final context: 30 entities, 178 relations, 12 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E10/2 R1/2 E6/3 R1/3 E10/4 R1/4 E3/5 R1/5 E7/6 R1/6
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 26 chunks
+validation 6 / 40 v2_context em 0.0 abstained True
+validation 6 / 40 v2_verify em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:506c685aebd9bdce4301e47649336c1b
+INFO: Query nodes: Sporting News (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 113 relations
+INFO: Query edges: platforms, media coverage (top_k:16, cosine:0.2)
+INFO: Global query: 28 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 44 entities, 129 relations, 16 vector chunks
+INFO: After truncation: 29 entities, 129 relations
+INFO: Selecting 72 from 296 entity-related chunks by vector similarity
+INFO: Find 96 additional chunks in 77 relations (deduplicated 28)
+INFO: Selecting 96 from 96 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 184 -> 176 (deduplicated 8)
+INFO: Final context: 29 entities, 129 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E3/1 R1/1 C1/2 E1/2 R1/2 C1/3 E1/3 R1/3 C1/4 E1/4 R1/4 E1/5 R1/5 E1/6 R1/6
+INFO:  == LLM cache == saving: mix:keywords:3ac31fa53293ec884660c55f2d1b34b8
+INFO: Query nodes: welcome bonuses, specific requirements (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 59 relations
+INFO: Query edges: platforms, welcome bonuses, requirements (top_k:16, cosine:0.2)
+INFO: Global query: 23 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 31 entities, 61 relations, 16 vector chunks
+INFO: After truncation: 31 entities, 61 relations
+INFO: Selecting 72 from 72 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 61 relations
+INFO: Round-robin merged chunks: 88 -> 80 (deduplicated 8)
+INFO: Final context: 31 entities, 61 relations, 16 chunks
+INFO: Final chunks S+F/O: E3/1 E4/2 E7/3 E2/4 E2/5 E5/6 E4/7 C1/8 E1/8 C1/9 E4/9 C1/10 E3/10 C1/11 E1/11 C1/12
+validation 6 / 40 v2_full em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:ea2008d6db95253300521e0fd2a3cc44
+INFO: Query nodes: TechCrunch report, Sam Bankman-Fried, October 31, 2023, The Verge report, financial discrepancies (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 299 relations
+INFO: Query edges: narrative change, awareness of financial issues (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 307 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 185 relations
+INFO: Selecting 55 from 233 entity-related chunks by vector similarity
+INFO: Find 108 additional chunks in 94 relations (deduplicated 41)
+INFO: Selecting 108 from 108 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 171 -> 165 (deduplicated 6)
+INFO: Final context: 22 entities, 185 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R2/1 E1/2 R2/2 E3/3 R1/3 C1/4 E2/4
+validation 7 / 40 baseline em 0.0 abstained True
+validation 7 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: TechCrunch report, Sam Bankman-Fried, October 31, 2023, The Verge report, financial discrepancies (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 321 relations
+INFO: Query edges: narrative change, awareness of financial issues (top_k:24, cosine:0.2)
+INFO: Global query: 44 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 67 entities, 344 relations, 24 vector chunks
+INFO: After truncation: 35 entities, 181 relations
+INFO: Selecting 87 from 239 entity-related chunks by vector similarity
+INFO: Find 84 additional chunks in 77 relations (deduplicated 62)
+INFO: Selecting 84 from 84 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 195 -> 179 (deduplicated 16)
+INFO: Final context: 35 entities, 181 relations, 13 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E1/2 R1/2 E4/3 R1/3 C1/4 E3/4 R2/4 E2/5 R1/5 E1/6 R1/6
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 30 chunks
+validation 7 / 40 v2_context em 1.0 abstained False
+validation 7 / 40 v2_verify em 1.0 abstained False
+validation 7 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:38e75df9b7bd206562a29d1ae8779536
+INFO: Query nodes: The New York Times, The Guardian, Houdini, city beginning with B (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 19 relations
+INFO: Query edges: Houdini escape acts, Houdini rivalry with spiritualists, public dispute with spiritualist, daring performance location (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 27 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 27 relations
+INFO: Selecting 49 from 49 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 27 relations
+INFO: Round-robin merged chunks: 57 -> 57 (deduplicated 0)
+INFO: Final context: 23 entities, 27 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E3/1 C1/2 E2/2 C1/3 E1/3 C1/4 E2/4
+validation 8 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:dbab692e6acfe823a39f0383af2bd71c
+INFO: Query nodes: Houdini, escape acts, New York Times, city beginning with B (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 72 relations
+INFO: Query edges: Houdini famous escape acts, New York Times city (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 77 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 77 relations
+INFO: Selecting 50 from 133 entity-related chunks by vector similarity
+INFO: Find 39 additional chunks in 38 relations (deduplicated 26)
+INFO: Selecting 39 from 39 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 97 -> 97 (deduplicated 0)
+INFO: Final context: 20 entities, 77 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 C1/2 E1/2 R1/2 C1/3 E2/3
+INFO:  == LLM cache == saving: mix:keywords:8cea9e13e36c341c7c95abded7d3967a
+INFO: Query nodes: Houdini, Guardian, city beginning with B (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 16 relations
+INFO: Query edges: rivalry, spiritualists, public dispute (top_k:8, cosine:0.2)
+INFO: Global query: 16 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 24 entities, 24 relations, 8 vector chunks
+INFO: After truncation: 24 entities, 24 relations
+INFO: Selecting 60 from 108 entity-related chunks by vector similarity
+INFO: Find 9 additional chunks in 9 relations (deduplicated 15)
+INFO: Selecting 9 from 9 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 77 -> 76 (deduplicated 1)
+INFO: Final context: 24 entities, 24 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 C1/2 E1/2 R1/2 C1/3 E1/3
+validation 8 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: The New York Times, The Guardian, Houdini, city beginning with B (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 123 relations
+INFO: Query edges: Houdini escape acts, Houdini rivalry with spiritualists, public dispute with spiritualist, daring performance location (top_k:24, cosine:0.2)
+INFO: Global query: 39 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 63 entities, 147 relations, 24 vector chunks
+INFO: After truncation: 50 entities, 147 relations
+INFO: Selecting 125 from 151 entity-related chunks by vector similarity
+INFO: Find 24 additional chunks in 23 relations (deduplicated 95)
+INFO: Selecting 24 from 24 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 173 -> 165 (deduplicated 8)
+INFO: Final context: 50 entities, 147 relations, 18 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 E2/2 R1/2 E1/3 R1/3 C1/4 E3/4 R1/4 C1/5 E1/5 R1/5 C1/6 E2/6 R1/6 C1/7 E2/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 32 chunks
+validation 8 / 40 v2_context em 1.0 abstained True
+validation 8 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:60632fac9931c25716dcc5041ac60d20
+INFO: Query nodes: Houdini, New York Times, escape acts, city beginning with B, daring performance (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 100 relations
+INFO: Query edges: Houdini famous escape acts, New York Times article (top_k:16, cosine:0.2)
+INFO: Global query: 23 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 36 entities, 107 relations, 16 vector chunks
+INFO: After truncation: 36 entities, 107 relations
+INFO: Selecting 90 from 203 entity-related chunks by vector similarity
+INFO: Find 47 additional chunks in 46 relations (deduplicated 41)
+INFO: Selecting 47 from 47 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 153 -> 149 (deduplicated 4)
+INFO: Final context: 36 entities, 107 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R2/1 C1/2 E1/2 R1/2 E1/3 R1/3 C1/4 E1/4 R1/4 E3/5 R1/5 C1/6 E1/6 R2/6
+INFO:  == LLM cache == saving: mix:keywords:138b3bef58a05f79798f085263feb267
+INFO: Query nodes: Guardian article, Houdini, spiritualists, prominent spiritualist, city beginning with B (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 34 relations
+INFO: Query edges: Houdini rivalry with spiritualists, public dispute (top_k:16, cosine:0.2)
+INFO: Global query: 30 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 46 entities, 50 relations, 16 vector chunks
+INFO: After truncation: 34 entities, 50 relations
+INFO: Selecting 85 from 171 entity-related chunks by vector similarity
+INFO: Find 18 additional chunks in 17 relations (deduplicated 14)
+INFO: Selecting 18 from 18 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 119 -> 115 (deduplicated 4)
+INFO: Final context: 34 entities, 50 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 C1/2 E1/2 R1/2 E1/3 R1/3 C1/4 E1/4 R1/4 C1/5 E2/5 R1/5 E1/6 R1/6
+validation 8 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:bb6e30ea5928d629c682ac53bd8a4796
+INFO: Query nodes: The Independent - Life and Style, BBC News - Entertainment & Arts, The Age, CBSSports.com (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 66 relations
+INFO: Query edges: public figure, Time's Person of the Year, rumors, friendship bracelet (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 74 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 74 relations
+INFO: Selecting 47 from 107 entity-related chunks by vector similarity
+INFO: Find 32 additional chunks in 25 relations (deduplicated 40)
+INFO: Selecting 32 from 32 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 87 -> 80 (deduplicated 7)
+INFO: Final context: 19 entities, 74 relations, 8 chunks
+INFO: Final chunks S+F/O: E8/1 R1/1 E2/2 R2/2 E7/3 R1/3 E4/4 R3/4
+validation 9 / 40 baseline em 1.0 abstained False
+validation 9 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: The Independent - Life and Style, BBC News - Entertainment & Arts, The Age, CBSSports.com (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 97 relations
+INFO: Query edges: public figure, Time's Person of the Year, rumors, friendship bracelet (top_k:24, cosine:0.2)
+INFO: Global query: 25 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 49 entities, 121 relations, 24 vector chunks
+INFO: After truncation: 35 entities, 121 relations
+INFO: Selecting 87 from 137 entity-related chunks by vector similarity
+INFO: Find 38 additional chunks in 30 relations (deduplicated 68)
+INFO: Selecting 38 from 38 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 149 -> 130 (deduplicated 19)
+INFO: Final context: 35 entities, 121 relations, 16 chunks
+INFO: Final chunks S+F/O: E10/1 R1/1 E3/2 R2/2 E7/3 R1/3 E4/4 R1/4 E7/5 R1/5 E2/6 R1/6 E4/7 R1/7 E1/8 R1/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 32 chunks
+validation 9 / 40 v2_context em 1.0 abstained False
+validation 9 / 40 v2_verify em 1.0 abstained False
+validation 9 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:a601377b33c86209192961b675b1f04c
+INFO: Query nodes: The New York Times, The Guardian, Dance The Night (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 65 relations
+INFO: Query edges: film plot twist, third act reveal, exceptional dance performance, Academy Award-winning actor (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 73 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 73 relations
+INFO: Selecting 57 from 85 entity-related chunks by vector similarity
+INFO: Find 20 additional chunks in 18 relations (deduplicated 40)
+INFO: Selecting 20 from 20 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 85 -> 83 (deduplicated 2)
+INFO: Final context: 23 entities, 73 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 E1/2 R1/2 C1/3 E2/3 R2/3
+validation 10 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:75ed80f74875dba7b42423f512565559
+INFO: Query nodes: The New York Times, Dance The Night, character (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 10 relations
+INFO: Query edges: film plot twist, Academy Award winner, third act (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 18 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 18 relations
+INFO: Selecting 44 from 44 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 18 relations
+INFO: Round-robin merged chunks: 52 -> 48 (deduplicated 4)
+INFO: Final context: 23 entities, 18 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 E2/2 C1/3 E1/3 C1/4 E2/4 E1/5 C1/6
+INFO:  == LLM cache == saving: mix:keywords:aff77b771eee9ac60f4657bd46dd095f
+INFO: Query nodes: The Guardian, Dance The Night (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 41 relations
+INFO: Query edges: film pivotal scene, exceptional dance performance (top_k:8, cosine:0.2)
+INFO: Global query: 16 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 24 entities, 49 relations, 8 vector chunks
+INFO: After truncation: 24 entities, 49 relations
+INFO: Selecting 60 from 83 entity-related chunks by vector similarity
+INFO: Find 8 additional chunks in 7 relations (deduplicated 28)
+INFO: Selecting 8 from 8 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 76 -> 74 (deduplicated 2)
+INFO: Final context: 24 entities, 49 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 C1/2 E1/2 R2/2 C1/3 E1/3
+validation 10 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: The New York Times, The Guardian, Dance The Night (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 173 relations
+INFO: Query edges: film plot twist, third act reveal, exceptional dance performance, Academy Award-winning actor (top_k:24, cosine:0.2)
+INFO: Global query: 39 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 63 entities, 197 relations, 24 vector chunks
+INFO: After truncation: 49 entities, 187 relations
+INFO: Selecting 122 from 194 entity-related chunks by vector similarity
+INFO: Find 58 additional chunks in 55 relations (deduplicated 93)
+INFO: Selecting 58 from 58 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 204 -> 197 (deduplicated 7)
+INFO: Final context: 49 entities, 187 relations, 15 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 E1/2 R1/2 C1/3 E2/3 R1/3 C1/4 E1/4 R1/4 C1/5 E1/5 R1/5 C1/6
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 32 chunks
+validation 10 / 40 v2_context em 1.0 abstained True
+validation 10 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:50dcddfea28ceec76c0a5fb5a883a55a
+INFO: Query nodes: The New York Times, Dance The Night (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 91 relations
+INFO: Query edges: film plot twist, third act plot twist, central character (top_k:16, cosine:0.2)
+INFO: Global query: 29 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 45 entities, 107 relations, 16 vector chunks
+INFO: After truncation: 45 entities, 107 relations
+INFO: Selecting 112 from 126 entity-related chunks by vector similarity
+INFO: Find 14 additional chunks in 13 relations (deduplicated 90)
+INFO: Selecting 14 from 14 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 142 -> 140 (deduplicated 2)
+INFO: Final context: 45 entities, 107 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 C1/2 E1/2 R1/2 E2/3 R1/3 C1/4 E1/4 R1/4 C1/5 E2/5 R1/5 E1/6 R1/6
+INFO:  == LLM cache == saving: mix:keywords:d1340be90c250d2f7e02c1ee5b3bedab
+INFO: Query nodes: The Guardian, Dance The Night, character (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 23 relations
+INFO: Query edges: film analysis, dance performance, pivotal scene (top_k:16, cosine:0.2)
+INFO: Global query: 28 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 44 entities, 39 relations, 16 vector chunks
+INFO: After truncation: 44 entities, 39 relations
+INFO: Selecting 79 from 79 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 39 relations
+INFO: Round-robin merged chunks: 95 -> 94 (deduplicated 1)
+INFO: Final context: 44 entities, 39 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E5/1 C1/2 E2/2 C1/3 E2/3 C1/4 E1/4 C1/5 E1/5 C1/6 E2/6 C1/7 E1/7 C1/8 E1/8
+validation 10 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:3969c4fe0285d1cef0ac160e077f2259
+INFO: Query nodes: The Wall Street Journal, Apple, Bloomberg, strategic financial decisions, latest product launch (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 329 relations
+INFO: Query edges: executive identification, financial performance, product launch, cross-source analysis (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 337 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 143 relations
+INFO: Selecting 57 from 195 entity-related chunks by vector similarity
+INFO: Find 85 additional chunks in 55 relations (deduplicated 37)
+INFO: Selecting 85 from 85 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 150 -> 145 (deduplicated 5)
+INFO: Final context: 23 entities, 143 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R6/1 E1/2 R1/2 C1/3 E1/3 R5/3 E1/4
+validation 11 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:0a6ad8acd2d8620827c31c1bac6abdca
+INFO: Query nodes: Wall Street Journal, Apple, executive (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 296 relations
+INFO: Query edges: financial performance, strategic financial decisions (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 304 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 150 relations
+INFO: Selecting 50 from 167 entity-related chunks by vector similarity
+INFO: Find 76 additional chunks in 54 relations (deduplicated 36)
+INFO: Selecting 76 from 76 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 134 -> 128 (deduplicated 6)
+INFO: Final context: 20 entities, 150 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R6/1 E1/2 R1/2 C1/3 E1/3 R1/3 C1/4
+INFO:  == LLM cache == saving: mix:keywords:4c6b166f45f541fc8053f6e93f698a8f
+INFO: Query nodes: Bloomberg, Apple (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 328 relations
+INFO: Query edges: product launch, executive oversight (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 336 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 150 relations
+INFO: Selecting 57 from 177 entity-related chunks by vector similarity
+INFO: Find 68 additional chunks in 52 relations (deduplicated 44)
+INFO: Selecting 68 from 68 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 133 -> 127 (deduplicated 6)
+INFO: Final context: 23 entities, 150 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E1/2 R4/2 E3/3 R6/3 C1/4 E1/4
+validation 11 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: The Wall Street Journal, Apple, Bloomberg, strategic financial decisions, latest product launch (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 510 relations
+INFO: Query edges: executive identification, financial performance, product launch, cross-source analysis (top_k:24, cosine:0.2)
+INFO: Global query: 43 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 67 entities, 534 relations, 24 vector chunks
+INFO: After truncation: 20 entities, 138 relations
+INFO: Selecting 50 from 198 entity-related chunks by vector similarity
+INFO: Find 106 additional chunks in 64 relations (deduplicated 30)
+INFO: Selecting 106 from 106 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 180 -> 165 (deduplicated 15)
+INFO: Final context: 20 entities, 138 relations, 16 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E1/2 R1/2 E1/3 R2/3 E2/4 R1/4 E2/5 R3/5 E2/6 R1/6 E1/7 R4/7 C1/8 E1/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 11 / 40 v2_context em 1.0 abstained True
+validation 11 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:88f5a32f1ed22a8b166906b14862033f
+INFO: Query nodes: Wall Street Journal, Apple, executive (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 318 relations
+INFO: Query edges: financial performance, strategic financial decisions (top_k:16, cosine:0.2)
+INFO: Global query: 24 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 40 entities, 334 relations, 16 vector chunks
+INFO: After truncation: 40 entities, 148 relations
+INFO: Selecting 100 from 187 entity-related chunks by vector similarity
+INFO: Find 51 additional chunks in 40 relations (deduplicated 63)
+INFO: Selecting 51 from 51 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 167 -> 159 (deduplicated 8)
+INFO: Final context: 40 entities, 148 relations, 16 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E1/2 R1/2 C1/3 E1/3 R2/3 E1/4 R1/4 E4/5 R7/5 E2/6 R2/6 E1/7 R4/7 C1/8
+INFO:  == LLM cache == saving: mix:keywords:dcb9bb6c9e4aced399568f28f850c512
+INFO: Query nodes: Bloomberg, Apple, executive (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 357 relations
+INFO: Query edges: product launch, news article (top_k:16, cosine:0.2)
+INFO: Global query: 27 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 43 entities, 373 relations, 16 vector chunks
+INFO: After truncation: 13 entities, 148 relations
+INFO: Selecting 32 from 201 entity-related chunks by vector similarity
+INFO: Find 89 additional chunks in 66 relations (deduplicated 26)
+INFO: Selecting 89 from 89 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 137 -> 126 (deduplicated 11)
+INFO: Final context: 13 entities, 148 relations, 16 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E2/2 R2/2 C1/3 E3/3 R1/3 C1/4 E1/4 R1/4 C1/5 E1/5 R1/5 E2/6 R1/6 E1/7
+validation 11 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:19c9b07c5e46c990e6b7f1b96dc5c95f
+INFO: Query nodes: Fortune, Jane Street trader, TechCrunch, prosecution (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 219 relations
+INFO: Query edges: jury assessment, contrasting legal narratives, fraud accusation, personal gain, recruitment of former trader (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 18 entities, 226 relations, 8 vector chunks
+INFO: After truncation: 18 entities, 180 relations
+INFO: Selecting 45 from 178 entity-related chunks by vector similarity
+INFO: Find 108 additional chunks in 96 relations (deduplicated 29)
+INFO: Selecting 108 from 108 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 161 -> 154 (deduplicated 7)
+INFO: Final context: 18 entities, 180 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E4/2 R3/2 C1/3 E2/3 R4/3 E2/4
+validation 12 / 40 baseline em 1.0 abstained False
+validation 12 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Fortune, Jane Street trader, TechCrunch, prosecution (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 514 relations
+INFO: Query edges: jury assessment, contrasting legal narratives, fraud accusation, personal gain, recruitment of former trader (top_k:24, cosine:0.2)
+INFO: Global query: 35 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 55 entities, 531 relations, 24 vector chunks
+INFO: After truncation: 17 entities, 122 relations
+INFO: Selecting 42 from 183 entity-related chunks by vector similarity
+INFO: Find 56 additional chunks in 41 relations (deduplicated 26)
+INFO: Selecting 56 from 56 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 122 -> 100 (deduplicated 22)
+INFO: Final context: 17 entities, 122 relations, 16 chunks
+INFO: Final chunks S+F/O: E2/1 R4/1 E3/2 R1/2 E1/3 R1/3 E2/4 R1/4 E2/5 R3/5 E2/6 R5/6 E1/7 R10/7 E4/8 R7/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 30 chunks
+validation 12 / 40 v2_context em 1.0 abstained False
+validation 12 / 40 v2_verify em 1.0 abstained False
+validation 12 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:81818fda5d09c0cba71e2ac7722a359b
+INFO: Query nodes: Music Business Worldwide, Iñigo Quintero, Si No Estás, Spotify's Global Top 50, Capitol Music Group, top-performing label (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 73 relations
+INFO: Query edges: music industry chart performance, record label rankings, leading position in music industry categories (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 81 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 81 relations
+INFO: Selecting 47 from 105 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 81 relations
+INFO: Round-robin merged chunks: 55 -> 48 (deduplicated 7)
+INFO: Final context: 19 entities, 81 relations, 8 chunks
+INFO: Final chunks S+F/O: E8/1 E3/2 E2/3 E3/4 E1/5 C1/6 E1/6 E4/7
+validation 13 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:d8ca9459422f8dc0529845368d6eaa94
+INFO: Query nodes: Music Business Worldwide, Iñigo Quintero, Si No Estás, Spotify Global Top 50 (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 67 relations
+INFO: Query edges: music industry news, Spotify chart performance (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 71 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 71 relations
+INFO: Selecting 47 from 212 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 15)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 61 -> 56 (deduplicated 5)
+INFO: Final context: 19 entities, 71 relations, 8 chunks
+INFO: Final chunks S+F/O: E10/1 R1/1 E4/2 R1/2 E2/3 R1/3 E1/4 R1/4
+INFO:  == LLM cache == saving: mix:keywords:71dc3aa68f265198b05ab42dfb2aeb8a
+INFO: Query nodes: Music Business Worldwide, Capitol Music Group, top-performing label (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 51 relations
+INFO: Query edges: music business, record label performance (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 58 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 58 relations
+INFO: Selecting 50 from 89 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 58 relations
+INFO: Round-robin merged chunks: 58 -> 51 (deduplicated 7)
+INFO: Final context: 20 entities, 58 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 C1/2 E5/2 E2/3 E2/4 E3/5 E2/6 E4/7
+validation 13 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Music Business Worldwide, Iñigo Quintero, Si No Estás, Spotify's Global Top 50, Capitol Music Group, top-performing label (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 162 relations
+INFO: Query edges: music industry chart performance, record label rankings, leading position in music industry categories (top_k:24, cosine:0.2)
+INFO: Global query: 29 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 50 entities, 182 relations, 24 vector chunks
+INFO: After truncation: 37 entities, 182 relations
+INFO: Selecting 92 from 132 entity-related chunks by vector similarity
+INFO: Find 12 additional chunks in 11 relations (deduplicated 31)
+INFO: Selecting 12 from 12 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 128 -> 110 (deduplicated 18)
+INFO: Final context: 37 entities, 182 relations, 15 chunks
+INFO: Final chunks S+F/O: E12/1 R1/1 E9/2 R1/2 E3/3 R1/3 E4/4 R1/4 E2/5 R1/5 E3/6 R1/6 E1/7 R1/7 E5/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 13 / 40 v2_context em 1.0 abstained False
+validation 13 / 40 v2_verify em 1.0 abstained False
+validation 13 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:bf22215ac3d5c5e0c0ff8a8e425dc23f
+INFO: Query nodes: Business Today, Latest Stock Market And Economy News India, State of Israel, TechCrunch, SBF case (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 259 relations
+INFO: Query edges: military conflict, legal strategies, article focus comparison (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 266 relations, 8 vector chunks
+INFO: After truncation: 10 entities, 167 relations
+INFO: Selecting 25 from 216 entity-related chunks by vector similarity
+INFO: Find 117 additional chunks in 96 relations (deduplicated 23)
+INFO: Selecting 117 from 117 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 150 -> 142 (deduplicated 8)
+INFO: Final context: 10 entities, 167 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R3/1 E2/2 R1/2 E1/3 R1/3 E2/4 R1/4
+validation 14 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:a6d95f471ba4a0f6a91af09580838aa9
+INFO: Query nodes: Business Today, India, State of Israel (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 134 relations
+INFO: Query edges: stock market news, economy news, military conflict (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 140 relations, 8 vector chunks
+INFO: After truncation: 21 entities, 140 relations
+INFO: Selecting 52 from 122 entity-related chunks by vector similarity
+INFO: Find 15 additional chunks in 15 relations (deduplicated 47)
+INFO: Selecting 15 from 15 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 75 -> 68 (deduplicated 7)
+INFO: Final context: 21 entities, 140 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E1/2 R1/2 E1/3 R2/3 E2/4 R1/4
+INFO:  == LLM cache == saving: mix:keywords:4f5af50d09efc14d4a38fff9c5dc2de5
+INFO: Query nodes: TechCrunch, SBF case (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 184 relations
+INFO: Query edges: legal strategies (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 192 relations, 8 vector chunks
+INFO: After truncation: 7 entities, 188 relations
+INFO: Selecting 17 from 216 entity-related chunks by vector similarity
+INFO: Find 106 additional chunks in 95 relations (deduplicated 13)
+INFO: Selecting 106 from 106 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 131 -> 123 (deduplicated 8)
+INFO: Final context: 7 entities, 188 relations, 8 chunks
+INFO: Final chunks S+F/O: E4/1 R4/1 E1/2 R1/2 E2/3 R2/3 E1/4 R1/4
+validation 14 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Business Today, Latest Stock Market And Economy News India, State of Israel, TechCrunch, SBF case (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 580 relations
+INFO: Query edges: military conflict, legal strategies, article focus comparison (top_k:24, cosine:0.2)
+INFO: Global query: 38 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 59 entities, 600 relations, 24 vector chunks
+INFO: After truncation: 10 entities, 151 relations
+INFO: Selecting 25 from 216 entity-related chunks by vector similarity
+INFO: Find 124 additional chunks in 95 relations (deduplicated 21)
+INFO: Selecting 124 from 124 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 173 -> 149 (deduplicated 24)
+INFO: Final context: 10 entities, 151 relations, 15 chunks
+INFO: Final chunks S+F/O: E2/1 R4/1 E2/2 R1/2 E1/3 R1/3 E2/4 R1/4 E2/5 R2/5 E4/6 R3/6 E3/7 R1/7 E1/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 27 chunks
+validation 14 / 40 v2_context em 1.0 abstained False
+validation 14 / 40 v2_verify em 1.0 abstained False
+validation 14 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:0be8cdfe17096a7a24db9344d2198cd6
+INFO: Query nodes: TechCrunch, Google hardware developments, October 7, 2023, antitrust suit against Google, December 15, 2023 (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 24 relations
+INFO: Query edges: Google issues reported, change in nature of issues, TechCrunch reports comparison (top_k:8, cosine:0.2)
+INFO: Global query: 9 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 16 entities, 31 relations, 8 vector chunks
+INFO: After truncation: 13 entities, 31 relations
+INFO: Selecting 32 from 228 entity-related chunks by vector similarity
+INFO: Find 4 additional chunks in 4 relations (deduplicated 11)
+INFO: Selecting 4 from 4 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 44 -> 36 (deduplicated 8)
+INFO: Final context: 13 entities, 31 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E2/2 R2/2 E4/3 R1/3 E2/4 R2/4
+validation 15 / 40 baseline em 1.0 abstained False
+validation 15 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: TechCrunch, Google hardware developments, October 7, 2023, antitrust suit against Google, December 15, 2023 (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 545 relations
+INFO: Query edges: Google issues reported, change in nature of issues, TechCrunch reports comparison (top_k:24, cosine:0.2)
+INFO: Global query: 25 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 42 entities, 546 relations, 24 vector chunks
+INFO: After truncation: 13 entities, 131 relations
+INFO: Selecting 32 from 228 entity-related chunks by vector similarity
+INFO: Find 81 additional chunks in 54 relations (deduplicated 30)
+INFO: Selecting 81 from 81 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 137 -> 113 (deduplicated 24)
+INFO: Final context: 13 entities, 131 relations, 14 chunks
+INFO: Final chunks S+F/O: E2/1 R5/1 E2/2 R1/2 E4/3 R2/3 E2/4 R2/4 E2/5 R1/5 E1/6 R5/6 E1/7 R1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 15 / 40 v2_context em 1.0 abstained False
+validation 15 / 40 v2_verify em 1.0 abstained False
+validation 15 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:12c6e514ffeebbc2dedd4fa5cb4e7cc2
+INFO: Query nodes: Sporting News, CBSSports.com, oblique injury, rookie, Week 14, Week 12 (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 134 relations
+INFO: Query edges: player injury report, Week 14 availability, Week 12 rookie opportunity (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 140 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 140 relations
+INFO: Selecting 47 from 227 entity-related chunks by vector similarity
+INFO: Find 93 additional chunks in 79 relations (deduplicated 24)
+INFO: Selecting 93 from 93 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 148 -> 142 (deduplicated 6)
+INFO: Final context: 19 entities, 140 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R2/1 E1/2 R1/2 C1/3 E2/3 R1/3 E4/4
+validation 16 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:91ea8331dd8d417edb5d81041eb36b8e
+INFO: Query nodes: Sporting News, oblique injury, Week 14, Week 12, rookie, player (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 20 relations
+INFO: Query edges: sports news, injury report, rookie opportunity (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 28 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 28 relations
+INFO: Selecting 50 from 229 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 15)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 64 -> 59 (deduplicated 5)
+INFO: Final context: 20 entities, 28 relations, 8 chunks
+INFO: Final chunks S+F/O: E10/1 R1/1 C1/2 E2/2 R1/2 C1/3 E2/3 R1/3
+INFO:  == LLM cache == saving: mix:keywords:667380b59b551e1e36e6aaeea0e47fb9
+INFO: Query nodes: CBSSports.com, oblique injury, Week 14, rookie, Week 12, player (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 36 relations
+INFO: Query edges: sports injury report, player availability (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 43 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 43 relations
+INFO: Selecting 55 from 224 entity-related chunks by vector similarity
+INFO: Find 11 additional chunks in 11 relations (deduplicated 15)
+INFO: Selecting 11 from 11 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 74 -> 70 (deduplicated 4)
+INFO: Final context: 22 entities, 43 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 C1/2 E2/2 R1/2 C1/3 E3/3 R1/3
+validation 16 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Sporting News, CBSSports.com, oblique injury, rookie, Week 14, Week 12 (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 253 relations
+INFO: Query edges: player injury report, Week 14 availability, Week 12 rookie opportunity (top_k:24, cosine:0.2)
+INFO: Global query: 39 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 58 entities, 272 relations, 24 vector chunks
+INFO: After truncation: 21 entities, 161 relations
+INFO: Selecting 52 from 227 entity-related chunks by vector similarity
+INFO: Find 106 additional chunks in 85 relations (deduplicated 34)
+INFO: Selecting 106 from 106 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 182 -> 161 (deduplicated 21)
+INFO: Final context: 21 entities, 161 relations, 13 chunks
+INFO: Final chunks S+F/O: E8/1 R1/1 E2/2 R1/2 E1/3 R1/3 E2/4 R3/4 E3/5 R1/5 E5/6 R1/6 E2/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 24 chunks
+validation 16 / 40 v2_context em 1.0 abstained False
+validation 16 / 40 v2_verify em 1.0 abstained False
+validation 16 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:1e012d1bf44071fd4ce616fe3d91adbb
+INFO: Query nodes: Times of India, Deccan Herald, AI-driven services, significant funding, new traffic signal system, major Bangalore intersection (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 45 relations
+INFO: Query edges: tech startups growth, traffic management initiatives, Bangalore (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 53 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 53 relations
+INFO: Selecting 50 from 131 entity-related chunks by vector similarity
+INFO: Find 25 additional chunks in 23 relations (deduplicated 16)
+INFO: Selecting 25 from 25 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 83 -> 77 (deduplicated 6)
+INFO: Final context: 20 entities, 53 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 E1/2 R2/2 C1/3 E1/3 R2/3
+validation 17 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:f466d7e7f88bcd2fd1f7b7861159d44b
+INFO: Query nodes: Times of India, Bangalore (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 9 relations
+INFO: Query edges: tech startup funding, AI-driven services expansion (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 17 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 17 relations
+INFO: Selecting 47 from 115 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 5)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 61 -> 57 (deduplicated 4)
+INFO: Final context: 19 entities, 17 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R2/1 E1/2 R1/2 C1/3 E1/3 R1/3 E1/4
+INFO:  == LLM cache == saving: mix:keywords:09073ac6a9dece1cc82ae229c23525b7
+INFO: Query nodes: Deccan Herald, Bangalore, new traffic signal system, major intersection (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 9 relations
+INFO: Query edges: traffic management, traffic signal system (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 17 relations, 8 vector chunks
+INFO: After truncation: 18 entities, 17 relations
+INFO: Selecting 45 from 196 entity-related chunks by vector similarity
+INFO: Find 5 additional chunks in 5 relations (deduplicated 5)
+INFO: Selecting 5 from 5 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 58 -> 58 (deduplicated 0)
+INFO: Final context: 18 entities, 17 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 C1/2 E2/2 R4/2 C1/3 E1/3
+validation 17 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: Times of India, Deccan Herald, AI-driven services, significant funding, new traffic signal system, major Bangalore intersection (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 101 relations
+INFO: Query edges: tech startups growth, traffic management initiatives, Bangalore (top_k:24, cosine:0.2)
+INFO: Global query: 37 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 60 entities, 124 relations, 24 vector chunks
+INFO: After truncation: 24 entities, 124 relations
+INFO: Selecting 60 from 131 entity-related chunks by vector similarity
+INFO: Find 41 additional chunks in 39 relations (deduplicated 23)
+INFO: Selecting 41 from 41 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 125 -> 109 (deduplicated 16)
+INFO: Final context: 24 entities, 124 relations, 21 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 E1/2 R4/2 C1/3 E1/3 R1/3 E1/4 R1/4 E1/5 R1/5 E2/6 R1/6 E2/7 R1/7 E1/8 R1/8 E3/9 R1/9 E1/10
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 31 chunks
+validation 17 / 40 v2_context em 1.0 abstained True
+validation 17 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:d6d15cf8700f126d9be3ef44991fdb6c
+INFO: Query nodes: Times of India, Bangalore (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 19 relations
+INFO: Query edges: growth of tech startups, tech startup ecosystem (top_k:16, cosine:0.2)
+INFO: Global query: 22 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 38 entities, 35 relations, 16 vector chunks
+INFO: After truncation: 31 entities, 35 relations
+INFO: Selecting 77 from 229 entity-related chunks by vector similarity
+INFO: Find 10 additional chunks in 10 relations (deduplicated 8)
+INFO: Selecting 10 from 10 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 103 -> 89 (deduplicated 14)
+INFO: Final context: 31 entities, 35 relations, 16 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E2/2 R2/2 E3/3 R2/3 E2/4 R3/4 E2/5 R3/5 C1/6 E2/6 R1/6 E2/7 R1/7 E1/8
+INFO:  == LLM cache == saving: mix:keywords:c925cabb1663be3c6ec3283b03205797
+INFO: Query nodes: Bangalore, startup, significant funding, AI-driven services (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 25 relations
+INFO: Query edges: startup funding, AI-driven services expansion (top_k:16, cosine:0.2)
+INFO: Global query: 20 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 33 entities, 39 relations, 16 vector chunks
+INFO: After truncation: 33 entities, 39 relations
+INFO: Selecting 82 from 121 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 39 relations
+INFO: Round-robin merged chunks: 98 -> 89 (deduplicated 9)
+INFO: Final context: 33 entities, 39 relations, 16 chunks
+INFO: Final chunks S+F/O: E1/1 E1/2 E4/3 C1/4 E3/4 C1/5 E1/5 C1/6 E4/6 C1/7 E1/7 C1/8 E19/8 E1/9 C1/10 E2/10
+validation 17 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:f47cfac27e0317d54d4bed6840732cc5
+INFO: Query nodes: TechCrunch, iPhone setup, Engadget, Macs, new chipsets, upcoming event, The Verge, developers, OEMs, carriers, store, payment system (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 424 relations
+INFO: Query edges: company coverage, browser selection during iPhone setup, Mac and chipset event rumors, uniform developer terms, store and payment system enforcement (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 15 entities, 426 relations, 8 vector chunks
+INFO: After truncation: 12 entities, 145 relations
+INFO: Selecting 30 from 162 entity-related chunks by vector similarity
+INFO: Find 82 additional chunks in 55 relations (deduplicated 27)
+INFO: Selecting 82 from 82 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 120 -> 112 (deduplicated 8)
+INFO: Final context: 12 entities, 145 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E3/2 R1/2 E1/3 R6/3 E3/4 R1/4
+validation 18 / 40 baseline em 1.0 abstained False
+validation 18 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: TechCrunch, iPhone setup, Engadget, Macs, new chipsets, upcoming event, The Verge, developers, OEMs, carriers, store, payment system (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 716 relations
+INFO: Query edges: company coverage, browser selection during iPhone setup, Mac and chipset event rumors, uniform developer terms, store and payment system enforcement (top_k:24, cosine:0.2)
+INFO: Global query: 23 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 39 entities, 718 relations, 24 vector chunks
+INFO: After truncation: 13 entities, 142 relations
+INFO: Selecting 32 from 162 entity-related chunks by vector similarity
+INFO: Find 92 additional chunks in 60 relations (deduplicated 28)
+INFO: Selecting 92 from 92 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 148 -> 126 (deduplicated 22)
+INFO: Final context: 13 entities, 142 relations, 14 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E4/2 R1/2 E1/3 R6/3 E3/4 R1/4 E3/5 R1/5 E3/6 R3/6 E4/7 R1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 27 chunks
+validation 18 / 40 v2_context em 1.0 abstained False
+validation 18 / 40 v2_verify em 1.0 abstained False
+validation 18 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:425bec7e779bba97517367539914d02a
+INFO: Query nodes: Revyuh Media, Daam1, FOX News - Lifestyle, Bella Scalera, Luca Scalera, Cancer Couch Foundation (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 36 relations
+INFO: Query edges: cancer research advancement, article comparison, foundation involvement (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 15 entities, 38 relations, 8 vector chunks
+INFO: After truncation: 15 entities, 38 relations
+INFO: Selecting 37 from 80 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 1 relations (deduplicated 7)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 47 -> 43 (deduplicated 4)
+INFO: Final context: 15 entities, 38 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E10/2 R1/2 E3/3 C1/4 E1/4 C1/5
+validation 19 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:edf5316d2587c2fbd250e9ec37acbfd7
+INFO: Query nodes: Revyuh Media, Daam1 (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 10 relations
+INFO: Query edges: cancer research, significant advancement (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 18 relations, 8 vector chunks
+INFO: After truncation: 21 entities, 18 relations
+INFO: Selecting 29 from 29 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 18 relations
+INFO: Round-robin merged chunks: 37 -> 34 (deduplicated 3)
+INFO: Final context: 21 entities, 18 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 E4/2 C1/3 E3/3 E4/4 C1/5 E1/5 C1/6
+INFO:  == LLM cache == saving: mix:keywords:9a318867de491327031c3efd1e94706c
+INFO: Query nodes: FOX News Lifestyle, Bella Scalera, Luca Scalera, Cancer Couch Foundation (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 36 relations
+INFO: Query edges: news lifestyle feature, foundation inception (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 44 relations, 8 vector chunks
+INFO: After truncation: 21 entities, 44 relations
+INFO: Selecting 52 from 101 entity-related chunks by vector similarity
+INFO: Find 10 additional chunks in 5 relations (deduplicated 18)
+INFO: Selecting 10 from 10 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 70 -> 66 (deduplicated 4)
+INFO: Final context: 21 entities, 44 relations, 8 chunks
+INFO: Final chunks S+F/O: E7/1 R1/1 C1/2 E1/2 R1/2 C1/3 E2/3 R1/3
+validation 19 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Revyuh Media, Daam1, FOX News - Lifestyle, Bella Scalera, Luca Scalera, Cancer Couch Foundation (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 120 relations
+INFO: Query edges: cancer research advancement, article comparison, foundation involvement (top_k:24, cosine:0.2)
+INFO: Global query: 38 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 56 entities, 135 relations, 24 vector chunks
+INFO: After truncation: 30 entities, 135 relations
+INFO: Selecting 75 from 147 entity-related chunks by vector similarity
+INFO: Find 29 additional chunks in 28 relations (deduplicated 36)
+INFO: Selecting 29 from 29 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 128 -> 120 (deduplicated 8)
+INFO: Final context: 30 entities, 135 relations, 17 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E11/2 R1/2 E5/3 R1/3 E1/4 R1/4 C1/5 E1/5 R1/5 C1/6 E2/6 R1/6 E1/7 R1/7 C1/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 32 chunks
+validation 19 / 40 v2_context em 1.0 abstained False
+validation 19 / 40 v2_verify em 1.0 abstained False
+validation 19 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:38dec94ec7d3e97585a25a99fb39ee85
+INFO: Query nodes: ESPN article, BBC Sports report, Megan Schutt, key wickets, international tournament (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 149 relations
+INFO: Query edges: player performance in international tournament, bowling skills, personal milestones, national team contributions (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 18 entities, 153 relations, 8 vector chunks
+INFO: After truncation: 18 entities, 153 relations
+INFO: Selecting 45 from 90 entity-related chunks by vector similarity
+INFO: Find 18 additional chunks in 17 relations (deduplicated 41)
+INFO: Selecting 18 from 18 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 71 -> 68 (deduplicated 3)
+INFO: Final context: 18 entities, 153 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E4/2 R1/2 C1/3 E2/3 R5/3 C1/4
+validation 20 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:8c8e8eb9512d19c46c2d4f2939edd51a
+INFO: Query nodes: ESPN, Megan Schutt (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 60 relations
+INFO: Query edges: international tournament performance, key wickets (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 68 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 68 relations
+INFO: Selecting 50 from 126 entity-related chunks by vector similarity
+INFO: Find 32 additional chunks in 22 relations (deduplicated 23)
+INFO: Selecting 32 from 32 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 90 -> 84 (deduplicated 6)
+INFO: Final context: 20 entities, 68 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E1/2 R1/2 E4/3 R2/3 E6/4 R2/4
+INFO:  == LLM cache == saving: mix:keywords:930831367f23e9166b21ecf2130df35d
+INFO: Query nodes: BBC Sports, Megan Schutt (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 17 relations
+INFO: Query edges: personal milestones, national team (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 25 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 25 relations
+INFO: Selecting 39 from 39 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 25 relations
+INFO: Round-robin merged chunks: 47 -> 45 (deduplicated 2)
+INFO: Final context: 23 entities, 25 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 C1/2 E1/2 C1/3 E2/3 E1/4 C1/5
+validation 20 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: ESPN article, BBC Sports report, Megan Schutt, key wickets, international tournament (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 227 relations
+INFO: Query edges: player performance in international tournament, bowling skills, personal milestones, national team contributions (top_k:24, cosine:0.2)
+INFO: Global query: 28 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 46 entities, 239 relations, 24 vector chunks
+INFO: After truncation: 34 entities, 175 relations
+INFO: Selecting 85 from 106 entity-related chunks by vector similarity
+INFO: Find 10 additional chunks in 10 relations (deduplicated 58)
+INFO: Selecting 10 from 10 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 119 -> 105 (deduplicated 14)
+INFO: Final context: 34 entities, 175 relations, 14 chunks
+INFO: Final chunks S+F/O: E8/1 R1/1 E5/2 R1/2 E1/3 R1/3 E1/4 R1/4 C1/5 E3/5 R2/5 E3/6 R1/6 C1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 31 chunks
+validation 20 / 40 v2_context em 1.0 abstained True
+validation 20 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:b8e1c9515ba67cd935e5c43ff9847b38
+INFO: Query nodes: ESPN article, Megan Schutt, key wickets (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 29 relations
+INFO: Query edges: cricket performance analysis, international tournament (top_k:16, cosine:0.2)
+INFO: Global query: 18 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 33 entities, 44 relations, 16 vector chunks
+INFO: After truncation: 33 entities, 44 relations
+INFO: Selecting 70 from 70 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 44 relations
+INFO: Round-robin merged chunks: 86 -> 77 (deduplicated 9)
+INFO: Final context: 33 entities, 44 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E3/1 E4/2 E9/3 E3/4 C1/5 E1/5 E3/6 E1/7 E8/8 E2/9 C1/10 E2/10 E4/11 C1/12 E5/12
+INFO:  == LLM cache == saving: mix:keywords:55ca318e5f0be6066e347fd2edc756bb
+INFO: Query nodes: BBC Sports, Megan Schutt (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 55 relations
+INFO: Query edges: personal milestones, national team contributions (top_k:16, cosine:0.2)
+INFO: Global query: 26 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 42 entities, 71 relations, 16 vector chunks
+INFO: After truncation: 42 entities, 71 relations
+INFO: Selecting 80 from 80 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 71 relations
+INFO: Round-robin merged chunks: 96 -> 92 (deduplicated 4)
+INFO: Final context: 42 entities, 71 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 C1/2 E1/2 C1/3 E1/3 E1/4 E1/5 C1/6 E2/6 C1/7 E1/7 C1/8 E1/8 E1/9 C1/10
+validation 20 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:4b0045f2d0b66b06637fedb1015dbfd5
+INFO: Query nodes: Fortune, The Sydney Morning Herald (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 38 relations
+INFO: Query edges: institution, interest rates, inflation, home prices, investors, economic data (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 46 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 46 relations
+INFO: Selecting 50 from 60 entity-related chunks by vector similarity
+INFO: Find 9 additional chunks in 9 relations (deduplicated 30)
+INFO: Selecting 9 from 9 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 67 -> 59 (deduplicated 8)
+INFO: Final context: 20 entities, 46 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E3/2 R1/2 E5/3 R1/3 E1/4 R1/4
+validation 21 / 40 baseline em 0.0 abstained False
+validation 21 / 40 previous_recovery em 0.0 abstained False
+INFO: Query nodes: Fortune, The Sydney Morning Herald (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 79 relations
+INFO: Query edges: institution, interest rates, inflation, home prices, investors, economic data (top_k:24, cosine:0.2)
+INFO: Global query: 29 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 53 entities, 103 relations, 24 vector chunks
+INFO: After truncation: 53 entities, 103 relations
+INFO: Selecting 106 from 106 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 103 relations
+INFO: Round-robin merged chunks: 130 -> 109 (deduplicated 21)
+INFO: Final context: 53 entities, 103 relations, 22 chunks
+INFO: Final chunks S+F/O: E4/1 E6/2 E10/3 E1/4 E6/5 E7/6 E4/7 E2/8 E9/9 E4/10 E1/11 E4/12 E8/13 E10/14 E1/15 E5/16 E8/17 E3/18 C1/19 E1/19 E2/20 E1/21
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 32 chunks
+validation 21 / 40 v2_context em 0.0 abstained True
+validation 21 / 40 v2_verify em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:eb0551b555f97c11a70bfd50b8f23783
+INFO: Query nodes: Fortune (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 180 relations
+INFO: Query edges: institution, recent articles (top_k:16, cosine:0.2)
+INFO: Global query: 31 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 47 entities, 196 relations, 16 vector chunks
+INFO: After truncation: 25 entities, 151 relations
+INFO: Selecting 62 from 227 entity-related chunks by vector similarity
+INFO: Find 51 additional chunks in 28 relations (deduplicated 22)
+INFO: Selecting 51 from 51 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 129 -> 127 (deduplicated 2)
+INFO: Final context: 25 entities, 151 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R6/1 C1/2 E1/2 R1/2 C1/3 E1/3 R1/3 C1/4 E1/4 R3/4 C1/5 E1/5 R1/5 C1/6
+INFO:  == LLM cache == saving: mix:keywords:fb5fc188267910794f80c97a511b5b84
+INFO: Query nodes: The Sydney Morning Herald (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 26 relations
+INFO: Query edges: institution mentioned in recent articles, news reporting (top_k:16, cosine:0.2)
+INFO: Global query: 28 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 44 entities, 42 relations, 16 vector chunks
+INFO: After truncation: 21 entities, 42 relations
+INFO: Selecting 52 from 227 entity-related chunks by vector similarity
+INFO: Find 21 additional chunks in 18 relations (deduplicated 16)
+INFO: Selecting 21 from 21 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 89 -> 84 (deduplicated 5)
+INFO: Final context: 21 entities, 42 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 C1/2 E2/2 R1/2 C1/3 E1/3 R1/3 C1/4 E1/4 R1/4 C1/5 E3/5 R1/5 C1/6
+validation 21 / 40 v2_full em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:7ee53432486d535c89f1c02d86131e54
+INFO: Query nodes: Polygon, Five Nights at Freddy's, Tears of the Kingdom, Link, elementary school children, shared stories, suspicion, unfamiliarity (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 33 relations
+INFO: Query edges: children's reactions to video game characters, kid appeal, character perception in games (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 40 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 40 relations
+INFO: Selecting 35 from 35 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 40 relations
+INFO: Round-robin merged chunks: 43 -> 41 (deduplicated 2)
+INFO: Final context: 22 entities, 40 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 C1/2 E3/2 C1/3 E2/3 C1/4 E1/4 E2/5
+validation 22 / 40 baseline em 1.0 abstained False
+validation 22 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Polygon, Five Nights at Freddy's, Tears of the Kingdom, Link, elementary school children, shared stories, suspicion, unfamiliarity (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 68 relations
+INFO: Query edges: children's reactions to video game characters, kid appeal, character perception in games (top_k:24, cosine:0.2)
+INFO: Global query: 39 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 62 entities, 91 relations, 24 vector chunks
+INFO: After truncation: 34 entities, 91 relations
+INFO: Selecting 54 from 54 entity-related chunks by vector similarity
+INFO: Find 8 additional chunks in 8 relations (deduplicated 38)
+INFO: Selecting 8 from 8 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 86 -> 75 (deduplicated 11)
+INFO: Final context: 34 entities, 91 relations, 20 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E1/2 R2/2 C1/3 E3/3 R2/3 C1/4 E1/4 R6/4 E1/5 R1/5 C1/6 E2/6 R2/6 C1/7 E1/7 R2/7 E2/8 R2/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 22 / 40 v2_context em 1.0 abstained False
+validation 22 / 40 v2_verify em 1.0 abstained False
+validation 22 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:de9a9350ea3c3f4d57abd436aa130e05
+INFO: Query nodes: Sporting News, NBA Rookie of the Year, betting odds, lines, news sentiment, money flow, welcome bonuses, establishments (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 69 relations
+INFO: Query edges: betting odds and lines modification, news sentiment and money flow impact, welcome bonuses, NBA Rookie of the Year wagering (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 16 entities, 71 relations, 8 vector chunks
+INFO: After truncation: 16 entities, 71 relations
+INFO: Selecting 40 from 121 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 71 relations
+INFO: Round-robin merged chunks: 48 -> 41 (deduplicated 7)
+INFO: Final context: 16 entities, 71 relations, 8 chunks
+INFO: Final chunks S+F/O: E4/1 E6/2 E3/3 C1/4 E2/4 E2/5 E5/6 E2/7
+validation 23 / 40 baseline em 1.0 abstained False
+validation 23 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Sporting News, NBA Rookie of the Year, betting odds, lines, news sentiment, money flow, welcome bonuses, establishments (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 378 relations
+INFO: Query edges: betting odds and lines modification, news sentiment and money flow impact, welcome bonuses, NBA Rookie of the Year wagering (top_k:24, cosine:0.2)
+INFO: Global query: 33 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 38 entities, 381 relations, 24 vector chunks
+INFO: After truncation: 28 entities, 178 relations
+INFO: Selecting 70 from 134 entity-related chunks by vector similarity
+INFO: Find 58 additional chunks in 48 relations (deduplicated 55)
+INFO: Selecting 58 from 58 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 152 -> 129 (deduplicated 23)
+INFO: Final context: 28 entities, 178 relations, 13 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E9/2 R1/2 E6/3 R1/3 C1/4 E3/4 R1/4 E3/5 R1/5 E8/6 R1/6
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 27 chunks
+validation 23 / 40 v2_context em 1.0 abstained False
+validation 23 / 40 v2_verify em 1.0 abstained False
+validation 23 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:6d09e650d446550994303034dfa6b1c0
+INFO: Query nodes: Jane Street, Alameda, FTX, Binance, TechCrunch, Fortune, The Verge (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 224 relations
+INFO: Query edges: criminal trial, fraud and conspiracy, misusing customer funds, fraudulent activities, wealth, power, and influence (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 231 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 127 relations
+INFO: Selecting 47 from 89 entity-related chunks by vector similarity
+INFO: Find 9 additional chunks in 9 relations (deduplicated 40)
+INFO: Selecting 9 from 9 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 64 -> 56 (deduplicated 8)
+INFO: Final context: 19 entities, 127 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E4/2 R1/2 E6/3 R2/3 E6/4 R1/4
+validation 24 / 40 baseline em 1.0 abstained False
+validation 24 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Jane Street, Alameda, FTX, Binance, TechCrunch, Fortune, The Verge (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 630 relations
+INFO: Query edges: criminal trial, fraud and conspiracy, misusing customer funds, fraudulent activities, wealth, power, and influence (top_k:24, cosine:0.2)
+INFO: Global query: 31 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 52 entities, 647 relations, 24 vector chunks
+INFO: After truncation: 21 entities, 122 relations
+INFO: Selecting 52 from 89 entity-related chunks by vector similarity
+INFO: Find 46 additional chunks in 36 relations (deduplicated 33)
+INFO: Selecting 46 from 46 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 122 -> 98 (deduplicated 24)
+INFO: Final context: 21 entities, 122 relations, 14 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E4/2 R1/2 E6/3 R1/3 E6/4 R1/4 E4/5 R1/5 E4/6 R1/6 E4/7 R1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 30 chunks
+validation 24 / 40 v2_context em 1.0 abstained False
+validation 24 / 40 v2_verify em 1.0 abstained False
+validation 24 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:f949e3686e120592395f47a945f9c6a8
+INFO: Query nodes: The Guardian, Manchester United, pressure in the Champions League, November 27, TalkSport, November 29, leaky defence, unwanted record for conceding goals, group stages (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 206 relations
+INFO: Query edges: Manchester United performance in Europe, media agreement or disagreement, Champions League challenges (top_k:8, cosine:0.2)
+INFO: Global query: 8 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 13 entities, 206 relations, 8 vector chunks
+INFO: After truncation: 13 entities, 114 relations
+INFO: Selecting 32 from 107 entity-related chunks by vector similarity
+INFO: Find 12 additional chunks in 10 relations (deduplicated 26)
+INFO: Selecting 12 from 12 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 52 -> 44 (deduplicated 8)
+INFO: Final context: 13 entities, 114 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 R3/1 E4/2 R13/2 E3/3 R1/3 E4/4 R3/4
+validation 25 / 40 baseline em 1.0 abstained False
+validation 25 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: The Guardian, Manchester United, pressure in the Champions League, November 27, TalkSport, November 29, leaky defence, unwanted record for conceding goals, group stages (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 265 relations
+INFO: Query edges: Manchester United performance in Europe, media agreement or disagreement, Champions League challenges (top_k:24, cosine:0.2)
+INFO: Global query: 24 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 42 entities, 266 relations, 24 vector chunks
+INFO: After truncation: 16 entities, 114 relations
+INFO: Selecting 40 from 194 entity-related chunks by vector similarity
+INFO: Find 10 additional chunks in 8 relations (deduplicated 31)
+INFO: Selecting 10 from 10 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 74 -> 51 (deduplicated 23)
+INFO: Final context: 16 entities, 114 relations, 15 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E4/2 R1/2 E4/3 R1/3 E4/4 R1/4 E6/5 R1/5 E6/6 R2/6 E4/7 R1/7 E3/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 32 chunks
+validation 25 / 40 v2_context em 1.0 abstained False
+validation 25 / 40 v2_verify em 1.0 abstained False
+validation 25 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:1db032a7b0f8bf8024cdb127a1ad7d14
+INFO: Query nodes: Engadget, Polygon, improved screen, enhanced battery life, minor physical upgrades, November 16th (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 139 relations
+INFO: Query edges: company product release, upgraded version, product availability (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 18 entities, 145 relations, 8 vector chunks
+INFO: After truncation: 11 entities, 145 relations
+INFO: Selecting 27 from 203 entity-related chunks by vector similarity
+INFO: Find 28 additional chunks in 25 relations (deduplicated 17)
+INFO: Selecting 28 from 28 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 63 -> 55 (deduplicated 8)
+INFO: Final context: 11 entities, 145 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E2/2 R1/2 E2/3 R1/3 E1/4 R1/4
+validation 26 / 40 baseline em 1.0 abstained False
+validation 26 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Engadget, Polygon, improved screen, enhanced battery life, minor physical upgrades, November 16th (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 170 relations
+INFO: Query edges: company product release, upgraded version, product availability (top_k:24, cosine:0.2)
+INFO: Global query: 34 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 52 entities, 188 relations, 24 vector chunks
+INFO: After truncation: 11 entities, 167 relations
+INFO: Selecting 27 from 203 entity-related chunks by vector similarity
+INFO: Find 68 additional chunks in 39 relations (deduplicated 20)
+INFO: Selecting 68 from 68 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 119 -> 101 (deduplicated 18)
+INFO: Final context: 11 entities, 167 relations, 14 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E2/2 R1/2 E2/3 R2/3 E1/4 R1/4 E3/5 R1/5 E1/6 R1/6 E3/7 R2/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 27 chunks
+validation 26 / 40 v2_context em 1.0 abstained False
+validation 26 / 40 v2_verify em 1.0 abstained False
+validation 26 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:2e253225d1321440cf639345b0467713
+INFO: Query nodes: TechCrunch, Silicon Valley, artificial intelligence, board, CEO position (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 258 relations
+INFO: Query edges: Silicon Valley artificial intelligence influence, CEO departure controversy, TechCrunch profile (top_k:8, cosine:0.2)
+INFO: Global query: 8 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 13 entities, 258 relations, 8 vector chunks
+INFO: After truncation: 9 entities, 169 relations
+INFO: Selecting 22 from 164 entity-related chunks by vector similarity
+INFO: Find 116 additional chunks in 96 relations (deduplicated 16)
+INFO: Selecting 116 from 116 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 146 -> 139 (deduplicated 7)
+INFO: Final context: 9 entities, 169 relations, 8 chunks
+INFO: Final chunks S+F/O: E4/1 R1/1 E2/2 R12/2 E4/3 R1/3 E5/4 R3/4
+validation 27 / 40 baseline em 1.0 abstained False
+validation 27 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: TechCrunch, Silicon Valley, artificial intelligence, board, CEO position (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 519 relations
+INFO: Query edges: Silicon Valley artificial intelligence influence, CEO departure controversy, TechCrunch profile (top_k:24, cosine:0.2)
+INFO: Global query: 28 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 43 entities, 528 relations, 24 vector chunks
+INFO: After truncation: 9 entities, 158 relations
+INFO: Selecting 22 from 164 entity-related chunks by vector similarity
+INFO: Find 85 additional chunks in 55 relations (deduplicated 20)
+INFO: Selecting 85 from 85 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 131 -> 112 (deduplicated 19)
+INFO: Final context: 9 entities, 158 relations, 14 chunks
+INFO: Final chunks S+F/O: E4/1 R3/1 E2/2 R6/2 E4/3 R1/3 E5/4 R5/4 E4/5 R1/5 E2/6 R1/6 C1/7 E1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 27 / 40 v2_context em 1.0 abstained False
+validation 27 / 40 v2_verify em 1.0 abstained False
+validation 27 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:009904b4d04a39719c14c5f4fc5a3014
+INFO: Query nodes: Sporting News, Alejandro Mata, 31-yard field goal, Colorado, October 28, 2023, Jayden Fielding (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 38 relations
+INFO: Query edges: sports news reporting, field goal attempt outcome (top_k:8, cosine:0.2)
+INFO: Global query: 9 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 17 entities, 46 relations, 8 vector chunks
+INFO: After truncation: 17 entities, 46 relations
+INFO: Selecting 42 from 148 entity-related chunks by vector similarity
+INFO: Find 13 additional chunks in 8 relations (deduplicated 17)
+INFO: Selecting 13 from 13 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 63 -> 61 (deduplicated 2)
+INFO: Final context: 17 entities, 46 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 C1/2 E4/2 R2/2 E1/3 R1/3 C1/4
+validation 28 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:f0e1c949a9c53ecf3da4899f07a993cd
+INFO: Query nodes: Alejandro Mata, 31-yard field goal, Colorado, October 28 2023, Sporting News (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 36 relations
+INFO: Query edges: college football game recap, field goal play (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 42 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 42 relations
+INFO: Selecting 39 from 39 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 42 relations
+INFO: Round-robin merged chunks: 47 -> 44 (deduplicated 3)
+INFO: Final context: 20 entities, 42 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 E3/2 E3/3 C1/4 E3/4 C1/5 E1/5 C1/6
+INFO:  == LLM cache == saving: mix:keywords:af9ae5f1d2096e3c8aca63ca125dc0b8
+INFO: Query nodes: Jayden Fielding, Sporting News (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 11 relations
+INFO: Query edges: field goal attempt (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 19 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 19 relations
+INFO: Selecting 55 from 86 entity-related chunks by vector similarity
+INFO: Find 3 additional chunks in 3 relations (deduplicated 11)
+INFO: Selecting 3 from 3 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 66 -> 63 (deduplicated 3)
+INFO: Final context: 22 entities, 19 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R2/1 C1/2 E1/2 R1/2 E1/3 R2/3
+validation 28 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Sporting News, Alejandro Mata, 31-yard field goal, Colorado, October 28, 2023, Jayden Fielding (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 93 relations
+INFO: Query edges: sports news reporting, field goal attempt outcome (top_k:24, cosine:0.2)
+INFO: Global query: 29 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 52 entities, 116 relations, 24 vector chunks
+INFO: After truncation: 26 entities, 116 relations
+INFO: Selecting 65 from 244 entity-related chunks by vector similarity
+INFO: Find 38 additional chunks in 27 relations (deduplicated 22)
+INFO: Selecting 38 from 38 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 127 -> 112 (deduplicated 15)
+INFO: Final context: 26 entities, 116 relations, 14 chunks
+INFO: Final chunks S+F/O: E5/1 R2/1 C1/2 E4/2 R1/2 E1/3 R6/3 E1/4 R2/4 E1/5 R12/5 C1/6 E1/6 R1/6
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 24 chunks
+validation 28 / 40 v2_context em 0.0 abstained False
+validation 28 / 40 v2_verify em 0.0 abstained False
+validation 28 / 40 v2_full em 0.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:5a1fd7294bf1bfd5aba58326e4d34b53
+INFO: Query nodes: TechCrunch articles, Twitter, X, new leadership (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 422 relations
+INFO: Query edges: social media content moderation policy changes, state laws restricting social media companies, crowdsourced moderation system (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 428 relations, 8 vector chunks
+INFO: After truncation: 7 entities, 153 relations
+INFO: Selecting 17 from 225 entity-related chunks by vector similarity
+INFO: Find 114 additional chunks in 80 relations (deduplicated 16)
+INFO: Selecting 114 from 114 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 139 -> 131 (deduplicated 8)
+INFO: Final context: 7 entities, 153 relations, 8 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E2/2 R1/2 E2/3 R1/3 E2/4 R1/4
+validation 29 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:a4872dc4aec106ef1739dca42ad51ed6
+INFO: Query nodes: TechCrunch article, social media companies (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 221 relations
+INFO: Query edges: state laws, content moderation policies (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 228 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 187 relations
+INFO: Selecting 47 from 189 entity-related chunks by vector similarity
+INFO: Find 93 additional chunks in 86 relations (deduplicated 37)
+INFO: Selecting 93 from 93 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 148 -> 140 (deduplicated 8)
+INFO: Final context: 19 entities, 187 relations, 8 chunks
+INFO: Final chunks S+F/O: E9/1 R2/1 E5/2 R1/2 E3/3 R2/3 E1/4 R2/4
+INFO:  == LLM cache == saving: mix:keywords:bdd5fac9b25448601760b2f8550f1372
+INFO: Query nodes: TechCrunch article, new leadership (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 161 relations
+INFO: Query edges: crowdsourced moderation system, social media content moderation (top_k:8, cosine:0.2)
+INFO: Global query: 9 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 17 entities, 169 relations, 8 vector chunks
+INFO: After truncation: 16 entities, 169 relations
+INFO: Selecting 40 from 199 entity-related chunks by vector similarity
+INFO: Find 96 additional chunks in 87 relations (deduplicated 24)
+INFO: Selecting 96 from 96 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 144 -> 138 (deduplicated 6)
+INFO: Final context: 16 entities, 169 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R1/1 E4/2 R3/2 E1/3 R1/3 C1/4
+validation 29 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: TechCrunch articles, Twitter, X, new leadership (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 449 relations
+INFO: Query edges: social media content moderation policy changes, state laws restricting social media companies, crowdsourced moderation system (top_k:24, cosine:0.2)
+INFO: Global query: 26 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 47 entities, 466 relations, 24 vector chunks
+INFO: After truncation: 7 entities, 155 relations
+INFO: Selecting 17 from 225 entity-related chunks by vector similarity
+INFO: Find 111 additional chunks in 79 relations (deduplicated 16)
+INFO: Selecting 111 from 111 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 152 -> 133 (deduplicated 19)
+INFO: Final context: 7 entities, 155 relations, 16 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E2/2 R1/2 E2/3 R2/3 E2/4 R1/4 E3/5 R4/5 E2/6 R1/6 E2/7 R3/7 E3/8 R4/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 30 chunks
+validation 29 / 40 v2_context em 1.0 abstained False
+validation 29 / 40 v2_verify em 1.0 abstained False
+validation 29 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:6e3c2bfbb95c4233df7ed24b17e788e4
+INFO: Query nodes: under 30, trustworthy face, The Verge, prosecution, fraud for wealth and influence, TechCrunch, expert board, crypto exchange, Cnbc | World Business News Leader, fortune, prevent humanity's extinction (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 144 relations
+INFO: Query edges: cryptocurrency industry figure, fraud accusation, crypto exchange expert board, humanity extinction prevention (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 151 relations, 8 vector chunks
+INFO: After truncation: 10 entities, 151 relations
+INFO: Selecting 25 from 238 entity-related chunks by vector similarity
+INFO: Find 107 additional chunks in 82 relations (deduplicated 19)
+INFO: Selecting 107 from 107 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 140 -> 133 (deduplicated 7)
+INFO: Final context: 10 entities, 151 relations, 8 chunks
+INFO: Final chunks S+F/O: E3/1 R2/1 E1/2 R1/2 C1/3 E2/3 R2/3 E2/4
+validation 30 / 40 baseline em 0.0 abstained True
+validation 30 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: under 30, trustworthy face, The Verge, prosecution, fraud for wealth and influence, TechCrunch, expert board, crypto exchange, Cnbc | World Business News Leader, fortune, prevent humanity's extinction (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 335 relations
+INFO: Query edges: cryptocurrency industry figure, fraud accusation, crypto exchange expert board, humanity extinction prevention (top_k:24, cosine:0.2)
+INFO: Global query: 31 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 50 entities, 353 relations, 24 vector chunks
+INFO: After truncation: 10 entities, 167 relations
+INFO: Selecting 25 from 238 entity-related chunks by vector similarity
+INFO: Find 122 additional chunks in 96 relations (deduplicated 19)
+INFO: Selecting 122 from 122 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 171 -> 149 (deduplicated 22)
+INFO: Final context: 10 entities, 167 relations, 15 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E1/2 R1/2 C1/3 E2/3 R1/3 E2/4 R2/4 E1/5 R2/5 E2/6 R3/6 E1/7 R1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 31 chunks
+validation 30 / 40 v2_context em 1.0 abstained False
+validation 30 / 40 v2_verify em 1.0 abstained False
+validation 30 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:ebf6d97696baa9917fba881f8b16bcf4
+INFO: Query nodes: TechCrunch, October 31, 2023, Google, default search engine position, December 15, 2023, class action antitrust suit, news publisher (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 377 relations
+INFO: Query edges: antitrust, competitive practices, news reporting consistency (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 381 relations, 8 vector chunks
+INFO: After truncation: 12 entities, 134 relations
+INFO: Selecting 30 from 133 entity-related chunks by vector similarity
+INFO: Find 79 additional chunks in 49 relations (deduplicated 28)
+INFO: Selecting 79 from 79 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 117 -> 109 (deduplicated 8)
+INFO: Final context: 12 entities, 134 relations, 8 chunks
+INFO: Final chunks S+F/O: E4/1 R4/1 E5/2 R2/2 E1/3 R1/3 E2/4 R4/4
+validation 31 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:641983c5f739e9ececeae849471a1c1c
+INFO: Query nodes: TechCrunch, October 31 2023, Google, millions, billions, default search engine position (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 379 relations
+INFO: Query edges: Google antitrust case, default search engine deals, tech industry payments (top_k:8, cosine:0.2)
+INFO: Global query: 8 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 14 entities, 381 relations, 8 vector chunks
+INFO: After truncation: 13 entities, 134 relations
+INFO: Selecting 32 from 217 entity-related chunks by vector similarity
+INFO: Find 77 additional chunks in 46 relations (deduplicated 29)
+INFO: Selecting 77 from 77 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 117 -> 109 (deduplicated 8)
+INFO: Final context: 13 entities, 134 relations, 8 chunks
+INFO: Final chunks S+F/O: E9/1 R2/1 E2/2 R2/2 E3/3 R2/3 E4/4 R2/4
+INFO:  == LLM cache == saving: mix:keywords:c35c8eaa639a8a775f343fc818d4a183
+INFO: Query nodes: TechCrunch, December 15 2023, Google (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 534 relations
+INFO: Query edges: antitrust lawsuit, class action, news publishing industry (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 539 relations, 8 vector chunks
+INFO: After truncation: 13 entities, 134 relations
+INFO: Selecting 32 from 218 entity-related chunks by vector similarity
+INFO: Find 84 additional chunks in 54 relations (deduplicated 29)
+INFO: Selecting 84 from 84 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 124 -> 116 (deduplicated 8)
+INFO: Final context: 13 entities, 134 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R2/1 E2/2 R2/2 E1/3 R7/3 E2/4 R1/4
+validation 31 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: TechCrunch, October 31, 2023, Google, default search engine position, December 15, 2023, class action antitrust suit, news publisher (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 436 relations
+INFO: Query edges: antitrust, competitive practices, news reporting consistency (top_k:24, cosine:0.2)
+INFO: Global query: 31 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 51 entities, 448 relations, 24 vector chunks
+INFO: After truncation: 12 entities, 136 relations
+INFO: Selecting 30 from 133 entity-related chunks by vector similarity
+INFO: Find 81 additional chunks in 50 relations (deduplicated 28)
+INFO: Selecting 81 from 81 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 135 -> 112 (deduplicated 23)
+INFO: Final context: 12 entities, 136 relations, 17 chunks
+INFO: Final chunks S+F/O: E4/1 R3/1 E5/2 R2/2 E1/3 R1/3 E2/4 R4/4 E1/5 R7/5 E3/6 R6/6 E2/7 R1/7 E1/8 R1/8 E1/9
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 28 chunks
+validation 31 / 40 v2_context em 1.0 abstained False
+validation 31 / 40 v2_verify em 1.0 abstained False
+validation 31 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:b4b53b134474a21940560bd8e101b9ad
+INFO: Query nodes: Music Business Worldwide, Polygon, FOX News - Health (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 32 relations
+INFO: Query edges: AI-driven voice replication policing, reaction content debate, most used app by young people (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 40 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 40 relations
+INFO: Selecting 57 from 193 entity-related chunks by vector similarity
+INFO: Find 16 additional chunks in 16 relations (deduplicated 13)
+INFO: Selecting 16 from 16 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 81 -> 75 (deduplicated 6)
+INFO: Final context: 23 entities, 40 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 C1/2 E1/2 R3/2 E4/3 R1/3 E2/4
+validation 32 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:1b44484e6d5670f5f4ef8f6ca5f563b5
+INFO: Query nodes: Music Business Worldwide (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 32 relations
+INFO: Query edges: AI-driven voice replication policing platform (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 40 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 40 relations
+INFO: Selecting 55 from 99 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 23)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 69 -> 62 (deduplicated 7)
+INFO: Final context: 22 entities, 40 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E1/2 R1/2 C1/3 E2/3 R2/3 E1/4
+INFO:  == LLM cache == saving: mix:keywords:9f976f52c391cdc49ccc35a8f0164e86
+INFO: Query nodes: Polygon, reaction content (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 86 relations
+INFO: Query edges: content debate platform (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 94 relations, 8 vector chunks
+INFO: After truncation: 21 entities, 94 relations
+INFO: Selecting 52 from 216 entity-related chunks by vector similarity
+INFO: Find 47 additional chunks in 39 relations (deduplicated 17)
+INFO: Selecting 47 from 47 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 107 -> 103 (deduplicated 4)
+INFO: Final context: 21 entities, 94 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 C1/2 E2/2 R1/2 C1/3 E5/3 R1/3
+validation 32 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Music Business Worldwide, Polygon, FOX News - Health (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 160 relations
+INFO: Query edges: AI-driven voice replication policing, reaction content debate, most used app by young people (top_k:24, cosine:0.2)
+INFO: Global query: 39 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 63 entities, 184 relations, 24 vector chunks
+INFO: After truncation: 21 entities, 181 relations
+INFO: Selecting 52 from 185 entity-related chunks by vector similarity
+INFO: Find 104 additional chunks in 72 relations (deduplicated 24)
+INFO: Selecting 104 from 104 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 180 -> 163 (deduplicated 17)
+INFO: Final context: 21 entities, 181 relations, 14 chunks
+INFO: Final chunks S+F/O: E1/1 R7/1 E1/2 R1/2 E1/3 R1/3 E4/4 R1/4 C1/5 E2/5 R1/5 E1/6 R1/6 E1/7
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 28 chunks
+validation 32 / 40 v2_context em 1.0 abstained False
+validation 32 / 40 v2_verify em 1.0 abstained False
+validation 32 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:b8593fbea278368edcc38b9f84c119ae
+INFO: Query nodes: Polygon article, Spider-Man: Across the Spider-Verse, Spider-Man 2 (game) (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 10 relations
+INFO: Query edges: multiverse of Spider-themed characters, multiple Spider-Men stories (top_k:8, cosine:0.2)
+INFO: Global query: 12 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 20 entities, 18 relations, 8 vector chunks
+INFO: After truncation: 20 entities, 18 relations
+INFO: Selecting 50 from 68 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 18 relations
+INFO: Round-robin merged chunks: 58 -> 50 (deduplicated 8)
+INFO: Final context: 20 entities, 18 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 E7/2 E2/3 E1/4 E5/5 E1/6 E1/7 E4/8
+validation 33 / 40 baseline em 1.0 abstained False
+validation 33 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Polygon article, Spider-Man: Across the Spider-Verse, Spider-Man 2 (game) (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 56 relations
+INFO: Query edges: multiverse of Spider-themed characters, multiple Spider-Men stories (top_k:24, cosine:0.2)
+INFO: Global query: 25 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 42 entities, 69 relations, 24 vector chunks
+INFO: After truncation: 42 entities, 69 relations
+INFO: Selecting 105 from 171 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 20)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 131 -> 116 (deduplicated 15)
+INFO: Final context: 42 entities, 69 relations, 18 chunks
+INFO: Final chunks S+F/O: E10/1 R1/1 E12/2 R1/2 E2/3 E3/4 E11/5 E2/6 E1/7 E6/8 E10/9 C1/10 E1/10 E2/11 E1/12 E1/13 C1/14 E5/14
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 33 / 40 v2_context em 1.0 abstained False
+validation 33 / 40 v2_verify em 1.0 abstained False
+validation 33 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:87bbc2777dede69071c69e37b49329f0
+INFO: Query nodes: TechCrunch, Deft, The Verge, Apple, Google (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 263 relations
+INFO: Query edges: user behavior change, e-commerce search, default search engine (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 271 relations, 8 vector chunks
+INFO: After truncation: 15 entities, 185 relations
+INFO: Selecting 37 from 242 entity-related chunks by vector similarity
+INFO: Find 124 additional chunks in 102 relations (deduplicated 22)
+INFO: Selecting 124 from 124 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 169 -> 161 (deduplicated 8)
+INFO: Final context: 15 entities, 185 relations, 8 chunks
+INFO: Final chunks S+F/O: E3/1 R12/1 E2/2 R1/2 E2/3 R1/3 E5/4 R1/4
+validation 34 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:8e46b91f164b90eb5d0674a648dcc1c6
+INFO: Query nodes: TechCrunch, Deft (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 185 relations
+INFO: Query edges: e-commerce search, user behavior (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 190 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 190 relations
+INFO: Selecting 47 from 218 entity-related chunks by vector similarity
+INFO: Find 98 additional chunks in 90 relations (deduplicated 17)
+INFO: Selecting 98 from 98 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 153 -> 146 (deduplicated 7)
+INFO: Final context: 19 entities, 190 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E8/2 R1/2 E3/3 R2/3 E1/4 R3/4
+INFO:  == LLM cache == saving: mix:keywords:854c03fb8722d939078d40738a812597
+INFO: Query nodes: The Verge, Apple, Google, default search engine (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 371 relations
+INFO: Query edges: Apple alternative default search engine, Google search engine competition (top_k:8, cosine:0.2)
+INFO: Global query: 8 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 12 entities, 372 relations, 8 vector chunks
+INFO: After truncation: 11 entities, 135 relations
+INFO: Selecting 27 from 219 entity-related chunks by vector similarity
+INFO: Find 83 additional chunks in 47 relations (deduplicated 23)
+INFO: Selecting 83 from 83 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 118 -> 110 (deduplicated 8)
+INFO: Final context: 11 entities, 135 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 R2/1 E2/2 R4/2 E4/3 R5/3 E3/4 R3/4
+validation 34 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: TechCrunch, Deft, The Verge, Apple, Google (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 678 relations
+INFO: Query edges: user behavior change, e-commerce search, default search engine (top_k:24, cosine:0.2)
+INFO: Global query: 27 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 49 entities, 690 relations, 24 vector chunks
+INFO: After truncation: 15 entities, 134 relations
+INFO: Selecting 37 from 242 entity-related chunks by vector similarity
+INFO: Find 82 additional chunks in 48 relations (deduplicated 26)
+INFO: Selecting 82 from 82 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 143 -> 119 (deduplicated 24)
+INFO: Final context: 15 entities, 134 relations, 17 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E2/2 R1/2 E2/3 R2/3 E5/4 R2/4 E2/5 R4/5 E1/6 R4/6 E2/7 R4/7 E1/8 R4/8 E2/9
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 34 / 40 v2_context em 1.0 abstained False
+validation 34 / 40 v2_verify em 0.0 abstained False
+validation 34 / 40 v2_full em 0.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:fca93441316ec8bbf1538e96b0318adc
+INFO: Query nodes: Sporting News, Newcastle United, Manchester United, Carabao Cup, The Guardian, Chelsea, quarter-finals (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 124 relations
+INFO: Query edges: tournament progression, source alignment, match result claims (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 132 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 132 relations
+INFO: Selecting 57 from 122 entity-related chunks by vector similarity
+INFO: Find 26 additional chunks in 18 relations (deduplicated 46)
+INFO: Selecting 26 from 26 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 91 -> 84 (deduplicated 7)
+INFO: Final context: 23 entities, 132 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R2/1 E2/2 R1/2 E1/3 R2/3 E1/4 R1/4
+validation 35 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:0529ef6f4fc2710315da753adb4e36d9
+INFO: Query nodes: Newcastle United, Manchester United, Carabao Cup (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 88 relations
+INFO: Query edges: sports news, football match result (top_k:8, cosine:0.2)
+INFO: Global query: 9 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 17 entities, 96 relations, 8 vector chunks
+INFO: After truncation: 17 entities, 96 relations
+INFO: Selecting 42 from 170 entity-related chunks by vector similarity
+INFO: Find 19 additional chunks in 12 relations (deduplicated 23)
+INFO: Selecting 19 from 19 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 69 -> 62 (deduplicated 7)
+INFO: Final context: 17 entities, 96 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R2/1 E3/2 R1/2 E1/3 R1/3 C1/4 E3/4
+INFO:  == LLM cache == saving: mix:keywords:b2cb8ae108152703130172d0bef04749
+INFO: Query nodes: The Guardian, Newcastle, Chelsea, Carabao Cup, quarter-finals (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 120 relations
+INFO: Query edges: football match, cup competition (top_k:8, cosine:0.2)
+INFO: Global query: 15 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 23 entities, 128 relations, 8 vector chunks
+INFO: After truncation: 23 entities, 128 relations
+INFO: Selecting 57 from 136 entity-related chunks by vector similarity
+INFO: Find 14 additional chunks in 13 relations (deduplicated 43)
+INFO: Selecting 14 from 14 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 79 -> 71 (deduplicated 8)
+INFO: Final context: 23 entities, 128 relations, 8 chunks
+INFO: Final chunks S+F/O: E6/1 R2/1 E5/2 R1/2 E5/3 R5/3 E5/4 R2/4
+validation 35 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: Sporting News, Newcastle United, Manchester United, Carabao Cup, The Guardian, Chelsea, quarter-finals (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 417 relations
+INFO: Query edges: tournament progression, source alignment, match result claims (top_k:24, cosine:0.2)
+INFO: Global query: 40 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 63 entities, 440 relations, 24 vector chunks
+INFO: After truncation: 28 entities, 100 relations
+INFO: Selecting 70 from 139 entity-related chunks by vector similarity
+INFO: Find 55 additional chunks in 24 relations (deduplicated 44)
+INFO: Selecting 55 from 55 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 149 -> 127 (deduplicated 22)
+INFO: Final context: 28 entities, 100 relations, 15 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E3/2 R1/2 E1/3 R1/3 E1/4 R2/4 E4/5 R1/5 E3/6 R1/6 E5/7 R6/7 C1/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 31 chunks
+validation 35 / 40 v2_context em 1.0 abstained False
+validation 35 / 40 v2_verify em 1.0 abstained False
+validation 35 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:91639453a63c6474485d3c8395ea1112
+INFO: Query nodes: OpenAI, GPT-3.5, news publishers, Apple, tech companies, The Verge, TechCrunch (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 196 relations
+INFO: Query edges: AI performance comparison, antitrust accusations, default search engine deals (top_k:8, cosine:0.2)
+INFO: Global query: 9 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 17 entities, 204 relations, 8 vector chunks
+INFO: After truncation: 3 entities, 123 relations
+INFO: Selecting 7 from 168 entity-related chunks by vector similarity
+INFO: Find 60 additional chunks in 23 relations (deduplicated 7)
+INFO: Selecting 57 from 60 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 72 -> 64 (deduplicated 8)
+INFO: Final context: 3 entities, 123 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R2/1 E1/2 R12/2 E1/3 R2/3 E1/4 R9/4
+validation 36 / 40 baseline em 1.0 abstained False
+validation 36 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: OpenAI, GPT-3.5, news publishers, Apple, tech companies, The Verge, TechCrunch (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 478 relations
+INFO: Query edges: AI performance comparison, antitrust accusations, default search engine deals (top_k:24, cosine:0.2)
+INFO: Global query: 28 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 52 entities, 502 relations, 24 vector chunks
+INFO: After truncation: 3 entities, 117 relations
+INFO: Selecting 7 from 168 entity-related chunks by vector similarity
+INFO: Find 113 additional chunks in 64 relations (deduplicated 7)
+INFO: Selecting 113 from 113 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 144 -> 123 (deduplicated 21)
+INFO: Final context: 3 entities, 117 relations, 16 chunks
+INFO: Final chunks S+F/O: E1/1 R3/1 E1/2 R7/2 E1/3 R2/3 E1/4 R5/4 E2/5 R3/5 E1/6 R3/6 E1/7 R2/7 R5/8 C1/9
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 27 chunks
+validation 36 / 40 v2_context em 1.0 abstained False
+validation 36 / 40 v2_verify em 1.0 abstained False
+validation 36 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:d1f892d4611eafe5e247426c75ae750b
+INFO: Query nodes: Bloomberg article, Samsung Electronics Co Ltd., last quarter, Reuters report, new semiconductor plant, current CEO, city name (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 154 relations
+INFO: Query edges: financial performance, expansion plans, semiconductor market, letter puzzle (top_k:8, cosine:0.2)
+INFO: Global query: 13 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 162 relations, 8 vector chunks
+INFO: After truncation: 18 entities, 162 relations
+INFO: Selecting 45 from 189 entity-related chunks by vector similarity
+INFO: Find 95 additional chunks in 81 relations (deduplicated 24)
+INFO: Selecting 95 from 95 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 148 -> 141 (deduplicated 7)
+INFO: Final context: 18 entities, 162 relations, 8 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E1/2 R1/2 E1/3 R1/3 E3/4 R1/4
+validation 37 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:13bf856a7e3a7b9ac83789fa127b2bd6
+INFO: Query nodes: Samsung Electronics, semiconductor plant, new plant city (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 57 relations
+INFO: Query edges: semiconductor manufacturing expansion, corporate investment strategy (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 65 relations, 8 vector chunks
+INFO: After truncation: 22 entities, 65 relations
+INFO: Selecting 55 from 59 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 42)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 65 -> 62 (deduplicated 3)
+INFO: Final context: 22 entities, 65 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E4/1 R1/1 E1/2 R1/2 E2/3 E1/4 C1/5
+INFO:  == LLM cache == saving: mix:keywords:cdc6b6da3b5a5bb0fb16eaaad34200e1
+INFO: Query nodes: Samsung Electronics, current CEO name (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 64 relations
+INFO: Query edges: corporate leadership (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 71 relations, 8 vector chunks
+INFO: After truncation: 18 entities, 71 relations
+INFO: Selecting 45 from 152 entity-related chunks by vector similarity
+INFO: Find 26 additional chunks in 18 relations (deduplicated 26)
+INFO: Selecting 26 from 26 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 79 -> 73 (deduplicated 6)
+INFO: Final context: 18 entities, 71 relations, 8 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E2/2 R2/2 E2/3 R2/3 E3/4 R1/4
+validation 37 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: Bloomberg article, Samsung Electronics Co Ltd., last quarter, Reuters report, new semiconductor plant, current CEO, city name (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 381 relations
+INFO: Query edges: financial performance, expansion plans, semiconductor market, letter puzzle (top_k:24, cosine:0.2)
+INFO: Global query: 42 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 65 entities, 402 relations, 24 vector chunks
+INFO: After truncation: 21 entities, 177 relations
+INFO: Selecting 52 from 189 entity-related chunks by vector similarity
+INFO: Find 128 additional chunks in 104 relations (deduplicated 26)
+INFO: Selecting 128 from 128 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 204 -> 187 (deduplicated 17)
+INFO: Final context: 21 entities, 177 relations, 15 chunks
+INFO: Final chunks S+F/O: E3/1 R2/1 E1/2 R1/2 E1/3 R1/3 E3/4 R1/4 E2/5 R2/5 E1/6 R1/6 E1/7 R12/7 C1/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 30 chunks
+validation 37 / 40 v2_context em 1.0 abstained True
+validation 37 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:cacadaf0d07fb67f5175bca73b9d0ef1
+INFO: Query nodes: Bloomberg article, Samsung Electronics Co Ltd, last quarter (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 87 relations
+INFO: Query edges: financial performance (top_k:16, cosine:0.2)
+INFO: Global query: 24 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 40 entities, 103 relations, 16 vector chunks
+INFO: After truncation: 39 entities, 103 relations
+INFO: Selecting 97 from 151 entity-related chunks by vector similarity
+INFO: Find 15 additional chunks in 14 relations (deduplicated 51)
+INFO: Selecting 15 from 15 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 128 -> 117 (deduplicated 11)
+INFO: Final context: 39 entities, 103 relations, 16 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E8/2 R1/2 E1/3 R1/3 E5/4 R1/4 E2/5 R1/5 E1/6 R3/6 E2/7 R2/7 C1/8 E1/8
+INFO:  == LLM cache == saving: mix:keywords:c8c3e3d284aa5df4f4d2b9bc83dba116
+INFO: Query nodes: Reuters, Samsung Electronics Co Ltd (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 55 relations
+INFO: Query edges: expansion, semiconductor market (top_k:16, cosine:0.2)
+INFO: Global query: 27 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 43 entities, 71 relations, 16 vector chunks
+INFO: After truncation: 43 entities, 71 relations
+INFO: Selecting 107 from 138 entity-related chunks by vector similarity
+INFO: Find 12 additional chunks in 11 relations (deduplicated 43)
+INFO: Selecting 12 from 12 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 135 -> 125 (deduplicated 10)
+INFO: Final context: 43 entities, 71 relations, 16 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 E2/2 R1/2 E2/3 R1/3 E2/4 R1/4 C1/5 E2/5 R2/5 C1/6 E3/6 R2/6 E1/7
+validation 37 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:d7102e96618cefcf42b16df2392ca57d
+INFO: Query nodes: BBC News, Reuters, GSM Association, annual conference, headquarters, city, country (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 82 relations
+INFO: Query edges: BBC News article, Reuters report, GSM Association, annual conference, headquarters location (top_k:8, cosine:0.2)
+INFO: Global query: 16 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 87 relations, 8 vector chunks
+INFO: After truncation: 16 entities, 87 relations
+INFO: Selecting 40 from 200 entity-related chunks by vector similarity
+INFO: Find 56 additional chunks in 52 relations (deduplicated 16)
+INFO: Selecting 56 from 56 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 104 -> 100 (deduplicated 4)
+INFO: Final context: 16 entities, 87 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 E1/2 R1/2 E1/3 R1/3 C1/4
+validation 38 / 40 baseline em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:57f82806a7c36c75e580c622e91e052b
+INFO: Query nodes: BBC News, GSM Association, city (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 14 relations
+INFO: Query edges: news, annual conference (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 22 relations, 8 vector chunks
+INFO: After truncation: 21 entities, 22 relations
+INFO: Selecting 52 from 260 entity-related chunks by vector similarity
+INFO: Find 9 additional chunks in 9 relations (deduplicated 10)
+INFO: Selecting 9 from 9 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 69 -> 65 (deduplicated 4)
+INFO: Final context: 21 entities, 22 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E1/2 R2/2 C1/3 E1/3 R1/3 C1/4
+INFO:  == LLM cache == saving: mix:keywords:88335d8417179dbd0388eb53710d2e1f
+INFO: Query nodes: Reuters, GSM Association (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 26 relations
+INFO: Query edges: organization headquarters location (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 22 entities, 34 relations, 8 vector chunks
+INFO: After truncation: 21 entities, 34 relations
+INFO: Selecting 52 from 184 entity-related chunks by vector similarity
+INFO: Find 19 additional chunks in 18 relations (deduplicated 12)
+INFO: Selecting 19 from 19 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 79 -> 78 (deduplicated 1)
+INFO: Final context: 21 entities, 34 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 C1/2 E2/2 R1/2 C1/3 E1/3 R1/3
+validation 38 / 40 previous_recovery em 1.0 abstained True
+INFO: Query nodes: BBC News, Reuters, GSM Association, annual conference, headquarters, city, country (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 381 relations
+INFO: Query edges: BBC News article, Reuters report, GSM Association, annual conference, headquarters location (top_k:24, cosine:0.2)
+INFO: Global query: 44 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 59 entities, 396 relations, 24 vector chunks
+INFO: After truncation: 15 entities, 173 relations
+INFO: Selecting 37 from 200 entity-related chunks by vector similarity
+INFO: Find 113 additional chunks in 93 relations (deduplicated 12)
+INFO: Selecting 113 from 113 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 174 -> 161 (deduplicated 13)
+INFO: Final context: 15 entities, 173 relations, 19 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 E1/2 R1/2 E1/3 R1/3 C1/4 E1/4 R1/4 C1/5 E1/5 R1/5 C1/6 E1/6 R1/6 E1/7 R2/7 E1/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 32 chunks
+validation 38 / 40 v2_context em 1.0 abstained True
+validation 38 / 40 v2_verify em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:60d721363e0a1bca275f471cfa1bd603
+INFO: Query nodes: city, BBC News (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 38 relations
+INFO: Query edges: annual conference, BBC News (top_k:16, cosine:0.2)
+INFO: Global query: 28 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 43 entities, 53 relations, 16 vector chunks
+INFO: After truncation: 32 entities, 53 relations
+INFO: Selecting 80 from 160 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 39)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 102 -> 99 (deduplicated 3)
+INFO: Final context: 32 entities, 53 relations, 16 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 C1/2 E1/2 R1/2 C1/3 E1/3 R1/3 C1/4 E1/4 R1/4 E1/5 R1/5 C1/6 E1/6 R1/6
+INFO:  == LLM cache == saving: mix:keywords:bbed6bd1129b36b8465da7c9131fa255
+INFO: Query nodes: GSM Association, Reuters (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 35 relations
+INFO: Query edges: headquarters location, GSM Association, Reuters report (top_k:16, cosine:0.2)
+INFO: Global query: 31 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 45 entities, 49 relations, 16 vector chunks
+INFO: After truncation: 37 entities, 49 relations
+INFO: Selecting 92 from 177 entity-related chunks by vector similarity
+INFO: Find 18 additional chunks in 16 relations (deduplicated 27)
+INFO: Selecting 18 from 18 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 126 -> 116 (deduplicated 10)
+INFO: Final context: 37 entities, 49 relations, 16 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 C1/2 E1/2 R2/2 C1/3 E1/3 R1/3 E2/4 R1/4 E1/5 R1/5 E2/6 R1/6 C1/7 E1/7
+validation 38 / 40 v2_full em 1.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:1ae844b29ee4bdccd4297d3746c127c2
+INFO: Query nodes: The Age, October 22, 2023, Google, foul play, TechCrunch, October 31, 2023, December 15, 2023 (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 60 relations
+INFO: Query edges: Google antitrust issues, impact on news publishers, Google market behavior, media reporting consistency (top_k:8, cosine:0.2)
+INFO: Global query: 9 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 17 entities, 68 relations, 8 vector chunks
+INFO: After truncation: 13 entities, 68 relations
+INFO: Selecting 32 from 166 entity-related chunks by vector similarity
+INFO: Find 37 additional chunks in 36 relations (deduplicated 12)
+INFO: Selecting 37 from 37 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 77 -> 69 (deduplicated 8)
+INFO: Final context: 13 entities, 68 relations, 8 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E2/2 R1/2 E1/3 R1/3 E2/4 R6/4
+validation 39 / 40 baseline em 1.0 abstained False
+validation 39 / 40 previous_recovery em 1.0 abstained False
+INFO: Query nodes: The Age, October 22, 2023, Google, foul play, TechCrunch, October 31, 2023, December 15, 2023 (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 634 relations
+INFO: Query edges: Google antitrust issues, impact on news publishers, Google market behavior, media reporting consistency (top_k:24, cosine:0.2)
+INFO: Global query: 24 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 46 entities, 637 relations, 24 vector chunks
+INFO: After truncation: 13 entities, 132 relations
+INFO: Selecting 32 from 166 entity-related chunks by vector similarity
+INFO: Find 78 additional chunks in 48 relations (deduplicated 30)
+INFO: Selecting 78 from 78 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 134 -> 112 (deduplicated 22)
+INFO: Final context: 13 entities, 132 relations, 16 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E2/2 R1/2 E1/3 R3/3 E2/4 R1/4 E1/5 R1/5 E2/6 R1/6 E1/7 R1/7 E4/8 R3/8
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 29 chunks
+validation 39 / 40 v2_context em 1.0 abstained False
+validation 39 / 40 v2_verify em 1.0 abstained False
+validation 39 / 40 v2_full em 1.0 abstained False
+INFO:  == LLM cache == saving: mix:keywords:8b2d79bcdcaf200362e1f6ff9a5a313d
+INFO: Query nodes: Sporting News, USA squad, Johnny Cardoso, injury, Lucas Cavallini, withdrawal, Canada squad (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 115 relations
+INFO: Query edges: article coverage comparison, squad injury reporting (top_k:8, cosine:0.2)
+INFO: Global query: 14 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 21 entities, 120 relations, 8 vector chunks
+INFO: After truncation: 21 entities, 120 relations
+INFO: Selecting 52 from 269 entity-related chunks by vector similarity
+INFO: Find 78 additional chunks in 68 relations (deduplicated 25)
+INFO: Selecting 78 from 78 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 138 -> 134 (deduplicated 4)
+INFO: Final context: 21 entities, 120 relations, 8 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R2/1 E4/2 R1/2 C1/3 E1/3 R1/3
+validation 40 / 40 baseline em 0.0 abstained True
+INFO:  == LLM cache == saving: mix:keywords:56fbbce83b09f989a21e5df54b587118
+INFO: Query nodes: Sporting News, USA squad, Johnny Cardoso, injury inclusion (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 119 relations
+INFO: Query edges: sports news, team squad, player injury (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 18 entities, 121 relations, 8 vector chunks
+INFO: After truncation: 18 entities, 121 relations
+INFO: Selecting 45 from 178 entity-related chunks by vector similarity
+INFO: Find 81 additional chunks in 73 relations (deduplicated 27)
+INFO: Selecting 81 from 81 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 134 -> 132 (deduplicated 2)
+INFO: Final context: 18 entities, 121 relations, 8 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E1/2 R1/2 C1/3 E2/3 R2/3 C1/4
+INFO:  == LLM cache == saving: mix:keywords:2a0e7051280fa9e6be5c855ef5fa3802
+INFO: Query nodes: Sporting News, Canada, Lucas Cavallini (top_k:8, cosine:0.2)
+INFO: Local query: 8 entites, 10 relations
+INFO: Query edges: sports news, national team squad, player injury withdrawal (top_k:8, cosine:0.2)
+INFO: Global query: 11 entites, 8 relations
+INFO: Naive query: 8 chunks (chunk_top_k:8 cosine:0.2)
+INFO: Raw search results: 19 entities, 18 relations, 8 vector chunks
+INFO: After truncation: 19 entities, 18 relations
+INFO: Selecting 47 from 105 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 8)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 57 -> 54 (deduplicated 3)
+INFO: Final context: 19 entities, 18 relations, 8 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E2/2 R1/2 E1/3 C1/4 E1/4 C1/5
+validation 40 / 40 previous_recovery em 0.0 abstained True
+INFO: Query nodes: Sporting News, USA squad, Johnny Cardoso, injury, Lucas Cavallini, withdrawal, Canada squad (top_k:24, cosine:0.2)
+INFO: Local query: 24 entites, 158 relations
+INFO: Query edges: article coverage comparison, squad injury reporting (top_k:24, cosine:0.2)
+INFO: Global query: 33 entites, 24 relations
+INFO: Naive query: 24 chunks (chunk_top_k:24 cosine:0.2)
+INFO: Raw search results: 55 entities, 170 relations, 24 vector chunks
+INFO: After truncation: 25 entities, 170 relations
+INFO: Selecting 62 from 275 entity-related chunks by vector similarity
+INFO: Find 100 additional chunks in 90 relations (deduplicated 35)
+INFO: Selecting 100 from 100 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 186 -> 171 (deduplicated 15)
+INFO: Final context: 25 entities, 170 relations, 13 chunks
+INFO: Final chunks S+F/O: R1/1 E2/1 E5/2 R1/2 C1/3 E1/3 R1/3 E1/4 R1/4 E1/5 R2/5 C1/6 E3/6
+INFO: Naive query: 32 chunks (chunk_top_k:32 cosine:0.2)
+INFO: Final context: 25 chunks
+validation 40 / 40 v2_context em 1.0 abstained False
+validation 40 / 40 v2_verify em 1.0 abstained False
+validation 40 / 40 v2_full em 1.0 abstained False
+COMPLETE validation {"baseline": {"n": 40, "em": 0.575, "f1": 0.5875, "coverage": 0.425, "selective_accuracy": 0.8823529411764706, "answered": 17, "wrong_nonempty": 2, "n_answerable": 32, "answerable_em": 0.46875, "null_unsafe_accepts": 0, "format_errors": 3, "mean_graph_calls": 1.0, "fact_recall_proxy": 0.5052083333333334, "by_kind": {"comparison_query": {"n": 9, "em": 0.2222222222222222}, "inference_query": {"n": 15, "em": 0.6666666666666666}, "null_query": {"n": 8, "em": 1.0}, "temporal_query": {"n": 8, "em": 0.375}}}, "previous_recovery": {"n": 40, "em": 0.65, "f1": 0.6625, "coverage": 0.5, "selective_accuracy": 0.9, "answered": 20, "wrong_nonempty": 2, "n_answerable": 32, "answerable_em": 0.5625, "null_unsafe_accepts": 0, "format_errors": 3, "mean_graph_calls": 2.0, "fact_recall_proxy": 0.578125, "by_kind": {"comparison_query": {"n": 9, "em": 0.4444444444444444}, "inference_query": {"n": 15, "em": 0.7333333333333333}, "null_query": {"n": 8, "em": 1.0}, "temporal_query": {"n": 8, "em": 0.375}}}, "v2_context": {"n": 40, "em": 0.9, "f1": 0.9, "coverage": 0.75, "selective_accuracy": 0.9333333333333333, "answered": 30, "wrong_nonempty": 2, "n_answerable": 32, "answerable_em": 0.875, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 2.0, "fact_recall_proxy": 0.9401041666666666, "by_kind": {"comparison_query": {"n": 9, "em": 1.0}, "inference_query": {"n": 15, "em": 0.8666666666666667}, "null_query": {"n": 8, "em": 1.0}, "temporal_query": {"n": 8, "em": 0.75}}}, "v2_verify": {"n": 40, "em": 0.875, "f1": 0.875, "coverage": 0.75, "selective_accuracy": 0.9, "answered": 30, "wrong_nonempty": 3, "n_answerable": 32, "answerable_em": 0.84375, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 2.0, "fact_recall_proxy": 0.9401041666666666, "by_kind": {"comparison_query": {"n": 9, "em": 0.8888888888888888}, "inference_query": {"n": 15, "em": 0.8666666666666667}, "null_query": {"n": 8, "em": 1.0}, "temporal_query": {"n": 8, "em": 0.75}}}, "v2_full": {"n": 40, "em": 0.875, "f1": 0.875, "coverage": 0.75, "selective_accuracy": 0.9, "answered": 30, "wrong_nonempty": 3, "n_answerable": 32, "answerable_em": 0.84375, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 2.5, "fact_recall_proxy": 0.9401041666666666, "by_kind": {"comparison_query": {"n": 9, "em": 0.8888888888888888}, "inference_query": {"n": 15, "em": 0.8666666666666667}, "null_query": {"n": 8, "em": 1.0}, "temporal_query": {"n": 8, "em": 0.75}}}}
+INFO: Successfully finalized 12 storages

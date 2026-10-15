@@ -1,4 +1,19 @@
-# EvidenceChain-RAG · 证据链可信问答系统（可运行 V0.1）
+# EvidenceChain-RAG · 证据链可信问答系统
+
+## 最新源码与参赛成果
+
+河南大学 **观微算法队**：韩昌达、张中瑜、李嘉栋。
+
+本次更新包含父文档证据重组、独立原子事实核验、三值逻辑组合和一次有界修复。真实实验使用 DeepSeek API，服务器运行嵌入、重排与检索程序。冻结后的同批 100 题测试中，基础方案完全匹配率为 55%，完整流程为 86%；改进候选分支为 88%。各分支原始结果均保留，便于对照验证器的收益与取舍。
+
+- [参赛成果总览](artifacts/README.md)
+- [中文参赛报告（PDF）](artifacts/report/观微证据链参赛报告.pdf)
+- [三分钟项目介绍（MP4）](artifacts/video/观微证据链三分钟项目介绍.mp4)
+- [离线网页演示](artifacts/video/观微证据链三分钟介绍.html)（下载后用浏览器打开）
+- [逐题成绩与实验记录](artifacts/experiments/20261015/results/)
+- [优化算法与运行方式](docs/corrective_v2.md)
+
+以下保留原始基础方案说明。最新优化入口为 `scripts/ask_corrective.py`，不会自动替换旧入口；本轮结果以成果目录中的冻结记录为准。
 
 面向 2026 年全球校园人工智能算法精英大赛的独立参赛研发骨架。基于 **HKUDS LightRAG** 的结构化检索 SDK，添加两个**待实验验证的候选方法**：`AdaptiveController`（预算控制）与 `EvidenceVerifier`（声明级支持/冲突验证、选择性拒答）。
 

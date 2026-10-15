@@ -1,0 +1,250 @@
+{
+  "text": "大家好，我们是河南大学观微算法队。我们的项目，关注一个很具体的问题：多跳问答明明找到了相关材料，为什么还是答不对？答案，往往藏在证据怎样被组织起来。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 9,
+  "duration": 13.704,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 458750,
+      "duration": 2752080,
+      "text": "大家"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 3210830,
+      "duration": 3325830,
+      "text": "好"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 10091660,
+      "duration": 1835000,
+      "text": "我们"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 12041250,
+      "duration": 1376250,
+      "text": "是"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 13646660,
+      "duration": 6766250,
+      "text": "河南大学"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 20642080,
+      "duration": 2981660,
+      "text": "观微"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 23623750,
+      "duration": 5160410,
+      "text": "算法队"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 34059580,
+      "duration": 2178750,
+      "text": "我们"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36238330,
+      "duration": 573330,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36926660,
+      "duration": 4242910,
+      "text": "项目"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 44151250,
+      "duration": 2752500,
+      "text": "关注"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 47018330,
+      "duration": 1376250,
+      "text": "一个"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 48394580,
+      "duration": 1720000,
+      "text": "很"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 50114580,
+      "duration": 2408330,
+      "text": "具体"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52522910,
+      "duration": 687910,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 53325830,
+      "duration": 4357910,
+      "text": "问题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 61123750,
+      "duration": 1720000,
+      "text": "多"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 62844160,
+      "duration": 1146660,
+      "text": "跳"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 64105410,
+      "duration": 4931250,
+      "text": "问答"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 69954160,
+      "duration": 2408330,
+      "text": "明明"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 72477080,
+      "duration": 2064160,
+      "text": "找到"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 74541250,
+      "duration": 573330,
+      "text": "了"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 75344160,
+      "duration": 3096250,
+      "text": "相关"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 78440410,
+      "duration": 4128330,
+      "text": "材料"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 85550410,
+      "duration": 3899160,
+      "text": "为什么"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 89678750,
+      "duration": 1490830,
+      "text": "还是"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 91284580,
+      "duration": 1261250,
+      "text": "答"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 92545830,
+      "duration": 2522910,
+      "text": "不对"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 100229160,
+      "duration": 3669580,
+      "text": "答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 107683330,
+      "duration": 2752500,
+      "text": "往往"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 110550410,
+      "duration": 1376250,
+      "text": "藏"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 111926660,
+      "duration": 917500,
+      "text": "在"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 112958750,
+      "duration": 4816660,
+      "text": "证据"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 118807500,
+      "duration": 3440000,
+      "text": "怎样"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 122247500,
+      "duration": 1146660,
+      "text": "被"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 123394580,
+      "duration": 2293330,
+      "text": "组织"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 125687910,
+      "duration": 3325830,
+      "text": "起来"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 33100916,
+      "text": "大家好，我们是河南大学观微算法队。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 33600916,
+      "duration": 66169722,
+      "text": "我们的项目，关注一个很具体的问题：多跳问答明明找到了相关材料，为什么还是答不对？"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 99770639,
+      "duration": 36697246,
+      "text": "答案，往往藏在证据怎样被组织起来。"
+    }
+  ]
+}

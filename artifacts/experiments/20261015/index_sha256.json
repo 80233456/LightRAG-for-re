@@ -1,0 +1,50 @@
+{
+  "graph_chunk_entity_relation.graphml": {
+    "bytes": 37946400,
+    "sha256": "bc1dc1b0b7d376488b4be6f2aaafde167ac8a04c3e70b16cc4c8e2744ba7593e"
+  },
+  "kv_store_doc_status.json": {
+    "bytes": 802856,
+    "sha256": "cbf82b6512fb50f380c5d9490d4dc7171e15dd6e2180fc6bbeebb683b2778d67"
+  },
+  "kv_store_entity_chunks.json": {
+    "bytes": 7233215,
+    "sha256": "75d5c9966e94227b9b2ea247902fb24586fdac95d9034213e3571d459f6d33e7"
+  },
+  "kv_store_full_docs.json": {
+    "bytes": 6830901,
+    "sha256": "e5656e097844f2c0b432cd63cc36393327b73b634c1e592fc67c3c4fdcf35616"
+  },
+  "kv_store_full_entities.json": {
+    "bytes": 1111334,
+    "sha256": "447c8b412b8e01973d085ac895003245879d039e911a8c818483e8be5cddc292"
+  },
+  "kv_store_full_relations.json": {
+    "bytes": 3287006,
+    "sha256": "a27d4e77c2fc8945a5b12a86f7d206da9d6ecefe40eefdbfb19f5a26467d354d"
+  },
+  "kv_store_llm_response_cache.json": {
+    "bytes": 92084156,
+    "sha256": "0c21257a6503d983ac06808a532417b526cc7ebc776cce5058437df67a45c8b2"
+  },
+  "kv_store_relation_chunks.json": {
+    "bytes": 11193467,
+    "sha256": "1e41e77b27ace965e3bf335ffe09bfb3a8c8be0db6c8162987925625b0227f54"
+  },
+  "kv_store_text_chunks.json": {
+    "bytes": 7790061,
+    "sha256": "9ac960dc94e3c6e5a8a264f7f6c8c2a1d2014de218362eee54627272f72a1b1d"
+  },
+  "vdb_chunks.json": {
+    "bytes": 20707653,
+    "sha256": "2f1a4e290e7161a83a4d0ee7221a49b8ef819577193c141c5983ef6ec3830024"
+  },
+  "vdb_entities.json": {
+    "bytes": 245089254,
+    "sha256": "3869135cf030f3818eca168a19cec857bc7c9118f094f1f2914002e095479f6d"
+  },
+  "vdb_relationships.json": {
+    "bytes": 373077036,
+    "sha256": "cfff5282cb954a3f4f35bafbcaf6ad33e3f3c312998a62f64688a7c9311753cc"
+  }
+}

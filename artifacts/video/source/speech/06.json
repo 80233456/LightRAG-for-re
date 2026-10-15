@@ -1,0 +1,274 @@
+{
+  "text": "以真实题目为例，一篇报道写卡多索伤后恢复并入选，另一篇写卡瓦利尼因伤退出。首轮给出否定答案。核查两条来源事实后，答案修正为肯定，与标准答案一致。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 12,
+  "duration": 13.584,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 446250,
+      "duration": 1450830,
+      "text": "以"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 2120410,
+      "duration": 3125000,
+      "text": "真实"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 5357080,
+      "duration": 2232080,
+      "text": "题目"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 7700830,
+      "duration": 1562500,
+      "text": "为"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 9263330,
+      "duration": 2120410,
+      "text": "例"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14955410,
+      "duration": 1450830,
+      "text": "一"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 16406250,
+      "duration": 1227500,
+      "text": "篇"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17745410,
+      "duration": 3348330,
+      "text": "报道"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 21317080,
+      "duration": 1674160,
+      "text": "写"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 22991250,
+      "duration": 3906250,
+      "text": "卡多索"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 27008750,
+      "duration": 1897500,
+      "text": "伤"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 28906250,
+      "duration": 2008750,
+      "text": "后"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 31026660,
+      "duration": 3682910,
+      "text": "恢复"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 34932910,
+      "duration": 1227500,
+      "text": "并"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36272500,
+      "duration": 3460000,
+      "text": "入选"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 42857080,
+      "duration": 1562500,
+      "text": "另"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 44419580,
+      "duration": 781250,
+      "text": "一"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 45200830,
+      "duration": 2678750,
+      "text": "篇"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 48102500,
+      "duration": 1897500,
+      "text": "写"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 50000000,
+      "duration": 3794580,
+      "text": "卡瓦利"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 53794580,
+      "duration": 2455410,
+      "text": "尼"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 57142910,
+      "duration": 1785830,
+      "text": "因"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 58928750,
+      "duration": 1785830,
+      "text": "伤"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 60825830,
+      "duration": 3906250,
+      "text": "退出"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 69866250,
+      "duration": 4910830,
+      "text": "首轮"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 74888330,
+      "duration": 1004580,
+      "text": "给"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 75892910,
+      "duration": 1116250,
+      "text": "出"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 77232080,
+      "duration": 2567080,
+      "text": "否定"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 79799160,
+      "duration": 4241250,
+      "text": "答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 89062500,
+      "duration": 3236660,
+      "text": "核查"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 92410830,
+      "duration": 3013330,
+      "text": "两条"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 95647500,
+      "duration": 2008750,
+      "text": "来源"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 97767910,
+      "duration": 2901660,
+      "text": "事实"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 100669580,
+      "duration": 2567080,
+      "text": "后"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 105133750,
+      "duration": 2567080,
+      "text": "答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 107812500,
+      "duration": 2901660,
+      "text": "修正"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 110714160,
+      "duration": 892910,
+      "text": "为"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 111718750,
+      "duration": 3571250,
+      "text": "肯定"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 117745410,
+      "duration": 1116250,
+      "text": "与"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 118973330,
+      "duration": 5580410,
+      "text": "标准答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 124665000,
+      "duration": 3236660,
+      "text": "一致"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 68919642,
+      "text": "以真实题目为例，一篇报道写卡多索伤后恢复并入选，另一篇写卡瓦利尼因伤退出。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 69419642,
+      "duration": 19196428,
+      "text": "首轮给出否定答案。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 88616071,
+      "duration": 46651785,
+      "text": "核查两条来源事实后，答案修正为肯定，与标准答案一致。"
+    }
+  ]
+}

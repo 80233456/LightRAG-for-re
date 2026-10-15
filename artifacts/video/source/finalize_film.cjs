@@ -1,0 +1,26 @@
+const fs=require('fs');
+const {createRequire}=require('module');
+const crypto=require('crypto');
+const r=createRequire('C:/Users/fanzhen/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/_film_finish.cjs');
+const JSZip=r('jszip');
+const OUT='D:/project/ai算法/deliverables/project_intro_video_20261015';
+(async()=>{
+ const playback=JSON.parse(fs.readFileSync(OUT+'/检查/完整播放检查.json','utf8'));
+ const test=JSON.parse(fs.readFileSync(OUT+'/检查/验收结果.json','utf8'));
+ if(!playback.passed||playback.duration!==180||test.errors.length||test.warnings.length)throw Error('Playback QA incomplete');
+ const zip=await JSZip.loadAsync(fs.readFileSync(OUT+'/项目介绍与配音字幕素材.zip'),{checkCRC32:true});
+ zip.remove('制作脚本.cjs');
+ const videoTest=JSON.parse(fs.readFileSync(OUT+'/检查/成片验收.json','utf8'));
+ if(!videoTest.passed)throw Error('MP4 QA incomplete');
+ for(const name of ['build_film.cjs','generate_speech.cjs','verify_film.cjs','playthrough.cjs','render_mp4.cjs','verify_mp4.cjs','scenes.json','package.json','pnpm-lock.yaml'])zip.file('制作工程/'+name,fs.readFileSync(__dirname+'/'+name));
+ for(const name of fs.readdirSync(__dirname+'/speech'))zip.file('制作工程/speech/'+name,fs.readFileSync(__dirname+'/speech/'+name));
+ zip.file('验收/功能与同步检查.json',JSON.stringify(test,null,2));zip.file('验收/完整三分钟播放.json',JSON.stringify(playback,null,2));
+ zip.file('验收/成片验收.json',JSON.stringify(videoTest,null,2));
+ zip.file('素材说明.txt','网页文件已经内嵌全部声音、图形和播放代码，可离线打开。\n正式视频另行交付为观微证据链三分钟项目介绍.mp4，1920×1080，每秒30帧，时长三分钟，字幕已烧录。\n旁白、字幕与分镜另行保留，便于后续剪辑。\n中文声音为合成男声，并非真人录音。\n制作工程保留本工作区使用的路径和依赖配置。\n');
+ const output=await zip.generateAsync({type:'nodebuffer',compression:'DEFLATE',compressionOptions:{level:6}});
+ fs.writeFileSync(OUT+'/项目介绍与配音字幕素材.zip',output);
+ const checked=await JSZip.loadAsync(output,{checkCRC32:true});
+ const meta={时长秒:180,完整播放:'通过',桌面与手机检查:'通过',同步字幕:53,网页字节:fs.statSync(OUT+'/观微证据链三分钟介绍.html').size,素材包字节:output.length,素材文件数:Object.values(checked.files).filter(x=>!x.dir).length,网页哈希:crypto.createHash('sha256').update(fs.readFileSync(OUT+'/观微证据链三分钟介绍.html')).digest('hex'),素材包哈希:crypto.createHash('sha256').update(output).digest('hex')};
+ const video=fs.readFileSync(OUT+'/观微证据链三分钟项目介绍.mp4');meta.视频字节=video.length;meta.视频哈希=crypto.createHash('sha256').update(video).digest('hex');meta.视频格式='1920×1080 / 30帧 / H.264 + AAC / 180秒';
+ fs.writeFileSync(OUT+'/交付校验.json',JSON.stringify(meta,null,2));console.log(JSON.stringify(meta));
+})().catch(e=>{console.error(e.stack);process.exitCode=1;});

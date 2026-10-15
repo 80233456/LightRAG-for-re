@@ -1,0 +1,26 @@
+temporal_yes True supported
+temporal_no True supported
+temporal_wrong True refuted
+negated_question True supported
+negation_reversed True supported
+wrong_year True refuted
+missing_year True insufficient
+unrelated_entity True insufficient
+conflicting_year True conflict
+injection True insufficient
+single_word_entity True supported
+unestablished_relation True insufficient
+other_attribute True refuted
+implicit_report_consistency True supported
+report_disagreement True supported
+report_consistency_wrong True refuted
+event_vs_publication True supported
+publication_not_event True refuted
+required_missing_clue True insufficient
+joint_identity True supported
+false_premise_no True supported
+failed_to_report_no True supported
+unknown_not_false True insufficient
+report_absence_complete True supported
+report_absence_partial True insufficient
+CONTROLS 25 / 25

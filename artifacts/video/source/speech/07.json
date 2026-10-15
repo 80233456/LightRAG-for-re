@@ -1,0 +1,232 @@
+{
+  "text": "实验使用六百零九篇新闻，固定二十四题开发集和四十题验证集。再排除既往测试题，抽取一百道新题。方案冻结后，五组流程同题运行，失败记录全部保留。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 12,
+  "duration": 14.064,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 446250,
+      "duration": 3571250,
+      "text": "实验"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 4017910,
+      "duration": 3013330,
+      "text": "使用"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 7254580,
+      "duration": 6696250,
+      "text": "六百零九篇"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14062500,
+      "duration": 4017910,
+      "text": "新闻"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 21986660,
+      "duration": 3013330,
+      "text": "固定"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 25223330,
+      "duration": 5022500,
+      "text": "二十四题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 30357080,
+      "duration": 3236660,
+      "text": "开发"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 33593750,
+      "duration": 2678750,
+      "text": "集"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 37276660,
+      "duration": 1785830,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 39174160,
+      "duration": 3125000,
+      "text": "四十"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 42299160,
+      "duration": 2120410,
+      "text": "题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 44531250,
+      "duration": 3125000,
+      "text": "验证"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 47656250,
+      "duration": 2455410,
+      "text": "集"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 55133750,
+      "duration": 2567080,
+      "text": "再"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 57700830,
+      "duration": 3571250,
+      "text": "排除"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 61495410,
+      "duration": 2455410,
+      "text": "既往"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 64062500,
+      "duration": 2567080,
+      "text": "测试"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 66629580,
+      "duration": 3348330,
+      "text": "题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 71651660,
+      "duration": 4687500,
+      "text": "抽取"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 76562500,
+      "duration": 3794580,
+      "text": "一百道"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 80468750,
+      "duration": 1785830,
+      "text": "新"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 82254580,
+      "duration": 2790000,
+      "text": "题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 90067080,
+      "duration": 3125000,
+      "text": "方案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 93303750,
+      "duration": 2343750,
+      "text": "冻结"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 95647500,
+      "duration": 2790000,
+      "text": "后"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101450830,
+      "duration": 3236660,
+      "text": "五组"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 104799160,
+      "duration": 3906250,
+      "text": "流程"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 108928750,
+      "duration": 1897080,
+      "text": "同"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 110825830,
+      "duration": 1116250,
+      "text": "题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 112053750,
+      "duration": 4464160,
+      "text": "运行"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 118526660,
+      "duration": 3682910,
+      "text": "失败"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 122210000,
+      "duration": 2790000,
+      "text": "记录"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 125223330,
+      "duration": 3571250,
+      "text": "全部"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 128794580,
+      "duration": 4017910,
+      "text": "保留"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 54187499,
+      "text": "实验使用六百零九篇新闻，固定二十四题开发集和四十题验证集。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 54687499,
+      "duration": 34933035,
+      "text": "再排除既往测试题，抽取一百道新题。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 89620535,
+      "duration": 50334821,
+      "text": "方案冻结后，五组流程同题运行，失败记录全部保留。"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "text": "因此，我们把流程重新接成三段。先用不同检索路径汇聚候选，再恢复父文档的完整语境，最后核查独立事实，并组合出题目所问的结论。答案和原始证据始终一起保留。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 19,
+  "duration": 13.704,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 420000,
+      "duration": 4937080,
+      "text": "因此"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 8403330,
+      "duration": 5357080,
+      "text": "我们"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 13760410,
+      "duration": 840410,
+      "text": "把"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14705830,
+      "duration": 3256250,
+      "text": "流程"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 18172080,
+      "duration": 3046250,
+      "text": "重新"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 21323330,
+      "duration": 1050410,
+      "text": "接"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 22373750,
+      "duration": 1050410,
+      "text": "成"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 23529580,
+      "duration": 3466250,
+      "text": "三段"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 31827910,
+      "duration": 1995410,
+      "text": "先"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 33823330,
+      "duration": 1680830,
+      "text": "用"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 35714160,
+      "duration": 2626250,
+      "text": "不同"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 38445410,
+      "duration": 3151250,
+      "text": "检索"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 41701660,
+      "duration": 2520830,
+      "text": "路径"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 44432910,
+      "duration": 1785830,
+      "text": "汇聚"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46323330,
+      "duration": 3991660,
+      "text": "候选"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52100830,
+      "duration": 1785830,
+      "text": "再"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 53991660,
+      "duration": 3151250,
+      "text": "恢复"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 57352910,
+      "duration": 1365410,
+      "text": "父"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 58718330,
+      "duration": 2520830,
+      "text": "文档"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 61239580,
+      "duration": 945410,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 62395000,
+      "duration": 2626250,
+      "text": "完整"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 65126250,
+      "duration": 3151250,
+      "text": "语境"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 71113330,
+      "duration": 3571250,
+      "text": "最后"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 74790000,
+      "duration": 3151250,
+      "text": "核查"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 78151250,
+      "duration": 2100830,
+      "text": "独立"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 80357080,
+      "duration": 4516660,
+      "text": "事实"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 86764580,
+      "duration": 1890830,
+      "text": "并"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 88760410,
+      "duration": 2520830,
+      "text": "组合"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 91281660,
+      "duration": 1365410,
+      "text": "出"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 92857080,
+      "duration": 2731250,
+      "text": "题目"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 95693330,
+      "duration": 1680410,
+      "text": "所"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 97373750,
+      "duration": 1050410,
+      "text": "问"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 98424160,
+      "duration": 630410,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 99159580,
+      "duration": 2941250,
+      "text": "结论"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 106932910,
+      "duration": 3781660,
+      "text": "答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 110924160,
+      "duration": 1050410,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 112080000,
+      "duration": 2836250,
+      "text": "原始"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 115020830,
+      "duration": 4096660,
+      "text": "证据"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 119957910,
+      "duration": 3676660,
+      "text": "始终"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 123844580,
+      "duration": 1785830,
+      "text": "一起"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 125735410,
+      "duration": 3886660,
+      "text": "保留"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 30907561,
+      "text": "因此，我们把流程重新接成三段。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 31407561,
+      "duration": 75105038,
+      "text": "先用不同检索路径汇聚候选，再恢复父文档的完整语境，最后核查独立事实，并组合出题目所问的结论。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 106512599,
+      "duration": 29936973,
+      "text": "答案和原始证据始终一起保留。"
+    }
+  ]
+}

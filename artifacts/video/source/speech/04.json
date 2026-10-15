@@ -1,0 +1,232 @@
+{
+  "text": "第一步，融合词项、图谱和向量召回。重排后的窗口，沿原文位置展开，合并重叠内容，并按预算补全短文。时间和来源限定，就能跟着事实一起进入推理。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 12,
+  "duration": 13.896,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 446250,
+      "duration": 4241250,
+      "text": "第一步"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 7477500,
+      "duration": 3460000,
+      "text": "融合"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 11049160,
+      "duration": 4352500,
+      "text": "词项"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17968750,
+      "duration": 5357080,
+      "text": "图谱"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 24442080,
+      "duration": 1450830,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 26004580,
+      "duration": 2901660,
+      "text": "向量"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 29017910,
+      "duration": 4241250,
+      "text": "召回"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 38392910,
+      "duration": 3348330,
+      "text": "重排"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 41741250,
+      "duration": 892500,
+      "text": "后"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 42633750,
+      "duration": 557910,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 43303750,
+      "duration": 4575830,
+      "text": "窗口"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 50446250,
+      "duration": 1562500,
+      "text": "沿"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52120410,
+      "duration": 2901660,
+      "text": "原文"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 55133750,
+      "duration": 2232080,
+      "text": "位置"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 57477500,
+      "duration": 4464160,
+      "text": "展开"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 65290000,
+      "duration": 3682910,
+      "text": "合并"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 69196250,
+      "duration": 3013330,
+      "text": "重叠"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 72321250,
+      "duration": 4129580,
+      "text": "内容"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 78460000,
+      "duration": 1227500,
+      "text": "并"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 79687500,
+      "duration": 1116250,
+      "text": "按"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 80803750,
+      "duration": 3348330,
+      "text": "预算"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 84375000,
+      "duration": 3348330,
+      "text": "补全"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 87835000,
+      "duration": 3794580,
+      "text": "短文"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 96763330,
+      "duration": 3682910,
+      "text": "时间"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 100669580,
+      "duration": 781250,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101562500,
+      "duration": 2678750,
+      "text": "来源"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 104352500,
+      "duration": 4799160,
+      "text": "限定"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 111495410,
+      "duration": 1450830,
+      "text": "就"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 112946250,
+      "duration": 1116250,
+      "text": "能"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 114174160,
+      "duration": 1897500,
+      "text": "跟着"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 116182910,
+      "duration": 5357080,
+      "text": "事实"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 122432910,
+      "duration": 2567080,
+      "text": "一起"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 125111660,
+      "duration": 2120410,
+      "text": "进入"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 127343750,
+      "duration": 3571250,
+      "text": "推理"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 37446428,
+      "text": "第一步，融合词项、图谱和向量召回。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 37946428,
+      "duration": 58370535,
+      "text": "重排后的窗口，沿原文位置展开，合并重叠内容，并按预算补全短文。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 96316963,
+      "duration": 41964285,
+      "text": "时间和来源限定，就能跟着事实一起进入推理。"
+    }
+  ]
+}

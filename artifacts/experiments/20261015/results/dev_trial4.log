@@ -1,0 +1,159 @@
+INFO: [] Loaded graph from /root/autodl-tmp/evidencechain_v2_20261015/index/graph_chunk_entity_relation.graphml with 28423 nodes, 43733 edges
+INFO:nano-vectordb:Load (28423, 1024) data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/root/autodl-tmp/evidencechain_v2_20261015/index/vdb_entities.json'} 28423 data
+INFO:nano-vectordb:Load (43733, 1024) data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/root/autodl-tmp/evidencechain_v2_20261015/index/vdb_relationships.json'} 43733 data
+INFO:nano-vectordb:Load (1650, 1024) data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/root/autodl-tmp/evidencechain_v2_20261015/index/vdb_chunks.json'} 1650 data
+INFO: Role LLM Configuration (initialized):
+INFO:  - extract: None/None, host=None, max_async=2, timeout=240
+INFO:  - keyword: None/None, host=None, max_async=2, timeout=240
+INFO:  - query: None/None, host=None, max_async=2, timeout=240
+INFO:  - vlm: None/None, host=None, max_async=2, timeout=240
+INFO: [] Process 3414 KV load full_docs with 609 records
+INFO: [] Process 3414 KV load text_chunks with 1650 records
+INFO: [] Process 3414 KV load full_entities with 609 records
+INFO: [] Process 3414 KV load full_relations with 609 records
+INFO: [] Process 3414 KV load entity_chunks with 28423 records
+INFO: [] Process 3414 KV load relation_chunks with 43733 records
+INFO: [] Process 3414 KV load llm_response_cache with 5398 records
+INFO: [] Process 3414 doc status load doc_status with 610 records
+INFO:sentence_transformers.base.model:No modules.json found for /root/autodl-tmp/evidencechain_v2_20261015/models/bge-reranker-v2-m3, initializing a new CrossEncoder model.
+dev/trial4 1 / 24 baseline em 1.0 abstained False
+dev/trial4 1 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 1 / 24 v2_context em 1.0 abstained False
+dev/trial4 1 / 24 v2_verify em 1.0 abstained False
+dev/trial4 1 / 24 v2_full em 1.0 abstained False
+dev/trial4 2 / 24 baseline em 0.0 abstained True
+dev/trial4 2 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 2 / 24 v2_context em 1.0 abstained False
+dev/trial4 2 / 24 v2_verify em 1.0 abstained False
+dev/trial4 2 / 24 v2_full em 1.0 abstained False
+dev/trial4 3 / 24 baseline em 1.0 abstained False
+dev/trial4 3 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 3 / 24 v2_context em 1.0 abstained False
+dev/trial4 3 / 24 v2_verify em 1.0 abstained False
+dev/trial4 3 / 24 v2_full em 1.0 abstained False
+dev/trial4 4 / 24 baseline em 0.0 abstained True
+dev/trial4 4 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 4 / 24 v2_context em 1.0 abstained False
+dev/trial4 4 / 24 v2_verify em 1.0 abstained False
+dev/trial4 4 / 24 v2_full em 1.0 abstained False
+dev/trial4 5 / 24 baseline em 0.0 abstained True
+dev/trial4 5 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 5 / 24 v2_context em 1.0 abstained False
+dev/trial4 5 / 24 v2_verify em 1.0 abstained False
+dev/trial4 5 / 24 v2_full em 1.0 abstained False
+dev/trial4 6 / 24 baseline em 1.0 abstained False
+dev/trial4 6 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 6 / 24 v2_context em 1.0 abstained False
+dev/trial4 6 / 24 v2_verify em 1.0 abstained False
+dev/trial4 6 / 24 v2_full em 1.0 abstained False
+dev/trial4 7 / 24 baseline em 1.0 abstained False
+dev/trial4 7 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 7 / 24 v2_context em 1.0 abstained False
+dev/trial4 7 / 24 v2_verify em 1.0 abstained False
+dev/trial4 7 / 24 v2_full em 1.0 abstained False
+dev/trial4 8 / 24 baseline em 1.0 abstained False
+dev/trial4 8 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 8 / 24 v2_context em 1.0 abstained False
+dev/trial4 8 / 24 v2_verify em 1.0 abstained False
+dev/trial4 8 / 24 v2_full em 1.0 abstained False
+dev/trial4 9 / 24 baseline em 1.0 abstained False
+dev/trial4 9 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 9 / 24 v2_context em 1.0 abstained False
+dev/trial4 9 / 24 v2_verify em 1.0 abstained False
+dev/trial4 9 / 24 v2_full em 1.0 abstained False
+dev/trial4 10 / 24 baseline em 1.0 abstained True
+dev/trial4 10 / 24 previous_recovery em 1.0 abstained True
+dev/trial4 10 / 24 v2_context em 1.0 abstained True
+dev/trial4 10 / 24 v2_verify em 1.0 abstained True
+dev/trial4 10 / 24 v2_full em 1.0 abstained True
+dev/trial4 11 / 24 baseline em 0.0 abstained True
+dev/trial4 11 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 11 / 24 v2_context em 1.0 abstained False
+dev/trial4 11 / 24 v2_verify em 1.0 abstained False
+dev/trial4 11 / 24 v2_full em 1.0 abstained False
+dev/trial4 12 / 24 baseline em 0.0 abstained True
+dev/trial4 12 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 12 / 24 v2_context em 0.0 abstained False
+dev/trial4 12 / 24 v2_verify em 0.0 abstained True
+dev/trial4 12 / 24 v2_full em 0.0 abstained True
+dev/trial4 13 / 24 baseline em 0.0 abstained True
+dev/trial4 13 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 13 / 24 v2_context em 0.0 abstained False
+dev/trial4 13 / 24 v2_verify em 0.0 abstained False
+dev/trial4 13 / 24 v2_full em 0.0 abstained False
+dev/trial4 14 / 24 baseline em 1.0 abstained False
+dev/trial4 14 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 14 / 24 v2_context em 1.0 abstained False
+dev/trial4 14 / 24 v2_verify em 1.0 abstained False
+dev/trial4 14 / 24 v2_full em 1.0 abstained False
+dev/trial4 15 / 24 baseline em 0.0 abstained True
+dev/trial4 15 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 15 / 24 v2_context em 1.0 abstained False
+dev/trial4 15 / 24 v2_verify em 1.0 abstained False
+dev/trial4 15 / 24 v2_full em 1.0 abstained False
+dev/trial4 16 / 24 baseline em 0.0 abstained True
+dev/trial4 16 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 16 / 24 v2_context em 0.0 abstained False
+dev/trial4 16 / 24 v2_verify em 0.0 abstained False
+dev/trial4 16 / 24 v2_full em 0.0 abstained False
+dev/trial4 17 / 24 baseline em 0.0 abstained True
+dev/trial4 17 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 17 / 24 v2_context em 0.0 abstained False
+dev/trial4 17 / 24 v2_verify em 1.0 abstained False
+dev/trial4 17 / 24 v2_full em 1.0 abstained False
+dev/trial4 18 / 24 baseline em 1.0 abstained False
+dev/trial4 18 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 18 / 24 v2_context em 1.0 abstained False
+dev/trial4 18 / 24 v2_verify em 1.0 abstained False
+dev/trial4 18 / 24 v2_full em 1.0 abstained False
+dev/trial4 19 / 24 baseline em 0.0 abstained True
+dev/trial4 19 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 19 / 24 v2_context em 1.0 abstained False
+dev/trial4 19 / 24 v2_verify em 1.0 abstained False
+dev/trial4 19 / 24 v2_full em 1.0 abstained False
+dev/trial4 20 / 24 baseline em 0.0 abstained True
+dev/trial4 20 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 20 / 24 v2_context em 0.0 abstained True
+dev/trial4 20 / 24 v2_verify em 0.0 abstained True
+INFO: keyword LLM func: 2 new workers initialized (Timeouts: Func: 240s, Worker: 480s, Health Check: 495s)
+INFO:  == LLM cache == saving: mix:keywords:3bf47f125923737c7d7b7082e42a1ad2
+INFO: Embedding func: 1 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+INFO: Query nodes: Sporting News, U.S. men's national team, Ghana, date (top_k:16, cosine:0.2)
+INFO: Local query: 16 entites, 180 relations
+INFO: Query edges: sports news reporting, U.S. men's national team friendly (top_k:16, cosine:0.2)
+INFO: Global query: 22 entites, 16 relations
+INFO: Naive query: 16 chunks (chunk_top_k:16 cosine:0.2)
+INFO: Raw search results: 35 entities, 189 relations, 16 vector chunks
+INFO: After truncation: 35 entities, 170 relations
+INFO: Selecting 87 from 196 entity-related chunks by vector similarity
+INFO: Find 55 additional chunks in 53 relations (deduplicated 54)
+INFO: Selecting 55 from 55 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 158 -> 148 (deduplicated 10)
+INFO: Final context: 35 entities, 170 relations, 13 chunks
+INFO: Final chunks S+F/O: E11/1 R1/1 C1/2 E3/2 R1/2 C1/3 E1/3 R2/3 C1/4 E1/4 R1/4 C1/5 E1/5
+dev/trial4 20 / 24 v2_full em 0.0 abstained True
+dev/trial4 21 / 24 baseline em 0.0 abstained True
+dev/trial4 21 / 24 previous_recovery em 0.0 abstained False
+dev/trial4 21 / 24 v2_context em 1.0 abstained False
+dev/trial4 21 / 24 v2_verify em 1.0 abstained False
+dev/trial4 21 / 24 v2_full em 1.0 abstained False
+dev/trial4 22 / 24 baseline em 0.0 abstained True
+dev/trial4 22 / 24 previous_recovery em 0.0 abstained True
+dev/trial4 22 / 24 v2_context em 1.0 abstained False
+dev/trial4 22 / 24 v2_verify em 1.0 abstained False
+dev/trial4 22 / 24 v2_full em 1.0 abstained False
+dev/trial4 23 / 24 baseline em 0.0 abstained True
+dev/trial4 23 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 23 / 24 v2_context em 1.0 abstained False
+dev/trial4 23 / 24 v2_verify em 1.0 abstained False
+dev/trial4 23 / 24 v2_full em 1.0 abstained False
+dev/trial4 24 / 24 baseline em 1.0 abstained False
+dev/trial4 24 / 24 previous_recovery em 1.0 abstained False
+dev/trial4 24 / 24 v2_context em 1.0 abstained False
+dev/trial4 24 / 24 v2_verify em 1.0 abstained False
+dev/trial4 24 / 24 v2_full em 1.0 abstained False
+COMPLETE dev/trial4 {"baseline": {"n": 24, "em": 0.4166666666666667, "f1": 0.4166666666666667, "coverage": 0.375, "selective_accuracy": 1.0, "answered": 9, "wrong_nonempty": 0, "n_answerable": 23, "answerable_em": 0.391304347826087, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 1.0, "fact_recall_proxy": 0.39855072463768115, "by_kind": {"comparison_query": {"n": 12, "em": 0.08333333333333333}, "inference_query": {"n": 7, "em": 0.8571428571428571}, "null_query": {"n": 1, "em": 1.0}, "temporal_query": {"n": 4, "em": 0.5}}}, "previous_recovery": {"n": 24, "em": 0.5833333333333334, "f1": 0.5833333333333334, "coverage": 0.5833333333333334, "selective_accuracy": 0.9285714285714286, "answered": 14, "wrong_nonempty": 1, "n_answerable": 23, "answerable_em": 0.5652173913043478, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 2.25, "fact_recall_proxy": 0.5543478260869565, "by_kind": {"comparison_query": {"n": 12, "em": 0.3333333333333333}, "inference_query": {"n": 7, "em": 1.0}, "null_query": {"n": 1, "em": 1.0}, "temporal_query": {"n": 4, "em": 0.5}}}, "v2_context": {"n": 24, "em": 0.7916666666666666, "f1": 0.7916666666666666, "coverage": 0.9166666666666666, "selective_accuracy": 0.8181818181818182, "answered": 22, "wrong_nonempty": 4, "n_answerable": 23, "answerable_em": 0.782608695652174, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 2.0, "fact_recall_proxy": 0.8405797101449275, "by_kind": {"comparison_query": {"n": 12, "em": 0.6666666666666666}, "inference_query": {"n": 7, "em": 1.0}, "null_query": {"n": 1, "em": 1.0}, "temporal_query": {"n": 4, "em": 0.75}}}, "v2_verify": {"n": 24, "em": 0.8333333333333334, "f1": 0.8333333333333334, "coverage": 0.875, "selective_accuracy": 0.9047619047619048, "answered": 21, "wrong_nonempty": 2, "n_answerable": 23, "answerable_em": 0.8260869565217391, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 2.0, "fact_recall_proxy": 0.8405797101449275, "by_kind": {"comparison_query": {"n": 12, "em": 0.75}, "inference_query": {"n": 7, "em": 1.0}, "null_query": {"n": 1, "em": 1.0}, "temporal_query": {"n": 4, "em": 0.75}}}, "v2_full": {"n": 24, "em": 0.8333333333333334, "f1": 0.8333333333333334, "coverage": 0.875, "selective_accuracy": 0.9047619047619048, "answered": 21, "wrong_nonempty": 2, "n_answerable": 23, "answerable_em": 0.8260869565217391, "null_unsafe_accepts": 0, "format_errors": 0, "mean_graph_calls": 2.1666666666666665, "fact_recall_proxy": 0.8405797101449275, "by_kind": {"comparison_query": {"n": 12, "em": 0.75}, "inference_query": {"n": 7, "em": 1.0}, "null_query": {"n": 1, "em": 1.0}, "temporal_query": {"n": 4, "em": 0.75}}}}
+INFO: Successfully finalized 12 storages

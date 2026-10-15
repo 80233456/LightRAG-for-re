@@ -1,0 +1,256 @@
+{
+  "text": "验证器并不是越严格越好。加入验证后，匹配率由百分之八十八，变为百分之八十六；但已经输出的错误，从十题减少到八题。我们保留这份取舍，供不同需求选择。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 12,
+  "duration": 13.32,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 446250,
+      "duration": 3571250,
+      "text": "验证"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 4017910,
+      "duration": 2678750,
+      "text": "器"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 7589160,
+      "duration": 3682910,
+      "text": "并不是"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 11495410,
+      "duration": 1116250,
+      "text": "越"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 12611660,
+      "duration": 2567080,
+      "text": "严格"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 15290000,
+      "duration": 1339160,
+      "text": "越"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 16629580,
+      "duration": 2790000,
+      "text": "好"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 24442080,
+      "duration": 2901660,
+      "text": "加入"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 27343750,
+      "duration": 3125000,
+      "text": "验证"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 30468750,
+      "duration": 2901660,
+      "text": "后"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36495410,
+      "duration": 2567080,
+      "text": "匹配"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 39062500,
+      "duration": 2120410,
+      "text": "率"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 41406250,
+      "duration": 1116250,
+      "text": "由"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 42633750,
+      "duration": 3348330,
+      "text": "百分之"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46093750,
+      "duration": 4464160,
+      "text": "八十八"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52343750,
+      "duration": 2343750,
+      "text": "变为"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 54910830,
+      "duration": 3125000,
+      "text": "百分之"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 58147500,
+      "duration": 4129580,
+      "text": "八十六"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 65513330,
+      "duration": 1339160,
+      "text": "但"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 66964160,
+      "duration": 1785830,
+      "text": "已经"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 68861660,
+      "duration": 2790000,
+      "text": "输出"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 71651660,
+      "duration": 669580,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 72432910,
+      "duration": 4017910,
+      "text": "错误"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 78013330,
+      "duration": 2008750,
+      "text": "从"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 80133750,
+      "duration": 2678750,
+      "text": "十"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 82812500,
+      "duration": 2455410,
+      "text": "题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 85491250,
+      "duration": 3125000,
+      "text": "减少"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 88616250,
+      "duration": 781250,
+      "text": "到"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 89508750,
+      "duration": 4017910,
+      "text": "八题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 98660830,
+      "duration": 2232080,
+      "text": "我们"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101004580,
+      "duration": 2455410,
+      "text": "保留"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 103682910,
+      "duration": 669580,
+      "text": "这"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 104352500,
+      "duration": 1116250,
+      "text": "份"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 105580410,
+      "duration": 5022500,
+      "text": "取舍"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 113839160,
+      "duration": 1897500,
+      "text": "供"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 115848330,
+      "duration": 2566660,
+      "text": "不同"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 118415000,
+      "duration": 2455410,
+      "text": "需求"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 120982080,
+      "duration": 4241250,
+      "text": "选择"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 23495535,
+      "text": "验证器并不是越严格越好。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 23995535,
+      "duration": 74218749,
+      "text": "加入验证后，匹配率由百分之八十八，变为百分之八十六；但已经输出的错误，从十题减少到八题。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 98214285,
+      "duration": 34374999,
+      "text": "我们保留这份取舍，供不同需求选择。"
+    }
+  ]
+}

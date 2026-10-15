@@ -1,0 +1,232 @@
+{
+  "text": "前期调试发现，问题主要有三类。原文被截断，关键限定没有进入上下文；重复片段挤占了另一条来源；验证时，又可能把题干为假，误解成否定答案不成立。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 10,
+  "duration": 13.752,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 454580,
+      "duration": 3409160,
+      "text": "前期"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 4090830,
+      "duration": 2272910,
+      "text": "调试"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 6477080,
+      "duration": 4090830,
+      "text": "发现"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 13863750,
+      "duration": 3750000,
+      "text": "问题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17840830,
+      "duration": 2159160,
+      "text": "主要"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 20000000,
+      "duration": 1022910,
+      "text": "有"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 21022910,
+      "duration": 3750000,
+      "text": "三类"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 29886250,
+      "duration": 3636250,
+      "text": "原文"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 33750000,
+      "duration": 1136250,
+      "text": "被"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 35000000,
+      "duration": 4431660,
+      "text": "截断"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 42500000,
+      "duration": 3295410,
+      "text": "关键"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 45909160,
+      "duration": 3522910,
+      "text": "限定"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 49659160,
+      "duration": 2159160,
+      "text": "没有"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 51818330,
+      "duration": 2159160,
+      "text": "进入"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 54204580,
+      "duration": 6022910,
+      "text": "上下文"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 63409160,
+      "duration": 3750000,
+      "text": "重复"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 67159160,
+      "duration": 4659160,
+      "text": "片段"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 72840830,
+      "duration": 3522910,
+      "text": "挤占"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 76363750,
+      "duration": 795410,
+      "text": "了"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 77386250,
+      "duration": 1250000,
+      "text": "另"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 78636250,
+      "duration": 2272910,
+      "text": "一条"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 81022910,
+      "duration": 3977080,
+      "text": "来源"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 88409160,
+      "duration": 3522500,
+      "text": "验证"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 91931660,
+      "duration": 3409160,
+      "text": "时"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 97500000,
+      "duration": 1590830,
+      "text": "又"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 99090830,
+      "duration": 2272910,
+      "text": "可能"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101477080,
+      "duration": 909160,
+      "text": "把"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 102500000,
+      "duration": 3181660,
+      "text": "题干"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 105795410,
+      "duration": 1477080,
+      "text": "为"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 107272910,
+      "duration": 2727080,
+      "text": "假"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 112386250,
+      "duration": 3295410,
+      "text": "误解"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 115681660,
+      "duration": 2159160,
+      "text": "成"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 118068330,
+      "duration": 6250000,
+      "text": "否定答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 124545410,
+      "duration": 1022910,
+      "text": "不"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 125568330,
+      "duration": 3863750,
+      "text": "成立"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 28931817,
+      "text": "前期调试发现，问题主要有三类。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 29431817,
+      "duration": 107386361,
+      "text": "原文被截断，关键限定没有进入上下文；重复片段挤占了另一条来源；验证时，又可能把题干为假，误解成否定答案不成立。"
+    }
+  ]
+}

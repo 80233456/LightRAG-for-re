@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "frames": 5400,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 180,
+  "subtitles": "burned-in",
+  "audio": "Chinese synthetic male voice",
+  "layouts": [
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    },
+    {
+      "titleLeft": 100.80000305175781,
+      "titleRight": 1819.2000274658203,
+      "captionTop": 986,
+      "captionBottom": 1056,
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "controlsHidden": true
+    }
+  ],
+  "browserErrors": [],
+  "encoderLog": "Guessed Channel Layout for Input Stream #1.0 : mono\r\n[image2pipe @ 000000000275ba80] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)\r\n[aac @ 000000000276cb40] Too many bits 6826.666667 > 6144 per frame requested, clamping to max\r\n",
+  "bytes": 8686334,
+  "renderSeconds": 265.292
+}

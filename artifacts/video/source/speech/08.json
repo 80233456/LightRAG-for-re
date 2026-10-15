@@ -1,0 +1,244 @@
+{
+  "text": "同题测试中，基础方案的完全匹配率是百分之五十五，完整流程达到百分之八十六，提升三十一个百分点。八十八道可回答题的匹配率为百分之八十四点零九，独立验证集达到百分之八十七点五。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 18,
+  "duration": 13.728,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 423750,
+      "duration": 1906660,
+      "text": "同"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 2330410,
+      "duration": 847500,
+      "text": "题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 3283750,
+      "duration": 2224580,
+      "text": "测试"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 5508330,
+      "duration": 2648330,
+      "text": "中"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 11122910,
+      "duration": 3072080,
+      "text": "基础"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14195000,
+      "duration": 2224580,
+      "text": "方案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 16419580,
+      "duration": 1059160,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17690830,
+      "duration": 2860000,
+      "text": "完全"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 20550830,
+      "duration": 2330410,
+      "text": "匹配"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 22881250,
+      "duration": 1059160,
+      "text": "率"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 23940830,
+      "duration": 2648330,
+      "text": "是"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 27542500,
+      "duration": 3390000,
+      "text": "百分之"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 31038330,
+      "duration": 4237080,
+      "text": "五十五"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 38665410,
+      "duration": 3283750,
+      "text": "完整"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 41949160,
+      "duration": 3919580,
+      "text": "流程"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46080410,
+      "duration": 2542500,
+      "text": "达到"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 48834580,
+      "duration": 2966250,
+      "text": "百分之"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 51800830,
+      "duration": 4025410,
+      "text": "八十六"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 58050830,
+      "duration": 3177910,
+      "text": "提升"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 61440830,
+      "duration": 4237080,
+      "text": "三十一个"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 65783750,
+      "duration": 3707500,
+      "text": "百分点"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 74258330,
+      "duration": 5932080,
+      "text": "八十八道"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 80402500,
+      "duration": 1377080,
+      "text": "可"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 81779580,
+      "duration": 2224580,
+      "text": "回答"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 84004160,
+      "duration": 1165410,
+      "text": "题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 85169580,
+      "duration": 635410,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 86017080,
+      "duration": 2330410,
+      "text": "匹配"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 88347500,
+      "duration": 741660,
+      "text": "率"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 89089160,
+      "duration": 2648330,
+      "text": "为"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 92690830,
+      "duration": 4449160,
+      "text": "百分之"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 97245830,
+      "duration": 8580410,
+      "text": "八十四点零九"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 109004160,
+      "duration": 2330410,
+      "text": "独立"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 111440830,
+      "duration": 2965830,
+      "text": "验证"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 114406660,
+      "duration": 2224580,
+      "text": "集"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 117372910,
+      "duration": 2436250,
+      "text": "达到"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 120021250,
+      "duration": 3495830,
+      "text": "百分之"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 123622910,
+      "duration": 6250000,
+      "text": "八十七点五"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 73334741,
+      "text": "同题测试中，基础方案的完全匹配率是百分之五十五，完整流程达到百分之八十六，提升三十一个百分点。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 73834741,
+      "duration": 62923725,
+      "text": "八十八道可回答题的匹配率为百分之八十四点零九，独立验证集达到百分之八十七点五。"
+    }
+  ]
+}

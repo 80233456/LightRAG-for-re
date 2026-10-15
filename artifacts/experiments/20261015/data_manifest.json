@@ -1,0 +1,12 @@
+{
+  "corpus_sha256": "20b61b5ab84de84a927420c5d265b7ec8d859ae49980699958a787ade9e4d28f",
+  "questions_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
+  "server_root": "/root/autodl-tmp/evidencechain_v2_20261015",
+  "server_index": "/root/autodl-tmp/evidencechain_v2_20261015/index",
+  "schema_inspected_question_indices_not_in_final_test": [
+    0
+  ],
+  "server_python": "/root/autodl-tmp/evidencechain_run_20261014/venv/bin/python",
+  "contains_weights": false,
+  "contains_index": false
+}

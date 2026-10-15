@@ -1,0 +1,244 @@
+{
+  "text": "第二步，核验器看不到候选答案，只核查来源明确的原子命题。程序再用真、假和未知三种状态组合逻辑，避免把未知当成假，也减少否定判断的混淆。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 12,
+  "duration": 12.288,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 446250,
+      "duration": 4910830,
+      "text": "第二步"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 8258750,
+      "duration": 1116250,
+      "text": "核"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 9375000,
+      "duration": 2008750,
+      "text": "验"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 11383750,
+      "duration": 2008750,
+      "text": "器"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 13616250,
+      "duration": 1450830,
+      "text": "看"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 15067080,
+      "duration": 669580,
+      "text": "不"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 15736660,
+      "duration": 781250,
+      "text": "到"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 16741250,
+      "duration": 2678330,
+      "text": "候选"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 19419580,
+      "duration": 3013330,
+      "text": "答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 25892910,
+      "duration": 1674160,
+      "text": "只"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 27567080,
+      "duration": 2790000,
+      "text": "核查"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 30580410,
+      "duration": 2120410,
+      "text": "来源"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 32812500,
+      "duration": 2678750,
+      "text": "明确"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 35491250,
+      "duration": 557910,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36272500,
+      "duration": 2232080,
+      "text": "原子"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 38616250,
+      "duration": 3906250,
+      "text": "命题"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 47656250,
+      "duration": 4241250,
+      "text": "程序"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52008750,
+      "duration": 1004580,
+      "text": "再"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 53013330,
+      "duration": 1674160,
+      "text": "用"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 54687500,
+      "duration": 2790000,
+      "text": "真"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 60491250,
+      "duration": 2566660,
+      "text": "假"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 63057910,
+      "duration": 1116250,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 64285830,
+      "duration": 2678750,
+      "text": "未知"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 67187500,
+      "duration": 3236660,
+      "text": "三种"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 70424160,
+      "duration": 3348330,
+      "text": "状态"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 73995410,
+      "duration": 2343750,
+      "text": "组合"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 76450830,
+      "duration": 4017910,
+      "text": "逻辑"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 84375000,
+      "duration": 2678750,
+      "text": "避免"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 87165000,
+      "duration": 1004580,
+      "text": "把"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 88281250,
+      "duration": 2901660,
+      "text": "未知"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 91406250,
+      "duration": 3348330,
+      "text": "当成"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 94754580,
+      "duration": 2567080,
+      "text": "假"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 98995410,
+      "duration": 1339160,
+      "text": "也"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 100446250,
+      "duration": 3348330,
+      "text": "减少"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 104017910,
+      "duration": 6026660,
+      "text": "否定判断"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 110044580,
+      "duration": 669580,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 110825830,
+      "duration": 4241250,
+      "text": "混淆"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 46709821,
+      "text": "第二步，核验器看不到候选答案，只核查来源明确的原子命题。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 47209821,
+      "duration": 75111606,
+      "text": "程序再用真、假和未知三种状态组合逻辑，避免把未知当成假，也减少否定判断的混淆。"
+    }
+  ]
+}

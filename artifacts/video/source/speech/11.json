@@ -1,0 +1,244 @@
+{
+  "text": "项目已通过一百零四项工程测试，和二十五项真实接口检查。单卡显存峰值约五点一二吉字节。我们交付答案、原文引用和完整轨迹。让分散证据，形成可核查的答案。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 21,
+  "duration": 13.752,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 413330,
+      "duration": 3305830,
+      "text": "项目"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 3822500,
+      "duration": 1032910,
+      "text": "已"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 4855410,
+      "duration": 3202500,
+      "text": "通过"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 8264580,
+      "duration": 6508330,
+      "text": "一百零四项"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14979160,
+      "duration": 2375830,
+      "text": "工程"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17355410,
+      "duration": 3925410,
+      "text": "测试"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 23037080,
+      "duration": 1446250,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 24586660,
+      "duration": 5888330,
+      "text": "二十五项"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 30681660,
+      "duration": 3099160,
+      "text": "真实"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 33884160,
+      "duration": 2272910,
+      "text": "接口"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36260410,
+      "duration": 4338750,
+      "text": "检查"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 45351250,
+      "duration": 2582500,
+      "text": "单"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 47933750,
+      "duration": 1549580,
+      "text": "卡"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 49586660,
+      "duration": 2685830,
+      "text": "显存"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52375830,
+      "duration": 4235410,
+      "text": "峰值"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 57541250,
+      "duration": 1652910,
+      "text": "约"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 59297500,
+      "duration": 4855410,
+      "text": "五点一二"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 64256250,
+      "duration": 1549580,
+      "text": "吉"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 65805830,
+      "duration": 4442080,
+      "text": "字节"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 74896660,
+      "duration": 2272910,
+      "text": "我们"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 77375830,
+      "duration": 2685830,
+      "text": "交付"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 80165410,
+      "duration": 3099160,
+      "text": "答案"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 85433750,
+      "duration": 3099160,
+      "text": "原文"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 88532910,
+      "duration": 3719160,
+      "text": "引用"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 93181660,
+      "duration": 1446250,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 94731250,
+      "duration": 2789160,
+      "text": "完整"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 97624160,
+      "duration": 3719160,
+      "text": "轨迹"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 106095000,
+      "duration": 2066250,
+      "text": "让"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 108367910,
+      "duration": 3202500,
+      "text": "分散"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 111673750,
+      "duration": 4235410,
+      "text": "证据"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 117562080,
+      "duration": 3615830,
+      "text": "形成"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 121384160,
+      "duration": 1446250,
+      "text": "可"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 122830410,
+      "duration": 2789160,
+      "text": "核查"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 125620000,
+      "duration": 723330,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 126446250,
+      "duration": 3615830,
+      "text": "答案"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 44438019,
+      "text": "项目已通过一百零四项工程测试，和二十五项真实接口检查。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 44938019,
+      "duration": 29545456,
+      "text": "单卡显存峰值约五点一二吉字节。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 74483476,
+      "duration": 31198349,
+      "text": "我们交付答案、原文引用和完整轨迹。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 105681825,
+      "duration": 31198349,
+      "text": "让分散证据，形成可核查的答案。"
+    }
+  ]
+}

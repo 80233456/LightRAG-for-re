@@ -1,0 +1,250 @@
+{
+  "text": "比如，判断两篇报道是否表达了同一个关系，至少要核对两个来源和两条事实。时间、主体或报道归因只要有一处错位，看起来相关的片段，也可能组合出错误答案。",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": 15,
+  "duration": 13.728,
+  "wordBoundaries": [
+    {
+      "type": "WordBoundary",
+      "offset": 434580,
+      "duration": 4347910,
+      "text": "比如"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 8152080,
+      "duration": 3152080,
+      "text": "判断"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 11412910,
+      "duration": 2717500,
+      "text": "两篇"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14239160,
+      "duration": 3912910,
+      "text": "报道"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 19021660,
+      "duration": 3152080,
+      "text": "是否"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 22282500,
+      "duration": 2608750,
+      "text": "表达"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 24891250,
+      "duration": 760830,
+      "text": "了"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 25869580,
+      "duration": 2173750,
+      "text": "同"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 28043330,
+      "duration": 1304160,
+      "text": "一个"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 29456660,
+      "duration": 4021660,
+      "text": "关系"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36739160,
+      "duration": 2934580,
+      "text": "至少"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 39782500,
+      "duration": 1087080,
+      "text": "要"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 40978330,
+      "duration": 3478330,
+      "text": "核对"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 44673750,
+      "duration": 2065410,
+      "text": "两个"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46847910,
+      "duration": 4021660,
+      "text": "来源"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 51739160,
+      "duration": 1739160,
+      "text": "和"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 53587080,
+      "duration": 3369580,
+      "text": "两条"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 57065410,
+      "duration": 4347910,
+      "text": "事实"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 66412910,
+      "duration": 5217500,
+      "text": "时间"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 74456660,
+      "duration": 5543330,
+      "text": "主体"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 80978330,
+      "duration": 1412910,
+      "text": "或"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 82500000,
+      "duration": 2173750,
+      "text": "报道"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 84673750,
+      "duration": 3804160,
+      "text": "归因"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 89347910,
+      "duration": 2282500,
+      "text": "只要"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 91630410,
+      "duration": 978330,
+      "text": "有"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 92608750,
+      "duration": 652080,
+      "text": "一"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 93260830,
+      "duration": 1087080,
+      "text": "处"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 94456660,
+      "duration": 4239160,
+      "text": "错位"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101412910,
+      "duration": 3912910,
+      "text": "看起来"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 105543330,
+      "duration": 2500000,
+      "text": "相关"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 108043330,
+      "duration": 652080,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 108804160,
+      "duration": 4565410,
+      "text": "片段"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 115543330,
+      "duration": 1087080,
+      "text": "也"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 116630410,
+      "duration": 2282500,
+      "text": "可能"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 119021660,
+      "duration": 2826250,
+      "text": "组合"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 121847910,
+      "duration": 1304160,
+      "text": "出"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 123369580,
+      "duration": 2608750,
+      "text": "错误"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 126087080,
+      "duration": 3369580,
+      "text": "答案"
+    }
+  ],
+  "sentenceBoundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 500000,
+      "duration": 65478262,
+      "text": "比如，判断两篇报道是否表达了同一个关系，至少要核对两个来源和两条事实。"
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 65978262,
+      "duration": 70652175,
+      "text": "时间、主体或报道归因只要有一处错位，看起来相关的片段，也可能组合出错误答案。"
+    }
+  ]
+}

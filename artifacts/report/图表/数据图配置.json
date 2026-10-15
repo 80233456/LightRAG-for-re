@@ -1,0 +1,6198 @@
+{
+  "数据一_总体性能": {
+    "width": 1000,
+    "height": 470,
+    "option": {
+      "animation": false,
+      "textStyle": {
+        "fontFamily": "Microsoft YaHei",
+        "fontSize": 18,
+        "color": "#222"
+      },
+      "title": [
+        {
+          "text": "（甲）留出集匹配率",
+          "left": 40,
+          "top": 10,
+          "textStyle": {
+            "fontSize": 23
+          }
+        },
+        {
+          "text": "（乙）可回答题匹配率",
+          "left": 545,
+          "top": 10,
+          "textStyle": {
+            "fontSize": 23
+          }
+        }
+      ],
+      "grid": [
+        {
+          "left": 75,
+          "top": 65,
+          "width": 400,
+          "bottom": 85
+        },
+        {
+          "left": 580,
+          "top": 65,
+          "width": 390,
+          "bottom": 85
+        }
+      ],
+      "xAxis": [
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 17,
+            "rotate": 20
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "category",
+          "data": [
+            "基础",
+            "补检索",
+            "候选",
+            "验证",
+            "完整"
+          ]
+        },
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 17,
+            "rotate": 20
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "category",
+          "gridIndex": 1,
+          "data": [
+            "基础",
+            "补检索",
+            "候选",
+            "验证",
+            "完整"
+          ]
+        }
+      ],
+      "yAxis": [
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "min": 0,
+          "max": 100,
+          "interval": 20,
+          "name": "完全匹配率（%）",
+          "nameTextStyle": {
+            "fontSize": 14
+          },
+          "nameGap": 14
+        },
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "min": 0,
+          "max": 100,
+          "interval": 20,
+          "gridIndex": 1,
+          "name": "完全匹配率（%）",
+          "nameTextStyle": {
+            "fontSize": 14
+          },
+          "nameGap": 14
+        }
+      ],
+      "series": [
+        {
+          "type": "bar",
+          "barWidth": 45,
+          "data": [
+            {
+              "value": 55,
+              "itemStyle": {
+                "color": "#8D939D",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 57,
+              "itemStyle": {
+                "color": "#B5A2C6",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 88,
+              "itemStyle": {
+                "color": "#E9C966",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 86,
+              "itemStyle": {
+                "color": "#78A8C8",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 86,
+              "itemStyle": {
+                "color": "#41A697",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            }
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 22,
+            "formatter": "{c}"
+          },
+          "markLine": {
+            "symbol": "none",
+            "label": {
+              "formatter": "80%目标",
+              "position": "insideEndTop",
+              "fontSize": 16
+            },
+            "lineStyle": {
+              "type": "dashed",
+              "color": "#ab6958"
+            },
+            "data": [
+              {
+                "yAxis": 80
+              }
+            ]
+          }
+        },
+        {
+          "type": "bar",
+          "xAxisIndex": 1,
+          "yAxisIndex": 1,
+          "barWidth": 45,
+          "data": [
+            {
+              "value": 48.86,
+              "itemStyle": {
+                "color": "#8D939D",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 51.14,
+              "itemStyle": {
+                "color": "#B5A2C6",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 86.36,
+              "itemStyle": {
+                "color": "#E9C966",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 84.09,
+              "itemStyle": {
+                "color": "#78A8C8",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            },
+            {
+              "value": 84.09,
+              "itemStyle": {
+                "color": "#41A697",
+                "borderColor": "#555",
+                "borderWidth": 0.7
+              }
+            }
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 18,
+            "formatter": "{c}"
+          }
+        }
+      ]
+    }
+  },
+  "数据二_分题型": {
+    "width": 1000,
+    "height": 470,
+    "option": {
+      "animation": false,
+      "textStyle": {
+        "fontFamily": "Microsoft YaHei",
+        "fontSize": 18,
+        "color": "#222"
+      },
+      "title": {
+        "text": "各类问题的完全匹配率",
+        "left": "center",
+        "top": 8,
+        "textStyle": {
+          "fontSize": 23
+        }
+      },
+      "legend": {
+        "top": 44,
+        "data": [
+          "基础",
+          "候选",
+          "完整"
+        ],
+        "textStyle": {
+          "fontSize": 19
+        }
+      },
+      "grid": {
+        "left": 75,
+        "right": 35,
+        "top": 100,
+        "bottom": 65
+      },
+      "xAxis": {
+        "axisLine": {
+          "show": true,
+          "lineStyle": {
+            "color": "#444",
+            "width": 1
+          }
+        },
+        "axisTick": {
+          "show": true
+        },
+        "axisLabel": {
+          "fontSize": 18
+        },
+        "splitLine": {
+          "lineStyle": {
+            "color": "#e4e4e4",
+            "type": "dashed"
+          }
+        },
+        "type": "category",
+        "data": [
+          "比较（27）",
+          "推断（36）",
+          "时间（25）",
+          "无答案（12）"
+        ]
+      },
+      "yAxis": {
+        "axisLine": {
+          "show": true,
+          "lineStyle": {
+            "color": "#444",
+            "width": 1
+          }
+        },
+        "axisTick": {
+          "show": true
+        },
+        "axisLabel": {
+          "fontSize": 18,
+          "color": "#222"
+        },
+        "splitLine": {
+          "lineStyle": {
+            "color": "#e4e4e4",
+            "type": "dashed"
+          }
+        },
+        "min": 0,
+        "max": 100,
+        "interval": 20,
+        "name": "完全匹配率（%）",
+        "nameTextStyle": {
+          "fontSize": 14
+        },
+        "nameGap": 14
+      },
+      "series": [
+        {
+          "name": "基础",
+          "type": "bar",
+          "barWidth": 45,
+          "itemStyle": {
+            "color": "#8D939D",
+            "borderWidth": 0.7,
+            "borderColor": "#555"
+          },
+          "data": [
+            14.8,
+            80.6,
+            40,
+            100
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 17,
+            "formatter": "{c}"
+          }
+        },
+        {
+          "name": "候选",
+          "type": "bar",
+          "barWidth": 45,
+          "itemStyle": {
+            "color": "#E9C966",
+            "borderWidth": 0.7,
+            "borderColor": "#555"
+          },
+          "data": [
+            85.2,
+            94.4,
+            76,
+            100
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 17,
+            "formatter": "{c}"
+          }
+        },
+        {
+          "name": "完整",
+          "type": "bar",
+          "barWidth": 45,
+          "itemStyle": {
+            "color": "#41A697",
+            "borderWidth": 0.7,
+            "borderColor": "#555"
+          },
+          "data": [
+            77.8,
+            91.7,
+            80,
+            100
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 17,
+            "formatter": "{c}"
+          }
+        }
+      ]
+    }
+  },
+  "数据三_消融": {
+    "width": 1000,
+    "height": 430,
+    "option": {
+      "animation": false,
+      "textStyle": {
+        "fontFamily": "Microsoft YaHei",
+        "fontSize": 18,
+        "color": "#222"
+      },
+      "title": [
+        {
+          "text": "（甲）验证的取舍",
+          "left": 35,
+          "top": 8,
+          "textStyle": {
+            "fontSize": 22
+          }
+        },
+        {
+          "text": "（乙）同题变化",
+          "left": 555,
+          "top": 8,
+          "textStyle": {
+            "fontSize": 22
+          }
+        }
+      ],
+      "legend": {
+        "data": [
+          "候选",
+          "验证／完整"
+        ],
+        "left": 80,
+        "top": 44,
+        "textStyle": {
+          "fontSize": 18
+        }
+      },
+      "grid": [
+        {
+          "left": 70,
+          "top": 100,
+          "width": 410,
+          "bottom": 75
+        },
+        {
+          "left": 610,
+          "top": 100,
+          "width": 350,
+          "bottom": 75
+        }
+      ],
+      "xAxis": [
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "category",
+          "data": [
+            "作答率",
+            "已作答匹配率"
+          ]
+        },
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "category",
+          "gridIndex": 1,
+          "data": [
+            "新增答对",
+            "丢失正确"
+          ]
+        }
+      ],
+      "yAxis": [
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "min": 70,
+          "max": 100,
+          "interval": 10,
+          "name": "百分比（%）",
+          "nameTextStyle": {
+            "fontSize": 14
+          },
+          "nameGap": 14
+        },
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "gridIndex": 1,
+          "min": 0,
+          "max": 6,
+          "interval": 1,
+          "name": "题数",
+          "nameTextStyle": {
+            "fontSize": 14
+          },
+          "nameGap": 14
+        }
+      ],
+      "series": [
+        {
+          "name": "候选",
+          "type": "bar",
+          "barWidth": 55,
+          "itemStyle": {
+            "color": "#E9C966",
+            "borderColor": "#555",
+            "borderWidth": 0.7
+          },
+          "data": [
+            86,
+            88.37
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 20
+          }
+        },
+        {
+          "name": "验证／完整",
+          "type": "bar",
+          "barWidth": 55,
+          "itemStyle": {
+            "color": "#41A697",
+            "borderColor": "#555",
+            "borderWidth": 0.7
+          },
+          "data": [
+            82,
+            90.24
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 20
+          }
+        },
+        {
+          "type": "bar",
+          "xAxisIndex": 1,
+          "yAxisIndex": 1,
+          "barWidth": 80,
+          "data": [
+            {
+              "value": 3,
+              "itemStyle": {
+                "color": "#41A697"
+              }
+            },
+            {
+              "value": 5,
+              "itemStyle": {
+                "color": "#D57869"
+              }
+            }
+          ],
+          "label": {
+            "show": true,
+            "position": "top",
+            "fontSize": 25
+          }
+        }
+      ]
+    }
+  },
+  "数据四_开发迭代": {
+    "width": 1000,
+    "height": 460,
+    "option": {
+      "animation": false,
+      "textStyle": {
+        "fontFamily": "Microsoft YaHei",
+        "fontSize": 18,
+        "color": "#222"
+      },
+      "title": {
+        "text": "固定开发集的四轮迭代",
+        "left": "center",
+        "top": 8,
+        "textStyle": {
+          "fontSize": 23
+        }
+      },
+      "legend": {
+        "top": 45,
+        "data": [
+          "基础",
+          "候选",
+          "验证",
+          "完整"
+        ],
+        "textStyle": {
+          "fontSize": 18
+        }
+      },
+      "grid": {
+        "left": 80,
+        "right": 50,
+        "top": 100,
+        "bottom": 65
+      },
+      "xAxis": {
+        "axisLine": {
+          "show": true,
+          "lineStyle": {
+            "color": "#444",
+            "width": 1
+          }
+        },
+        "axisTick": {
+          "show": true
+        },
+        "axisLabel": {
+          "fontSize": 18,
+          "color": "#222"
+        },
+        "splitLine": {
+          "lineStyle": {
+            "color": "#e4e4e4",
+            "type": "dashed"
+          }
+        },
+        "type": "category",
+        "data": [
+          "第一轮",
+          "第二轮",
+          "第三轮",
+          "第四轮"
+        ],
+        "boundaryGap": true
+      },
+      "yAxis": {
+        "axisLine": {
+          "show": true,
+          "lineStyle": {
+            "color": "#444",
+            "width": 1
+          }
+        },
+        "axisTick": {
+          "show": true
+        },
+        "axisLabel": {
+          "fontSize": 18,
+          "color": "#222"
+        },
+        "splitLine": {
+          "lineStyle": {
+            "color": "#e4e4e4",
+            "type": "dashed"
+          }
+        },
+        "min": 30,
+        "max": 100,
+        "interval": 10,
+        "name": "开发匹配率（%）",
+        "nameTextStyle": {
+          "fontSize": 14
+        },
+        "nameGap": 14
+      },
+      "series": [
+        {
+          "name": "基础",
+          "type": "line",
+          "data": [
+            41.67,
+            41.67,
+            41.67,
+            41.67
+          ],
+          "symbol": "circle",
+          "symbolSize": 9,
+          "lineStyle": {
+            "width": 2,
+            "type": "solid"
+          },
+          "itemStyle": {
+            "color": "#8D939D"
+          },
+          "label": {
+            "show": false,
+            "position": "bottom",
+            "fontSize": 19,
+            "formatter": "{c}"
+          }
+        },
+        {
+          "name": "候选",
+          "type": "line",
+          "data": [
+            91.67,
+            87.5,
+            79.17,
+            79.17
+          ],
+          "symbol": "circle",
+          "symbolSize": 9,
+          "lineStyle": {
+            "width": 2,
+            "type": "solid"
+          },
+          "itemStyle": {
+            "color": "#E9C966"
+          },
+          "label": {
+            "show": false,
+            "position": "bottom",
+            "fontSize": 19,
+            "formatter": "{c}"
+          }
+        },
+        {
+          "name": "验证",
+          "type": "line",
+          "data": [
+            83.33,
+            75,
+            50,
+            83.33
+          ],
+          "symbol": "circle",
+          "symbolSize": 9,
+          "lineStyle": {
+            "width": 2,
+            "type": "dashed"
+          },
+          "itemStyle": {
+            "color": "#78A8C8"
+          },
+          "label": {
+            "show": false,
+            "position": "bottom",
+            "fontSize": 19,
+            "formatter": "{c}"
+          }
+        },
+        {
+          "name": "完整",
+          "type": "line",
+          "data": [
+            83.33,
+            75,
+            54.17,
+            83.33
+          ],
+          "symbol": "diamond",
+          "symbolSize": 13,
+          "lineStyle": {
+            "width": 4,
+            "type": "solid"
+          },
+          "itemStyle": {
+            "color": "#41A697"
+          },
+          "label": {
+            "show": true,
+            "position": "bottom",
+            "fontSize": 19,
+            "formatter": "{c}"
+          }
+        }
+      ]
+    }
+  },
+  "数据五_显存利用率": {
+    "width": 1000,
+    "height": 420,
+    "option": {
+      "animation": false,
+      "textStyle": {
+        "fontFamily": "Microsoft YaHei",
+        "fontSize": 18,
+        "color": "#222"
+      },
+      "title": [
+        {
+          "text": "（甲）测试显存占用",
+          "left": 40,
+          "top": 8,
+          "textStyle": {
+            "fontSize": 22
+          }
+        },
+        {
+          "text": "（乙）计算利用率",
+          "left": 555,
+          "top": 8,
+          "textStyle": {
+            "fontSize": 22
+          }
+        }
+      ],
+      "grid": [
+        {
+          "left": 80,
+          "top": 70,
+          "width": 390,
+          "bottom": 70
+        },
+        {
+          "left": 590,
+          "top": 70,
+          "width": 370,
+          "bottom": 70
+        }
+      ],
+      "xAxis": [
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "value",
+          "name": "时间／秒",
+          "nameLocation": "middle",
+          "nameGap": 38,
+          "nameTextStyle": {
+            "fontSize": 18
+          },
+          "max": "dataMax"
+        },
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "value",
+          "gridIndex": 1,
+          "name": "时间／秒",
+          "nameLocation": "middle",
+          "nameGap": 38,
+          "nameTextStyle": {
+            "fontSize": 18
+          },
+          "max": "dataMax"
+        }
+      ],
+      "yAxis": [
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "value",
+          "min": 0,
+          "max": 6,
+          "interval": 1,
+          "name": "显存／吉字节",
+          "nameTextStyle": {
+            "fontSize": 14
+          },
+          "nameGap": 14
+        },
+        {
+          "axisLine": {
+            "show": true,
+            "lineStyle": {
+              "color": "#444",
+              "width": 1
+            }
+          },
+          "axisTick": {
+            "show": true
+          },
+          "axisLabel": {
+            "fontSize": 18,
+            "color": "#222"
+          },
+          "splitLine": {
+            "lineStyle": {
+              "color": "#e4e4e4",
+              "type": "dashed"
+            }
+          },
+          "type": "value",
+          "gridIndex": 1,
+          "min": 0,
+          "max": 100,
+          "interval": 25,
+          "name": "利用率（%）",
+          "nameTextStyle": {
+            "fontSize": 14
+          },
+          "nameGap": 14
+        }
+      ],
+      "series": [
+        {
+          "type": "line",
+          "showSymbol": false,
+          "lineStyle": {
+            "width": 2,
+            "color": "#41A697"
+          },
+          "areaStyle": {
+            "color": "#DAEBE6",
+            "opacity": 0.6
+          },
+          "data": [
+            [
+              0,
+              0
+            ],
+            [
+              3.2,
+              0
+            ],
+            [
+              6.5,
+              0
+            ],
+            [
+              9.7,
+              2.521
+            ],
+            [
+              13,
+              2.521
+            ],
+            [
+              16.2,
+              2.521
+            ],
+            [
+              19.5,
+              2.521
+            ],
+            [
+              22.7,
+              4.464
+            ],
+            [
+              26,
+              4.728
+            ],
+            [
+              29.2,
+              5.009
+            ],
+            [
+              32.5,
+              5.009
+            ],
+            [
+              35.8,
+              5.009
+            ],
+            [
+              39,
+              5.009
+            ],
+            [
+              42.3,
+              5.009
+            ],
+            [
+              45.6,
+              5.009
+            ],
+            [
+              48.8,
+              5.009
+            ],
+            [
+              52.1,
+              5.009
+            ],
+            [
+              55.3,
+              5.009
+            ],
+            [
+              58.6,
+              5.009
+            ],
+            [
+              61.8,
+              5.009
+            ],
+            [
+              65.1,
+              5.009
+            ],
+            [
+              68.3,
+              5.009
+            ],
+            [
+              71.6,
+              5.009
+            ],
+            [
+              74.9,
+              5.009
+            ],
+            [
+              78.1,
+              5.009
+            ],
+            [
+              81.4,
+              5.009
+            ],
+            [
+              84.6,
+              5.009
+            ],
+            [
+              87.8,
+              5.009
+            ],
+            [
+              91.1,
+              5.009
+            ],
+            [
+              94.3,
+              5.009
+            ],
+            [
+              97.5,
+              5.009
+            ],
+            [
+              100.8,
+              5.009
+            ],
+            [
+              104.1,
+              5.009
+            ],
+            [
+              107.3,
+              5.009
+            ],
+            [
+              110.6,
+              5.009
+            ],
+            [
+              113.8,
+              5.009
+            ],
+            [
+              117.1,
+              5.009
+            ],
+            [
+              120.4,
+              5.009
+            ],
+            [
+              123.6,
+              5.009
+            ],
+            [
+              126.9,
+              5.009
+            ],
+            [
+              130.1,
+              5.009
+            ],
+            [
+              133.4,
+              5.009
+            ],
+            [
+              136.7,
+              5.009
+            ],
+            [
+              139.9,
+              5.009
+            ],
+            [
+              143.2,
+              5.009
+            ],
+            [
+              146.5,
+              5.009
+            ],
+            [
+              149.7,
+              5.009
+            ],
+            [
+              152.9,
+              5.009
+            ],
+            [
+              156.2,
+              5.009
+            ],
+            [
+              159.4,
+              5.009
+            ],
+            [
+              162.6,
+              5.009
+            ],
+            [
+              165.9,
+              5.009
+            ],
+            [
+              169.2,
+              5.009
+            ],
+            [
+              172.4,
+              5.009
+            ],
+            [
+              175.7,
+              5.009
+            ],
+            [
+              178.8,
+              5.009
+            ],
+            [
+              182.1,
+              5.009
+            ],
+            [
+              185.4,
+              5.009
+            ],
+            [
+              188.6,
+              5.009
+            ],
+            [
+              191.8,
+              5.009
+            ],
+            [
+              195.1,
+              5.009
+            ],
+            [
+              198.3,
+              5.009
+            ],
+            [
+              201.5,
+              5.009
+            ],
+            [
+              204.8,
+              5.009
+            ],
+            [
+              208,
+              5.009
+            ],
+            [
+              211.3,
+              5.009
+            ],
+            [
+              214.5,
+              5.009
+            ],
+            [
+              217.7,
+              5.009
+            ],
+            [
+              221,
+              5.009
+            ],
+            [
+              224.2,
+              5.009
+            ],
+            [
+              227.4,
+              5.009
+            ],
+            [
+              230.7,
+              5.009
+            ],
+            [
+              233.9,
+              5.009
+            ],
+            [
+              237.1,
+              5.009
+            ],
+            [
+              240.4,
+              5.009
+            ],
+            [
+              243.6,
+              5.009
+            ],
+            [
+              246.9,
+              5.009
+            ],
+            [
+              250.1,
+              5.009
+            ],
+            [
+              253.3,
+              5.009
+            ],
+            [
+              256.6,
+              5.009
+            ],
+            [
+              259.9,
+              5.009
+            ],
+            [
+              263.1,
+              5.009
+            ],
+            [
+              266.4,
+              5.009
+            ],
+            [
+              269.7,
+              5.009
+            ],
+            [
+              272.9,
+              5.009
+            ],
+            [
+              276.2,
+              5.009
+            ],
+            [
+              279.4,
+              5.009
+            ],
+            [
+              282.7,
+              5.009
+            ],
+            [
+              286,
+              5.009
+            ],
+            [
+              289.3,
+              5.009
+            ],
+            [
+              292.5,
+              5.009
+            ],
+            [
+              295.7,
+              5.009
+            ],
+            [
+              298.9,
+              5.009
+            ],
+            [
+              302.1,
+              5.009
+            ],
+            [
+              305.4,
+              5.009
+            ],
+            [
+              308.5,
+              5.009
+            ],
+            [
+              311.7,
+              5.009
+            ],
+            [
+              314.9,
+              5.009
+            ],
+            [
+              318.2,
+              5.009
+            ],
+            [
+              321.4,
+              5.009
+            ],
+            [
+              324.6,
+              5.009
+            ],
+            [
+              327.8,
+              5.009
+            ],
+            [
+              331.1,
+              5.009
+            ],
+            [
+              334.4,
+              5.009
+            ],
+            [
+              337.6,
+              5.009
+            ],
+            [
+              340.8,
+              5.009
+            ],
+            [
+              344.1,
+              5.009
+            ],
+            [
+              347.4,
+              5.009
+            ],
+            [
+              350.6,
+              5.009
+            ],
+            [
+              353.8,
+              5.009
+            ],
+            [
+              357.1,
+              5.009
+            ],
+            [
+              360.3,
+              5.009
+            ],
+            [
+              363.5,
+              5.009
+            ],
+            [
+              366.8,
+              5.009
+            ],
+            [
+              370.1,
+              5.009
+            ],
+            [
+              373.3,
+              5.009
+            ],
+            [
+              376.6,
+              5.009
+            ],
+            [
+              379.9,
+              5.009
+            ],
+            [
+              383.1,
+              5.009
+            ],
+            [
+              386.4,
+              5.009
+            ],
+            [
+              389.7,
+              5.009
+            ],
+            [
+              392.9,
+              5.009
+            ],
+            [
+              396.2,
+              5.009
+            ],
+            [
+              399.4,
+              5.009
+            ],
+            [
+              402.7,
+              5.009
+            ],
+            [
+              406,
+              5.009
+            ],
+            [
+              409.3,
+              5.009
+            ],
+            [
+              412.5,
+              5.009
+            ],
+            [
+              415.8,
+              5.009
+            ],
+            [
+              419,
+              5.009
+            ],
+            [
+              422.3,
+              5.009
+            ],
+            [
+              425.5,
+              5.009
+            ],
+            [
+              428.8,
+              5.009
+            ],
+            [
+              432.1,
+              5.009
+            ],
+            [
+              435.4,
+              5.009
+            ],
+            [
+              438.7,
+              5.009
+            ],
+            [
+              441.9,
+              5.009
+            ],
+            [
+              445.2,
+              5.009
+            ],
+            [
+              448.5,
+              5.009
+            ],
+            [
+              451.8,
+              5.009
+            ],
+            [
+              455,
+              5.009
+            ],
+            [
+              458.3,
+              5.009
+            ],
+            [
+              461.6,
+              5.009
+            ],
+            [
+              464.8,
+              5.009
+            ],
+            [
+              468.1,
+              5.009
+            ],
+            [
+              471.3,
+              5.009
+            ],
+            [
+              474.6,
+              5.009
+            ],
+            [
+              477.8,
+              5.009
+            ],
+            [
+              481.1,
+              5.009
+            ],
+            [
+              484.3,
+              5.009
+            ],
+            [
+              487.6,
+              5.009
+            ],
+            [
+              490.8,
+              5.009
+            ],
+            [
+              494,
+              5.009
+            ],
+            [
+              497.2,
+              5.009
+            ],
+            [
+              500.4,
+              5.009
+            ],
+            [
+              503.6,
+              5.009
+            ],
+            [
+              506.9,
+              5.009
+            ],
+            [
+              510.1,
+              5.009
+            ],
+            [
+              513.4,
+              5.009
+            ],
+            [
+              516.6,
+              5.009
+            ],
+            [
+              519.8,
+              5.009
+            ],
+            [
+              523.1,
+              5.009
+            ],
+            [
+              526.3,
+              5.009
+            ],
+            [
+              529.5,
+              5.009
+            ],
+            [
+              532.7,
+              5.009
+            ],
+            [
+              535.8,
+              5.009
+            ],
+            [
+              538.9,
+              5.009
+            ],
+            [
+              542.1,
+              5.009
+            ],
+            [
+              545.3,
+              5.009
+            ],
+            [
+              548.5,
+              5.009
+            ],
+            [
+              551.8,
+              5.009
+            ],
+            [
+              555,
+              5.009
+            ],
+            [
+              558.3,
+              5.009
+            ],
+            [
+              561.6,
+              5.009
+            ],
+            [
+              564.9,
+              5.009
+            ],
+            [
+              568.1,
+              5.009
+            ],
+            [
+              571.4,
+              5.009
+            ],
+            [
+              574.6,
+              5.009
+            ],
+            [
+              577.8,
+              5.009
+            ],
+            [
+              581.1,
+              5.009
+            ],
+            [
+              584.2,
+              5.009
+            ],
+            [
+              587.4,
+              5.009
+            ],
+            [
+              590.7,
+              5.009
+            ],
+            [
+              593.9,
+              5.009
+            ],
+            [
+              597.2,
+              5.009
+            ],
+            [
+              600.4,
+              5.009
+            ],
+            [
+              603.7,
+              5.009
+            ],
+            [
+              607,
+              5.009
+            ],
+            [
+              610.1,
+              5.009
+            ],
+            [
+              613.4,
+              5.009
+            ],
+            [
+              616.6,
+              5.009
+            ],
+            [
+              619.9,
+              5.009
+            ],
+            [
+              623.2,
+              5.009
+            ],
+            [
+              626.4,
+              5.009
+            ],
+            [
+              629.7,
+              5.009
+            ],
+            [
+              632.9,
+              5.009
+            ],
+            [
+              636.1,
+              5.009
+            ],
+            [
+              639.3,
+              5.009
+            ],
+            [
+              642.6,
+              5.009
+            ],
+            [
+              645.9,
+              5.009
+            ],
+            [
+              649.1,
+              5.009
+            ],
+            [
+              652.3,
+              5.009
+            ],
+            [
+              655.5,
+              5.009
+            ],
+            [
+              658.7,
+              5.009
+            ],
+            [
+              662,
+              5.009
+            ],
+            [
+              665.2,
+              5.009
+            ],
+            [
+              668.5,
+              5.009
+            ],
+            [
+              671.7,
+              5.009
+            ],
+            [
+              674.9,
+              5.009
+            ],
+            [
+              678.2,
+              5.009
+            ],
+            [
+              681.4,
+              5.009
+            ],
+            [
+              684.6,
+              5.009
+            ],
+            [
+              687.9,
+              5.009
+            ],
+            [
+              691.2,
+              5.009
+            ],
+            [
+              694.4,
+              5.009
+            ],
+            [
+              697.6,
+              5.009
+            ],
+            [
+              700.9,
+              5.009
+            ],
+            [
+              704.1,
+              5.009
+            ],
+            [
+              707.3,
+              5.009
+            ],
+            [
+              710.5,
+              5.009
+            ],
+            [
+              713.8,
+              5.009
+            ],
+            [
+              716.9,
+              5.009
+            ],
+            [
+              720.2,
+              5.009
+            ],
+            [
+              723.4,
+              5.009
+            ],
+            [
+              726.7,
+              5.009
+            ],
+            [
+              729.8,
+              5.009
+            ],
+            [
+              733.1,
+              5.009
+            ],
+            [
+              736.4,
+              5.009
+            ],
+            [
+              739.6,
+              5.009
+            ],
+            [
+              742.8,
+              5.009
+            ],
+            [
+              746.1,
+              5.009
+            ],
+            [
+              749.3,
+              5.009
+            ],
+            [
+              752.6,
+              5.009
+            ],
+            [
+              755.8,
+              5.009
+            ],
+            [
+              759.1,
+              5.009
+            ],
+            [
+              762.4,
+              5.009
+            ],
+            [
+              765.6,
+              5.009
+            ],
+            [
+              768.9,
+              5.009
+            ],
+            [
+              772.1,
+              5.009
+            ],
+            [
+              775.4,
+              5.009
+            ],
+            [
+              778.6,
+              5.009
+            ],
+            [
+              781.9,
+              5.009
+            ],
+            [
+              785.2,
+              5.009
+            ],
+            [
+              788.5,
+              5.009
+            ],
+            [
+              791.7,
+              5.009
+            ],
+            [
+              795,
+              5.009
+            ],
+            [
+              798.2,
+              5.009
+            ],
+            [
+              801.5,
+              5.009
+            ],
+            [
+              804.7,
+              5.009
+            ],
+            [
+              808,
+              5.009
+            ],
+            [
+              811.3,
+              5.009
+            ],
+            [
+              814.6,
+              5.009
+            ],
+            [
+              817.8,
+              5.009
+            ],
+            [
+              821.1,
+              5.009
+            ],
+            [
+              824.3,
+              5.009
+            ],
+            [
+              827.5,
+              5.009
+            ],
+            [
+              830.8,
+              5.009
+            ],
+            [
+              834,
+              5.009
+            ],
+            [
+              837.2,
+              5.009
+            ],
+            [
+              840.5,
+              5.009
+            ],
+            [
+              843.7,
+              5.009
+            ],
+            [
+              847,
+              5.009
+            ],
+            [
+              850.3,
+              5.009
+            ],
+            [
+              853.5,
+              5.009
+            ],
+            [
+              856.8,
+              5.009
+            ],
+            [
+              860,
+              5.009
+            ],
+            [
+              863.3,
+              5.009
+            ],
+            [
+              866.6,
+              5.009
+            ],
+            [
+              869.8,
+              5.009
+            ],
+            [
+              873.1,
+              5.009
+            ],
+            [
+              876.3,
+              5.009
+            ],
+            [
+              879.6,
+              5.009
+            ],
+            [
+              882.9,
+              5.009
+            ],
+            [
+              886.1,
+              5.009
+            ],
+            [
+              889.3,
+              5.009
+            ],
+            [
+              892.6,
+              5.009
+            ],
+            [
+              895.8,
+              5.009
+            ],
+            [
+              899.1,
+              5.009
+            ],
+            [
+              902.3,
+              5.009
+            ],
+            [
+              905.6,
+              5.009
+            ],
+            [
+              908.9,
+              5.009
+            ],
+            [
+              912.2,
+              5.009
+            ],
+            [
+              915.4,
+              5.009
+            ],
+            [
+              918.6,
+              5.009
+            ],
+            [
+              921.9,
+              5.009
+            ],
+            [
+              925.1,
+              5.009
+            ],
+            [
+              928.3,
+              5.009
+            ],
+            [
+              931.6,
+              5.009
+            ],
+            [
+              934.8,
+              5.009
+            ],
+            [
+              938,
+              5.009
+            ],
+            [
+              941.3,
+              5.009
+            ],
+            [
+              944.5,
+              5.009
+            ],
+            [
+              947.7,
+              5.009
+            ],
+            [
+              951,
+              5.009
+            ],
+            [
+              954.2,
+              5.009
+            ],
+            [
+              957.4,
+              5.009
+            ],
+            [
+              960.6,
+              5.009
+            ],
+            [
+              963.9,
+              5.009
+            ],
+            [
+              967.1,
+              5.009
+            ],
+            [
+              970.4,
+              5.009
+            ],
+            [
+              973.7,
+              5.009
+            ],
+            [
+              977,
+              5.009
+            ],
+            [
+              980.2,
+              5.009
+            ],
+            [
+              983.4,
+              5.009
+            ],
+            [
+              986.6,
+              5.009
+            ],
+            [
+              989.9,
+              5.009
+            ],
+            [
+              993.1,
+              5.009
+            ],
+            [
+              996.3,
+              5.009
+            ],
+            [
+              999.6,
+              5.009
+            ],
+            [
+              1002.9,
+              5.009
+            ],
+            [
+              1006.2,
+              5.009
+            ],
+            [
+              1009.4,
+              5.009
+            ],
+            [
+              1012.6,
+              5.009
+            ],
+            [
+              1015.8,
+              5.009
+            ],
+            [
+              1019,
+              5.009
+            ],
+            [
+              1022.2,
+              5.009
+            ],
+            [
+              1025.5,
+              5.009
+            ],
+            [
+              1028.7,
+              5.009
+            ],
+            [
+              1031.9,
+              5.009
+            ],
+            [
+              1035.1,
+              5.009
+            ],
+            [
+              1038.3,
+              5.009
+            ],
+            [
+              1041.6,
+              5.009
+            ],
+            [
+              1044.7,
+              5.009
+            ],
+            [
+              1047.9,
+              5.009
+            ],
+            [
+              1051.2,
+              5.009
+            ],
+            [
+              1054.4,
+              5.009
+            ],
+            [
+              1057.7,
+              5.009
+            ],
+            [
+              1061,
+              5.009
+            ],
+            [
+              1064.2,
+              5.009
+            ],
+            [
+              1067.4,
+              5.009
+            ],
+            [
+              1070.7,
+              5.009
+            ],
+            [
+              1073.9,
+              5.009
+            ],
+            [
+              1077.1,
+              5.009
+            ],
+            [
+              1080.3,
+              5.009
+            ],
+            [
+              1083.5,
+              5.009
+            ],
+            [
+              1086.8,
+              5.009
+            ],
+            [
+              1090,
+              5.009
+            ],
+            [
+              1093.3,
+              5.009
+            ],
+            [
+              1096.5,
+              5.009
+            ],
+            [
+              1099.8,
+              5.009
+            ],
+            [
+              1103,
+              5.009
+            ],
+            [
+              1106.2,
+              5.009
+            ],
+            [
+              1109.4,
+              5.009
+            ],
+            [
+              1112.7,
+              5.009
+            ],
+            [
+              1115.9,
+              5.009
+            ],
+            [
+              1119.2,
+              5.009
+            ],
+            [
+              1122.4,
+              5.009
+            ],
+            [
+              1125.6,
+              5.009
+            ],
+            [
+              1128.8,
+              5.009
+            ],
+            [
+              1132,
+              5.009
+            ],
+            [
+              1135.2,
+              5.009
+            ],
+            [
+              1138.5,
+              5.009
+            ],
+            [
+              1141.8,
+              5.009
+            ],
+            [
+              1145.1,
+              5.009
+            ],
+            [
+              1148.3,
+              5.009
+            ],
+            [
+              1151.5,
+              5.009
+            ],
+            [
+              1154.6,
+              5.009
+            ],
+            [
+              1157.9,
+              5.009
+            ],
+            [
+              1161,
+              5.009
+            ],
+            [
+              1164.2,
+              5.009
+            ],
+            [
+              1167.4,
+              5.009
+            ],
+            [
+              1170.7,
+              5.009
+            ],
+            [
+              1173.9,
+              5.009
+            ],
+            [
+              1177.2,
+              5.009
+            ],
+            [
+              1180.4,
+              5.009
+            ],
+            [
+              1183.7,
+              5.009
+            ],
+            [
+              1186.9,
+              5.009
+            ],
+            [
+              1190.2,
+              5.009
+            ],
+            [
+              1193.4,
+              5.009
+            ],
+            [
+              1196.6,
+              5.009
+            ],
+            [
+              1199.8,
+              5.009
+            ],
+            [
+              1203.1,
+              5.009
+            ],
+            [
+              1206.4,
+              5.009
+            ],
+            [
+              1209.6,
+              5.009
+            ],
+            [
+              1212.9,
+              5.009
+            ],
+            [
+              1216.1,
+              5.009
+            ],
+            [
+              1219.4,
+              5.009
+            ],
+            [
+              1222.6,
+              5.009
+            ],
+            [
+              1225.9,
+              5.009
+            ],
+            [
+              1229.2,
+              5.009
+            ],
+            [
+              1232.5,
+              5.009
+            ],
+            [
+              1235.8,
+              5.009
+            ],
+            [
+              1239.1,
+              5.009
+            ],
+            [
+              1242.3,
+              5.009
+            ],
+            [
+              1245.5,
+              5.009
+            ],
+            [
+              1248.7,
+              5.009
+            ],
+            [
+              1252,
+              5.009
+            ],
+            [
+              1255.2,
+              5.009
+            ],
+            [
+              1258.4,
+              5.009
+            ],
+            [
+              1261.7,
+              5.009
+            ],
+            [
+              1264.9,
+              5.009
+            ],
+            [
+              1268.2,
+              5.009
+            ],
+            [
+              1271.5,
+              5.009
+            ],
+            [
+              1274.8,
+              5.009
+            ],
+            [
+              1278,
+              5.009
+            ],
+            [
+              1281.3,
+              5.009
+            ],
+            [
+              1284.5,
+              5.009
+            ],
+            [
+              1287.8,
+              5.009
+            ],
+            [
+              1291.1,
+              5.009
+            ],
+            [
+              1294.3,
+              5.009
+            ],
+            [
+              1297.5,
+              5.009
+            ],
+            [
+              1300.8,
+              5.009
+            ],
+            [
+              1304.1,
+              5.009
+            ],
+            [
+              1307.2,
+              5.009
+            ],
+            [
+              1310.5,
+              5.009
+            ],
+            [
+              1313.7,
+              5.009
+            ],
+            [
+              1317,
+              5.009
+            ],
+            [
+              1320.2,
+              5.009
+            ],
+            [
+              1323.5,
+              5.009
+            ],
+            [
+              1326.7,
+              5.009
+            ],
+            [
+              1329.9,
+              5.009
+            ],
+            [
+              1333.1,
+              5.009
+            ],
+            [
+              1336.4,
+              5.009
+            ],
+            [
+              1339.6,
+              5.009
+            ],
+            [
+              1342.9,
+              5.009
+            ],
+            [
+              1346.2,
+              5.009
+            ],
+            [
+              1349.4,
+              5.009
+            ],
+            [
+              1352.6,
+              5.009
+            ],
+            [
+              1355.9,
+              5.009
+            ],
+            [
+              1359.2,
+              5.009
+            ],
+            [
+              1362.4,
+              5.009
+            ],
+            [
+              1365.6,
+              5.009
+            ],
+            [
+              1368.8,
+              0
+            ],
+            [
+              1369.9,
+              0
+            ]
+          ]
+        },
+        {
+          "type": "line",
+          "xAxisIndex": 1,
+          "yAxisIndex": 1,
+          "showSymbol": false,
+          "lineStyle": {
+            "width": 1,
+            "color": "#888"
+          },
+          "data": [
+            [
+              0,
+              0
+            ],
+            [
+              3.2,
+              0
+            ],
+            [
+              6.5,
+              0
+            ],
+            [
+              9.7,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              16.2,
+              0
+            ],
+            [
+              19.5,
+              0
+            ],
+            [
+              22.7,
+              21
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              29.2,
+              0
+            ],
+            [
+              32.5,
+              0
+            ],
+            [
+              35.8,
+              0
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              42.3,
+              0
+            ],
+            [
+              45.6,
+              0
+            ],
+            [
+              48.8,
+              0
+            ],
+            [
+              52.1,
+              0
+            ],
+            [
+              55.3,
+              0
+            ],
+            [
+              58.6,
+              0
+            ],
+            [
+              61.8,
+              0
+            ],
+            [
+              65.1,
+              0
+            ],
+            [
+              68.3,
+              0
+            ],
+            [
+              71.6,
+              0
+            ],
+            [
+              74.9,
+              0
+            ],
+            [
+              78.1,
+              0
+            ],
+            [
+              81.4,
+              0
+            ],
+            [
+              84.6,
+              0
+            ],
+            [
+              87.8,
+              0
+            ],
+            [
+              91.1,
+              0
+            ],
+            [
+              94.3,
+              0
+            ],
+            [
+              97.5,
+              0
+            ],
+            [
+              100.8,
+              0
+            ],
+            [
+              104.1,
+              0
+            ],
+            [
+              107.3,
+              0
+            ],
+            [
+              110.6,
+              0
+            ],
+            [
+              113.8,
+              0
+            ],
+            [
+              117.1,
+              0
+            ],
+            [
+              120.4,
+              0
+            ],
+            [
+              123.6,
+              8
+            ],
+            [
+              126.9,
+              80
+            ],
+            [
+              130.1,
+              3
+            ],
+            [
+              133.4,
+              0
+            ],
+            [
+              136.7,
+              0
+            ],
+            [
+              139.9,
+              98
+            ],
+            [
+              143.2,
+              0
+            ],
+            [
+              146.5,
+              0
+            ],
+            [
+              149.7,
+              0
+            ],
+            [
+              152.9,
+              0
+            ],
+            [
+              156.2,
+              0
+            ],
+            [
+              159.4,
+              0
+            ],
+            [
+              162.6,
+              0
+            ],
+            [
+              165.9,
+              0
+            ],
+            [
+              169.2,
+              0
+            ],
+            [
+              172.4,
+              0
+            ],
+            [
+              175.7,
+              0
+            ],
+            [
+              178.8,
+              0
+            ],
+            [
+              182.1,
+              0
+            ],
+            [
+              185.4,
+              99
+            ],
+            [
+              188.6,
+              0
+            ],
+            [
+              191.8,
+              81
+            ],
+            [
+              195.1,
+              0
+            ],
+            [
+              198.3,
+              99
+            ],
+            [
+              201.5,
+              0
+            ],
+            [
+              204.8,
+              0
+            ],
+            [
+              208,
+              63
+            ],
+            [
+              211.3,
+              0
+            ],
+            [
+              214.5,
+              0
+            ],
+            [
+              217.7,
+              0
+            ],
+            [
+              221,
+              0
+            ],
+            [
+              224.2,
+              0
+            ],
+            [
+              227.4,
+              0
+            ],
+            [
+              230.7,
+              0
+            ],
+            [
+              233.9,
+              0
+            ],
+            [
+              237.1,
+              0
+            ],
+            [
+              240.4,
+              0
+            ],
+            [
+              243.6,
+              0
+            ],
+            [
+              246.9,
+              0
+            ],
+            [
+              250.1,
+              0
+            ],
+            [
+              253.3,
+              0
+            ],
+            [
+              256.6,
+              99
+            ],
+            [
+              259.9,
+              0
+            ],
+            [
+              263.1,
+              0
+            ],
+            [
+              266.4,
+              0
+            ],
+            [
+              269.7,
+              0
+            ],
+            [
+              272.9,
+              0
+            ],
+            [
+              276.2,
+              0
+            ],
+            [
+              279.4,
+              0
+            ],
+            [
+              282.7,
+              0
+            ],
+            [
+              286,
+              0
+            ],
+            [
+              289.3,
+              0
+            ],
+            [
+              292.5,
+              0
+            ],
+            [
+              295.7,
+              0
+            ],
+            [
+              298.9,
+              0
+            ],
+            [
+              302.1,
+              62
+            ],
+            [
+              305.4,
+              0
+            ],
+            [
+              308.5,
+              0
+            ],
+            [
+              311.7,
+              79
+            ],
+            [
+              314.9,
+              0
+            ],
+            [
+              318.2,
+              0
+            ],
+            [
+              321.4,
+              98
+            ],
+            [
+              324.6,
+              0
+            ],
+            [
+              327.8,
+              0
+            ],
+            [
+              331.1,
+              57
+            ],
+            [
+              334.4,
+              0
+            ],
+            [
+              337.6,
+              0
+            ],
+            [
+              340.8,
+              0
+            ],
+            [
+              344.1,
+              0
+            ],
+            [
+              347.4,
+              32
+            ],
+            [
+              350.6,
+              0
+            ],
+            [
+              353.8,
+              0
+            ],
+            [
+              357.1,
+              0
+            ],
+            [
+              360.3,
+              0
+            ],
+            [
+              363.5,
+              0
+            ],
+            [
+              366.8,
+              0
+            ],
+            [
+              370.1,
+              98
+            ],
+            [
+              373.3,
+              0
+            ],
+            [
+              376.6,
+              0
+            ],
+            [
+              379.9,
+              0
+            ],
+            [
+              383.1,
+              0
+            ],
+            [
+              386.4,
+              91
+            ],
+            [
+              389.7,
+              0
+            ],
+            [
+              392.9,
+              0
+            ],
+            [
+              396.2,
+              0
+            ],
+            [
+              399.4,
+              0
+            ],
+            [
+              402.7,
+              4
+            ],
+            [
+              406,
+              0
+            ],
+            [
+              409.3,
+              3
+            ],
+            [
+              412.5,
+              0
+            ],
+            [
+              415.8,
+              0
+            ],
+            [
+              419,
+              0
+            ],
+            [
+              422.3,
+              24
+            ],
+            [
+              425.5,
+              0
+            ],
+            [
+              428.8,
+              0
+            ],
+            [
+              432.1,
+              0
+            ],
+            [
+              435.4,
+              0
+            ],
+            [
+              438.7,
+              0
+            ],
+            [
+              441.9,
+              10
+            ],
+            [
+              445.2,
+              0
+            ],
+            [
+              448.5,
+              99
+            ],
+            [
+              451.8,
+              0
+            ],
+            [
+              455,
+              0
+            ],
+            [
+              458.3,
+              0
+            ],
+            [
+              461.6,
+              0
+            ],
+            [
+              464.8,
+              0
+            ],
+            [
+              468.1,
+              0
+            ],
+            [
+              471.3,
+              0
+            ],
+            [
+              474.6,
+              0
+            ],
+            [
+              477.8,
+              20
+            ],
+            [
+              481.1,
+              0
+            ],
+            [
+              484.3,
+              0
+            ],
+            [
+              487.6,
+              98
+            ],
+            [
+              490.8,
+              0
+            ],
+            [
+              494,
+              0
+            ],
+            [
+              497.2,
+              0
+            ],
+            [
+              500.4,
+              0
+            ],
+            [
+              503.6,
+              0
+            ],
+            [
+              506.9,
+              0
+            ],
+            [
+              510.1,
+              77
+            ],
+            [
+              513.4,
+              0
+            ],
+            [
+              516.6,
+              0
+            ],
+            [
+              519.8,
+              98
+            ],
+            [
+              523.1,
+              0
+            ],
+            [
+              526.3,
+              0
+            ],
+            [
+              529.5,
+              0
+            ],
+            [
+              532.7,
+              0
+            ],
+            [
+              535.8,
+              0
+            ],
+            [
+              538.9,
+              0
+            ],
+            [
+              542.1,
+              0
+            ],
+            [
+              545.3,
+              0
+            ],
+            [
+              548.5,
+              0
+            ],
+            [
+              551.8,
+              0
+            ],
+            [
+              555,
+              0
+            ],
+            [
+              558.3,
+              0
+            ],
+            [
+              561.6,
+              0
+            ],
+            [
+              564.9,
+              0
+            ],
+            [
+              568.1,
+              0
+            ],
+            [
+              571.4,
+              98
+            ],
+            [
+              574.6,
+              0
+            ],
+            [
+              577.8,
+              0
+            ],
+            [
+              581.1,
+              0
+            ],
+            [
+              584.2,
+              0
+            ],
+            [
+              587.4,
+              0
+            ],
+            [
+              590.7,
+              0
+            ],
+            [
+              593.9,
+              0
+            ],
+            [
+              597.2,
+              0
+            ],
+            [
+              600.4,
+              0
+            ],
+            [
+              603.7,
+              0
+            ],
+            [
+              607,
+              0
+            ],
+            [
+              610.1,
+              79
+            ],
+            [
+              613.4,
+              0
+            ],
+            [
+              616.6,
+              0
+            ],
+            [
+              619.9,
+              75
+            ],
+            [
+              623.2,
+              0
+            ],
+            [
+              626.4,
+              0
+            ],
+            [
+              629.7,
+              3
+            ],
+            [
+              632.9,
+              0
+            ],
+            [
+              636.1,
+              99
+            ],
+            [
+              639.3,
+              0
+            ],
+            [
+              642.6,
+              0
+            ],
+            [
+              645.9,
+              0
+            ],
+            [
+              649.1,
+              0
+            ],
+            [
+              652.3,
+              0
+            ],
+            [
+              655.5,
+              0
+            ],
+            [
+              658.7,
+              0
+            ],
+            [
+              662,
+              0
+            ],
+            [
+              665.2,
+              99
+            ],
+            [
+              668.5,
+              0
+            ],
+            [
+              671.7,
+              0
+            ],
+            [
+              674.9,
+              99
+            ],
+            [
+              678.2,
+              0
+            ],
+            [
+              681.4,
+              0
+            ],
+            [
+              684.6,
+              0
+            ],
+            [
+              687.9,
+              0
+            ],
+            [
+              691.2,
+              0
+            ],
+            [
+              694.4,
+              0
+            ],
+            [
+              697.6,
+              0
+            ],
+            [
+              700.9,
+              0
+            ],
+            [
+              704.1,
+              99
+            ],
+            [
+              707.3,
+              0
+            ],
+            [
+              710.5,
+              0
+            ],
+            [
+              713.8,
+              0
+            ],
+            [
+              716.9,
+              0
+            ],
+            [
+              720.2,
+              0
+            ],
+            [
+              723.4,
+              0
+            ],
+            [
+              726.7,
+              0
+            ],
+            [
+              729.8,
+              0
+            ],
+            [
+              733.1,
+              0
+            ],
+            [
+              736.4,
+              0
+            ],
+            [
+              739.6,
+              0
+            ],
+            [
+              742.8,
+              0
+            ],
+            [
+              746.1,
+              97
+            ],
+            [
+              749.3,
+              0
+            ],
+            [
+              752.6,
+              0
+            ],
+            [
+              755.8,
+              0
+            ],
+            [
+              759.1,
+              0
+            ],
+            [
+              762.4,
+              0
+            ],
+            [
+              765.6,
+              99
+            ],
+            [
+              768.9,
+              0
+            ],
+            [
+              772.1,
+              0
+            ],
+            [
+              775.4,
+              0
+            ],
+            [
+              778.6,
+              0
+            ],
+            [
+              781.9,
+              0
+            ],
+            [
+              785.2,
+              0
+            ],
+            [
+              788.5,
+              0
+            ],
+            [
+              791.7,
+              0
+            ],
+            [
+              795,
+              0
+            ],
+            [
+              798.2,
+              0
+            ],
+            [
+              801.5,
+              99
+            ],
+            [
+              804.7,
+              0
+            ],
+            [
+              808,
+              0
+            ],
+            [
+              811.3,
+              0
+            ],
+            [
+              814.6,
+              0
+            ],
+            [
+              817.8,
+              0
+            ],
+            [
+              821.1,
+              0
+            ],
+            [
+              824.3,
+              0
+            ],
+            [
+              827.5,
+              99
+            ],
+            [
+              830.8,
+              0
+            ],
+            [
+              834,
+              0
+            ],
+            [
+              837.2,
+              0
+            ],
+            [
+              840.5,
+              0
+            ],
+            [
+              843.7,
+              0
+            ],
+            [
+              847,
+              0
+            ],
+            [
+              850.3,
+              98
+            ],
+            [
+              853.5,
+              0
+            ],
+            [
+              856.8,
+              0
+            ],
+            [
+              860,
+              0
+            ],
+            [
+              863.3,
+              0
+            ],
+            [
+              866.6,
+              0
+            ],
+            [
+              869.8,
+              0
+            ],
+            [
+              873.1,
+              0
+            ],
+            [
+              876.3,
+              0
+            ],
+            [
+              879.6,
+              0
+            ],
+            [
+              882.9,
+              0
+            ],
+            [
+              886.1,
+              0
+            ],
+            [
+              889.3,
+              0
+            ],
+            [
+              892.6,
+              99
+            ],
+            [
+              895.8,
+              0
+            ],
+            [
+              899.1,
+              0
+            ],
+            [
+              902.3,
+              0
+            ],
+            [
+              905.6,
+              0
+            ],
+            [
+              908.9,
+              0
+            ],
+            [
+              912.2,
+              0
+            ],
+            [
+              915.4,
+              0
+            ],
+            [
+              918.6,
+              0
+            ],
+            [
+              921.9,
+              0
+            ],
+            [
+              925.1,
+              3
+            ],
+            [
+              928.3,
+              0
+            ],
+            [
+              931.6,
+              0
+            ],
+            [
+              934.8,
+              0
+            ],
+            [
+              938,
+              0
+            ],
+            [
+              941.3,
+              0
+            ],
+            [
+              944.5,
+              42
+            ],
+            [
+              947.7,
+              0
+            ],
+            [
+              951,
+              0
+            ],
+            [
+              954.2,
+              0
+            ],
+            [
+              957.4,
+              0
+            ],
+            [
+              960.6,
+              0
+            ],
+            [
+              963.9,
+              0
+            ],
+            [
+              967.1,
+              0
+            ],
+            [
+              970.4,
+              58
+            ],
+            [
+              973.7,
+              0
+            ],
+            [
+              977,
+              0
+            ],
+            [
+              980.2,
+              0
+            ],
+            [
+              983.4,
+              0
+            ],
+            [
+              986.6,
+              0
+            ],
+            [
+              989.9,
+              0
+            ],
+            [
+              993.1,
+              0
+            ],
+            [
+              996.3,
+              10
+            ],
+            [
+              999.6,
+              0
+            ],
+            [
+              1002.9,
+              36
+            ],
+            [
+              1006.2,
+              0
+            ],
+            [
+              1009.4,
+              0
+            ],
+            [
+              1012.6,
+              0
+            ],
+            [
+              1015.8,
+              0
+            ],
+            [
+              1019,
+              0
+            ],
+            [
+              1022.2,
+              0
+            ],
+            [
+              1025.5,
+              10
+            ],
+            [
+              1028.7,
+              0
+            ],
+            [
+              1031.9,
+              0
+            ],
+            [
+              1035.1,
+              0
+            ],
+            [
+              1038.3,
+              0
+            ],
+            [
+              1041.6,
+              0
+            ],
+            [
+              1044.7,
+              0
+            ],
+            [
+              1047.9,
+              0
+            ],
+            [
+              1051.2,
+              0
+            ],
+            [
+              1054.4,
+              0
+            ],
+            [
+              1057.7,
+              0
+            ],
+            [
+              1061,
+              0
+            ],
+            [
+              1064.2,
+              4
+            ],
+            [
+              1067.4,
+              0
+            ],
+            [
+              1070.7,
+              0
+            ],
+            [
+              1073.9,
+              0
+            ],
+            [
+              1077.1,
+              4
+            ],
+            [
+              1080.3,
+              0
+            ],
+            [
+              1083.5,
+              0
+            ],
+            [
+              1086.8,
+              0
+            ],
+            [
+              1090,
+              0
+            ],
+            [
+              1093.3,
+              0
+            ],
+            [
+              1096.5,
+              0
+            ],
+            [
+              1099.8,
+              0
+            ],
+            [
+              1103,
+              62
+            ],
+            [
+              1106.2,
+              0
+            ],
+            [
+              1109.4,
+              0
+            ],
+            [
+              1112.7,
+              0
+            ],
+            [
+              1115.9,
+              0
+            ],
+            [
+              1119.2,
+              99
+            ],
+            [
+              1122.4,
+              0
+            ],
+            [
+              1125.6,
+              0
+            ],
+            [
+              1128.8,
+              0
+            ],
+            [
+              1132,
+              0
+            ],
+            [
+              1135.2,
+              0
+            ],
+            [
+              1138.5,
+              0
+            ],
+            [
+              1141.8,
+              0
+            ],
+            [
+              1145.1,
+              0
+            ],
+            [
+              1148.3,
+              69
+            ],
+            [
+              1151.5,
+              0
+            ],
+            [
+              1154.6,
+              0
+            ],
+            [
+              1157.9,
+              99
+            ],
+            [
+              1161,
+              0
+            ],
+            [
+              1164.2,
+              0
+            ],
+            [
+              1167.4,
+              0
+            ],
+            [
+              1170.7,
+              0
+            ],
+            [
+              1173.9,
+              4
+            ],
+            [
+              1177.2,
+              0
+            ],
+            [
+              1180.4,
+              0
+            ],
+            [
+              1183.7,
+              35
+            ],
+            [
+              1186.9,
+              0
+            ],
+            [
+              1190.2,
+              0
+            ],
+            [
+              1193.4,
+              0
+            ],
+            [
+              1196.6,
+              0
+            ],
+            [
+              1199.8,
+              0
+            ],
+            [
+              1203.1,
+              0
+            ],
+            [
+              1206.4,
+              0
+            ],
+            [
+              1209.6,
+              0
+            ],
+            [
+              1212.9,
+              52
+            ],
+            [
+              1216.1,
+              0
+            ],
+            [
+              1219.4,
+              0
+            ],
+            [
+              1222.6,
+              0
+            ],
+            [
+              1225.9,
+              0
+            ],
+            [
+              1229.2,
+              0
+            ],
+            [
+              1232.5,
+              0
+            ],
+            [
+              1235.8,
+              99
+            ],
+            [
+              1239.1,
+              0
+            ],
+            [
+              1242.3,
+              0
+            ],
+            [
+              1245.5,
+              0
+            ],
+            [
+              1248.7,
+              0
+            ],
+            [
+              1252,
+              0
+            ],
+            [
+              1255.2,
+              0
+            ],
+            [
+              1258.4,
+              0
+            ],
+            [
+              1261.7,
+              0
+            ],
+            [
+              1264.9,
+              0
+            ],
+            [
+              1268.2,
+              0
+            ],
+            [
+              1271.5,
+              0
+            ],
+            [
+              1274.8,
+              1
+            ],
+            [
+              1278,
+              9
+            ],
+            [
+              1281.3,
+              0
+            ],
+            [
+              1284.5,
+              0
+            ],
+            [
+              1287.8,
+              0
+            ],
+            [
+              1291.1,
+              0
+            ],
+            [
+              1294.3,
+              0
+            ],
+            [
+              1297.5,
+              99
+            ],
+            [
+              1300.8,
+              0
+            ],
+            [
+              1304.1,
+              0
+            ],
+            [
+              1307.2,
+              81
+            ],
+            [
+              1310.5,
+              0
+            ],
+            [
+              1313.7,
+              0
+            ],
+            [
+              1317,
+              0
+            ],
+            [
+              1320.2,
+              0
+            ],
+            [
+              1323.5,
+              20
+            ],
+            [
+              1326.7,
+              14
+            ],
+            [
+              1329.9,
+              0
+            ],
+            [
+              1333.1,
+              0
+            ],
+            [
+              1336.4,
+              0
+            ],
+            [
+              1339.6,
+              0
+            ],
+            [
+              1342.9,
+              0
+            ],
+            [
+              1346.2,
+              0
+            ],
+            [
+              1349.4,
+              0
+            ],
+            [
+              1352.6,
+              0
+            ],
+            [
+              1355.9,
+              0
+            ],
+            [
+              1359.2,
+              0
+            ],
+            [
+              1362.4,
+              0
+            ],
+            [
+              1365.6,
+              0
+            ],
+            [
+              1368.8,
+              0
+            ],
+            [
+              1369.9,
+              0
+            ]
+          ]
+        },
+        {
+          "type": "line",
+          "xAxisIndex": 1,
+          "yAxisIndex": 1,
+          "showSymbol": false,
+          "lineStyle": {
+            "width": 2.4,
+            "color": "#78A8C8"
+          },
+          "data": [
+            [
+              0,
+              0
+            ],
+            [
+              3.2,
+              1.3
+            ],
+            [
+              6.5,
+              1.1
+            ],
+            [
+              9.7,
+              1.1
+            ],
+            [
+              13,
+              1.1
+            ],
+            [
+              16.2,
+              0
+            ],
+            [
+              19.5,
+              2.1
+            ],
+            [
+              22.7,
+              11.1
+            ],
+            [
+              26,
+              11.1
+            ],
+            [
+              29.2,
+              9.2
+            ],
+            [
+              32.5,
+              9
+            ],
+            [
+              35.8,
+              0
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              42.3,
+              5.9
+            ],
+            [
+              45.6,
+              5.9
+            ],
+            [
+              48.8,
+              5.9
+            ],
+            [
+              52.1,
+              5.9
+            ],
+            [
+              55.3,
+              0
+            ],
+            [
+              58.6,
+              4.8
+            ],
+            [
+              61.8,
+              5.6
+            ],
+            [
+              65.1,
+              5.6
+            ],
+            [
+              68.3,
+              14
+            ],
+            [
+              71.6,
+              9.2
+            ],
+            [
+              74.9,
+              8.4
+            ],
+            [
+              78.1,
+              8.4
+            ],
+            [
+              81.4,
+              0
+            ],
+            [
+              84.6,
+              9.4
+            ],
+            [
+              87.8,
+              9.4
+            ],
+            [
+              91.1,
+              9.4
+            ],
+            [
+              94.3,
+              9.4
+            ],
+            [
+              97.5,
+              8.8
+            ],
+            [
+              100.8,
+              8.8
+            ],
+            [
+              104.1,
+              8.8
+            ],
+            [
+              107.3,
+              17.7
+            ],
+            [
+              110.6,
+              8.9
+            ],
+            [
+              113.8,
+              8.9
+            ],
+            [
+              117.1,
+              8.9
+            ],
+            [
+              120.4,
+              0.7
+            ],
+            [
+              123.6,
+              16
+            ],
+            [
+              126.9,
+              16.3
+            ],
+            [
+              130.1,
+              15.5
+            ],
+            [
+              133.4,
+              8.7
+            ],
+            [
+              136.7,
+              9.4
+            ],
+            [
+              139.9,
+              9.4
+            ],
+            [
+              143.2,
+              9.4
+            ],
+            [
+              146.5,
+              0
+            ],
+            [
+              149.7,
+              8.9
+            ],
+            [
+              152.9,
+              8.9
+            ],
+            [
+              156.2,
+              8.9
+            ],
+            [
+              159.4,
+              8.9
+            ],
+            [
+              162.6,
+              9.3
+            ],
+            [
+              165.9,
+              9.3
+            ],
+            [
+              169.2,
+              18.2
+            ],
+            [
+              172.4,
+              19
+            ],
+            [
+              175.7,
+              9.7
+            ],
+            [
+              178.8,
+              9.7
+            ],
+            [
+              182.1,
+              9.8
+            ],
+            [
+              185.4,
+              9
+            ],
+            [
+              188.6,
+              16.4
+            ],
+            [
+              191.8,
+              11.5
+            ],
+            [
+              195.1,
+              20.5
+            ],
+            [
+              198.3,
+              13.1
+            ],
+            [
+              201.5,
+              22
+            ],
+            [
+              204.8,
+              14.6
+            ],
+            [
+              208,
+              14.6
+            ],
+            [
+              211.3,
+              14.6
+            ],
+            [
+              214.5,
+              0
+            ],
+            [
+              217.7,
+              5.5
+            ],
+            [
+              221,
+              5.5
+            ],
+            [
+              224.2,
+              5.5
+            ],
+            [
+              227.4,
+              5.5
+            ],
+            [
+              230.7,
+              0
+            ],
+            [
+              233.9,
+              17.7
+            ],
+            [
+              237.1,
+              17.7
+            ],
+            [
+              240.4,
+              17.7
+            ],
+            [
+              243.6,
+              17.7
+            ],
+            [
+              246.9,
+              0.3
+            ],
+            [
+              250.1,
+              0.5
+            ],
+            [
+              253.3,
+              9.5
+            ],
+            [
+              256.6,
+              9.5
+            ],
+            [
+              259.9,
+              9.3
+            ],
+            [
+              263.1,
+              0
+            ],
+            [
+              266.4,
+              5.6
+            ],
+            [
+              269.7,
+              5.6
+            ],
+            [
+              272.9,
+              5.6
+            ],
+            [
+              276.2,
+              5.6
+            ],
+            [
+              279.4,
+              0
+            ],
+            [
+              282.7,
+              8.9
+            ],
+            [
+              286,
+              8.9
+            ],
+            [
+              289.3,
+              15.5
+            ],
+            [
+              292.5,
+              15.5
+            ],
+            [
+              295.7,
+              15.6
+            ],
+            [
+              298.9,
+              21.3
+            ],
+            [
+              302.1,
+              14.6
+            ],
+            [
+              305.4,
+              21.5
+            ],
+            [
+              308.5,
+              14.1
+            ],
+            [
+              311.7,
+              14.1
+            ],
+            [
+              314.9,
+              14.1
+            ],
+            [
+              318.2,
+              8.9
+            ],
+            [
+              321.4,
+              8.9
+            ],
+            [
+              324.6,
+              11.5
+            ],
+            [
+              327.8,
+              7.8
+            ],
+            [
+              331.1,
+              7.8
+            ],
+            [
+              334.4,
+              16.7
+            ],
+            [
+              337.6,
+              8.9
+            ],
+            [
+              340.8,
+              8.9
+            ],
+            [
+              344.1,
+              20.7
+            ],
+            [
+              347.4,
+              11.8
+            ],
+            [
+              350.6,
+              11.8
+            ],
+            [
+              353.8,
+              17.8
+            ],
+            [
+              357.1,
+              8.9
+            ],
+            [
+              360.3,
+              8.9
+            ],
+            [
+              363.5,
+              8.9
+            ],
+            [
+              366.8,
+              8.9
+            ],
+            [
+              370.1,
+              8.9
+            ],
+            [
+              373.3,
+              8.9
+            ],
+            [
+              376.6,
+              0
+            ],
+            [
+              379.9,
+              0.3
+            ],
+            [
+              383.1,
+              8.5
+            ],
+            [
+              386.4,
+              8.5
+            ],
+            [
+              389.7,
+              8.5
+            ],
+            [
+              392.9,
+              0
+            ],
+            [
+              396.2,
+              0
+            ],
+            [
+              399.4,
+              9.3
+            ],
+            [
+              402.7,
+              9.3
+            ],
+            [
+              406,
+              26.4
+            ],
+            [
+              409.3,
+              26
+            ],
+            [
+              412.5,
+              17.1
+            ],
+            [
+              415.8,
+              16.8
+            ],
+            [
+              419,
+              11.2
+            ],
+            [
+              422.3,
+              11.2
+            ],
+            [
+              425.5,
+              11.2
+            ],
+            [
+              428.8,
+              9
+            ],
+            [
+              432.1,
+              0
+            ],
+            [
+              435.4,
+              0.3
+            ],
+            [
+              438.7,
+              1.2
+            ],
+            [
+              441.9,
+              1.2
+            ],
+            [
+              445.2,
+              10.2
+            ],
+            [
+              448.5,
+              9
+            ],
+            [
+              451.8,
+              23.5
+            ],
+            [
+              455,
+              14.5
+            ],
+            [
+              458.3,
+              14.5
+            ],
+            [
+              461.6,
+              14.5
+            ],
+            [
+              464.8,
+              0
+            ],
+            [
+              468.1,
+              0
+            ],
+            [
+              471.3,
+              6.1
+            ],
+            [
+              474.6,
+              7.9
+            ],
+            [
+              477.8,
+              8.9
+            ],
+            [
+              481.1,
+              17.9
+            ],
+            [
+              484.3,
+              18.9
+            ],
+            [
+              487.6,
+              18.9
+            ],
+            [
+              490.8,
+              17.9
+            ],
+            [
+              494,
+              0
+            ],
+            [
+              497.2,
+              9
+            ],
+            [
+              500.4,
+              9
+            ],
+            [
+              503.6,
+              9
+            ],
+            [
+              506.9,
+              24.9
+            ],
+            [
+              510.1,
+              16.5
+            ],
+            [
+              513.4,
+              16.5
+            ],
+            [
+              516.6,
+              18.4
+            ],
+            [
+              519.8,
+              9.5
+            ],
+            [
+              523.1,
+              8.9
+            ],
+            [
+              526.3,
+              0
+            ],
+            [
+              529.5,
+              7.7
+            ],
+            [
+              532.7,
+              7.7
+            ],
+            [
+              535.8,
+              7.7
+            ],
+            [
+              538.9,
+              7.7
+            ],
+            [
+              542.1,
+              0
+            ],
+            [
+              545.3,
+              4.5
+            ],
+            [
+              548.5,
+              4.5
+            ],
+            [
+              551.8,
+              4.5
+            ],
+            [
+              555,
+              9.7
+            ],
+            [
+              558.3,
+              5.2
+            ],
+            [
+              561.6,
+              5.2
+            ],
+            [
+              564.9,
+              5.2
+            ],
+            [
+              568.1,
+              8.9
+            ],
+            [
+              571.4,
+              8.9
+            ],
+            [
+              574.6,
+              8.9
+            ],
+            [
+              577.8,
+              0
+            ],
+            [
+              581.1,
+              5.4
+            ],
+            [
+              584.2,
+              5.4
+            ],
+            [
+              587.4,
+              5.4
+            ],
+            [
+              590.7,
+              12.1
+            ],
+            [
+              593.9,
+              6.7
+            ],
+            [
+              597.2,
+              6.7
+            ],
+            [
+              600.4,
+              6.7
+            ],
+            [
+              603.7,
+              0
+            ],
+            [
+              607,
+              7.2
+            ],
+            [
+              610.1,
+              7.2
+            ],
+            [
+              613.4,
+              12.6
+            ],
+            [
+              616.6,
+              12.3
+            ],
+            [
+              619.9,
+              12.3
+            ],
+            [
+              623.2,
+              12.3
+            ],
+            [
+              626.4,
+              0.3
+            ],
+            [
+              629.7,
+              0.7
+            ],
+            [
+              632.9,
+              9.7
+            ],
+            [
+              636.1,
+              18.5
+            ],
+            [
+              639.3,
+              18.5
+            ],
+            [
+              642.6,
+              9
+            ],
+            [
+              645.9,
+              9
+            ],
+            [
+              649.1,
+              9
+            ],
+            [
+              652.3,
+              9
+            ],
+            [
+              655.5,
+              9
+            ],
+            [
+              658.7,
+              9.5
+            ],
+            [
+              662,
+              9.5
+            ],
+            [
+              665.2,
+              12.4
+            ],
+            [
+              668.5,
+              12.4
+            ],
+            [
+              671.7,
+              20.8
+            ],
+            [
+              674.9,
+              20.8
+            ],
+            [
+              678.2,
+              17.9
+            ],
+            [
+              681.4,
+              8.9
+            ],
+            [
+              684.6,
+              0
+            ],
+            [
+              687.9,
+              7.2
+            ],
+            [
+              691.2,
+              7.2
+            ],
+            [
+              694.4,
+              7.2
+            ],
+            [
+              697.6,
+              7.5
+            ],
+            [
+              700.9,
+              9.3
+            ],
+            [
+              704.1,
+              9.3
+            ],
+            [
+              707.3,
+              9.3
+            ],
+            [
+              710.5,
+              0
+            ],
+            [
+              713.8,
+              15.1
+            ],
+            [
+              716.9,
+              15.1
+            ],
+            [
+              720.2,
+              15.1
+            ],
+            [
+              723.4,
+              15.1
+            ],
+            [
+              726.7,
+              9
+            ],
+            [
+              729.8,
+              9
+            ],
+            [
+              733.1,
+              9
+            ],
+            [
+              736.4,
+              9
+            ],
+            [
+              739.6,
+              0
+            ],
+            [
+              742.8,
+              8.8
+            ],
+            [
+              746.1,
+              8.8
+            ],
+            [
+              749.3,
+              8.8
+            ],
+            [
+              752.6,
+              0
+            ],
+            [
+              755.8,
+              0
+            ],
+            [
+              759.1,
+              0.5
+            ],
+            [
+              762.4,
+              9.5
+            ],
+            [
+              765.6,
+              9.5
+            ],
+            [
+              768.9,
+              18.5
+            ],
+            [
+              772.1,
+              8.9
+            ],
+            [
+              775.4,
+              8.9
+            ],
+            [
+              778.6,
+              22.5
+            ],
+            [
+              781.9,
+              13.6
+            ],
+            [
+              785.2,
+              13.6
+            ],
+            [
+              788.5,
+              13.6
+            ],
+            [
+              791.7,
+              0.5
+            ],
+            [
+              795,
+              0.5
+            ],
+            [
+              798.2,
+              9.5
+            ],
+            [
+              801.5,
+              9.5
+            ],
+            [
+              804.7,
+              9
+            ],
+            [
+              808,
+              4.8
+            ],
+            [
+              811.3,
+              4.8
+            ],
+            [
+              814.6,
+              4.8
+            ],
+            [
+              817.8,
+              4.8
+            ],
+            [
+              821.1,
+              0
+            ],
+            [
+              824.3,
+              9
+            ],
+            [
+              827.5,
+              9
+            ],
+            [
+              830.8,
+              9
+            ],
+            [
+              834,
+              0
+            ],
+            [
+              837.2,
+              0
+            ],
+            [
+              840.5,
+              0
+            ],
+            [
+              843.7,
+              0
+            ],
+            [
+              847,
+              17.9
+            ],
+            [
+              850.3,
+              17.9
+            ],
+            [
+              853.5,
+              18.3
+            ],
+            [
+              856.8,
+              9.8
+            ],
+            [
+              860,
+              0.8
+            ],
+            [
+              863.3,
+              9.8
+            ],
+            [
+              866.6,
+              9.5
+            ],
+            [
+              869.8,
+              9
+            ],
+            [
+              873.1,
+              9
+            ],
+            [
+              876.3,
+              9
+            ],
+            [
+              879.6,
+              9
+            ],
+            [
+              882.9,
+              9
+            ],
+            [
+              886.1,
+              9
+            ],
+            [
+              889.3,
+              15.1
+            ],
+            [
+              892.6,
+              15.1
+            ],
+            [
+              895.8,
+              15.1
+            ],
+            [
+              899.1,
+              13.7
+            ],
+            [
+              902.3,
+              7.6
+            ],
+            [
+              905.6,
+              7.6
+            ],
+            [
+              908.9,
+              13.3
+            ],
+            [
+              912.2,
+              5.6
+            ],
+            [
+              915.4,
+              5.6
+            ],
+            [
+              918.6,
+              5.6
+            ],
+            [
+              921.9,
+              0.3
+            ],
+            [
+              925.1,
+              9.3
+            ],
+            [
+              928.3,
+              9.3
+            ],
+            [
+              931.6,
+              9
+            ],
+            [
+              934.8,
+              9
+            ],
+            [
+              938,
+              0
+            ],
+            [
+              941.3,
+              9.5
+            ],
+            [
+              944.5,
+              9.5
+            ],
+            [
+              947.7,
+              9.5
+            ],
+            [
+              951,
+              5.6
+            ],
+            [
+              954.2,
+              0
+            ],
+            [
+              957.4,
+              10.7
+            ],
+            [
+              960.6,
+              10.7
+            ],
+            [
+              963.9,
+              10.7
+            ],
+            [
+              967.1,
+              24.4
+            ],
+            [
+              970.4,
+              13.6
+            ],
+            [
+              973.7,
+              13.6
+            ],
+            [
+              977,
+              17.4
+            ],
+            [
+              980.2,
+              9
+            ],
+            [
+              983.4,
+              9
+            ],
+            [
+              986.6,
+              9
+            ],
+            [
+              989.9,
+              0
+            ],
+            [
+              993.1,
+              0.9
+            ],
+            [
+              996.3,
+              0.9
+            ],
+            [
+              999.6,
+              4.2
+            ],
+            [
+              1002.9,
+              3.3
+            ],
+            [
+              1006.2,
+              3.3
+            ],
+            [
+              1009.4,
+              9
+            ],
+            [
+              1012.6,
+              9
+            ],
+            [
+              1015.8,
+              9
+            ],
+            [
+              1019,
+              9.4
+            ],
+            [
+              1022.2,
+              1.3
+            ],
+            [
+              1025.5,
+              11.1
+            ],
+            [
+              1028.7,
+              11.1
+            ],
+            [
+              1031.9,
+              9.8
+            ],
+            [
+              1035.1,
+              9.8
+            ],
+            [
+              1038.3,
+              9.1
+            ],
+            [
+              1041.6,
+              9.1
+            ],
+            [
+              1044.7,
+              9.3
+            ],
+            [
+              1047.9,
+              18.3
+            ],
+            [
+              1051.2,
+              9.2
+            ],
+            [
+              1054.4,
+              9.2
+            ],
+            [
+              1057.7,
+              9
+            ],
+            [
+              1061,
+              0.4
+            ],
+            [
+              1064.2,
+              9.4
+            ],
+            [
+              1067.4,
+              9.4
+            ],
+            [
+              1070.7,
+              9
+            ],
+            [
+              1073.9,
+              17.3
+            ],
+            [
+              1077.1,
+              8.3
+            ],
+            [
+              1080.3,
+              8.3
+            ],
+            [
+              1083.5,
+              16.8
+            ],
+            [
+              1086.8,
+              8.9
+            ],
+            [
+              1090,
+              8.9
+            ],
+            [
+              1093.3,
+              8.9
+            ],
+            [
+              1096.5,
+              0
+            ],
+            [
+              1099.8,
+              5.6
+            ],
+            [
+              1103,
+              5.6
+            ],
+            [
+              1106.2,
+              5.6
+            ],
+            [
+              1109.4,
+              0
+            ],
+            [
+              1112.7,
+              0
+            ],
+            [
+              1115.9,
+              9
+            ],
+            [
+              1119.2,
+              10.7
+            ],
+            [
+              1122.4,
+              10.7
+            ],
+            [
+              1125.6,
+              1.7
+            ],
+            [
+              1128.8,
+              13.5
+            ],
+            [
+              1132,
+              11.8
+            ],
+            [
+              1135.2,
+              11.8
+            ],
+            [
+              1138.5,
+              11.8
+            ],
+            [
+              1141.8,
+              7.1
+            ],
+            [
+              1145.1,
+              13.4
+            ],
+            [
+              1148.3,
+              13.4
+            ],
+            [
+              1151.5,
+              13.6
+            ],
+            [
+              1154.6,
+              9.3
+            ],
+            [
+              1157.9,
+              14
+            ],
+            [
+              1161,
+              14
+            ],
+            [
+              1164.2,
+              4.7
+            ],
+            [
+              1167.4,
+              4.7
+            ],
+            [
+              1170.7,
+              0.4
+            ],
+            [
+              1173.9,
+              0.4
+            ],
+            [
+              1177.2,
+              0.8
+            ],
+            [
+              1180.4,
+              3.6
+            ],
+            [
+              1183.7,
+              3.6
+            ],
+            [
+              1186.9,
+              3.6
+            ],
+            [
+              1190.2,
+              0
+            ],
+            [
+              1193.4,
+              8.9
+            ],
+            [
+              1196.6,
+              8.9
+            ],
+            [
+              1199.8,
+              8.9
+            ],
+            [
+              1203.1,
+              8.9
+            ],
+            [
+              1206.4,
+              0
+            ],
+            [
+              1209.6,
+              4.7
+            ],
+            [
+              1212.9,
+              4.7
+            ],
+            [
+              1216.1,
+              4.7
+            ],
+            [
+              1219.4,
+              6
+            ],
+            [
+              1222.6,
+              6
+            ],
+            [
+              1225.9,
+              6
+            ],
+            [
+              1229.2,
+              6.3
+            ],
+            [
+              1232.5,
+              9.3
+            ],
+            [
+              1235.8,
+              9.3
+            ],
+            [
+              1239.1,
+              9.3
+            ],
+            [
+              1242.3,
+              0
+            ],
+            [
+              1245.5,
+              17.9
+            ],
+            [
+              1248.7,
+              17.9
+            ],
+            [
+              1252,
+              23.3
+            ],
+            [
+              1255.2,
+              23.3
+            ],
+            [
+              1258.4,
+              11.5
+            ],
+            [
+              1261.7,
+              11.5
+            ],
+            [
+              1264.9,
+              6.2
+            ],
+            [
+              1268.2,
+              6.2
+            ],
+            [
+              1271.5,
+              0.1
+            ],
+            [
+              1274.8,
+              5.8
+            ],
+            [
+              1278,
+              6.3
+            ],
+            [
+              1281.3,
+              6.2
+            ],
+            [
+              1284.5,
+              5.4
+            ],
+            [
+              1287.8,
+              0.5
+            ],
+            [
+              1291.1,
+              9
+            ],
+            [
+              1294.3,
+              18
+            ],
+            [
+              1297.5,
+              18
+            ],
+            [
+              1300.8,
+              18.4
+            ],
+            [
+              1304.1,
+              7.7
+            ],
+            [
+              1307.2,
+              7.7
+            ],
+            [
+              1310.5,
+              7.7
+            ],
+            [
+              1313.7,
+              9
+            ],
+            [
+              1317,
+              9
+            ],
+            [
+              1320.2,
+              10.8
+            ],
+            [
+              1323.5,
+              21.1
+            ],
+            [
+              1326.7,
+              12.1
+            ],
+            [
+              1329.9,
+              10.3
+            ],
+            [
+              1333.1,
+              17.6
+            ],
+            [
+              1336.4,
+              8.6
+            ],
+            [
+              1339.6,
+              8.6
+            ],
+            [
+              1342.9,
+              8.6
+            ],
+            [
+              1346.2,
+              0
+            ],
+            [
+              1349.4,
+              6.5
+            ],
+            [
+              1352.6,
+              6.5
+            ],
+            [
+              1355.9,
+              6.5
+            ],
+            [
+              1359.2,
+              6.5
+            ],
+            [
+              1362.4,
+              0
+            ],
+            [
+              1365.6,
+              0
+            ],
+            [
+              1368.8,
+              0
+            ],
+            [
+              1369.9,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

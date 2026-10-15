@@ -1,0 +1,14 @@
+{
+  "duration": 180,
+  "scenes": 12,
+  "desktopScreenshots": 12,
+  "mobileScreenshots": 5,
+  "voicePlayback": true,
+  "pause": true,
+  "mute": true,
+  "subtitleToggle": true,
+  "endAt180Seconds": true,
+  "timelineDriftMs": 1.7840000000000078,
+  "errors": [],
+  "warnings": []
+}

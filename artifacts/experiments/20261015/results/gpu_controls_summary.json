@@ -1,0 +1,9 @@
+{
+  "stage": "controls",
+  "scope": "This monitored stage including model startup; excludes earlier development and initial graph ingestion",
+  "samples": 47,
+  "sample_sleep_s": 1,
+  "peak_device_memory_mib": 0,
+  "peak_device_utilization_percent": 35,
+  "warning": "Whole-device samples, not allocator stats; can miss subsecond spikes."
+}

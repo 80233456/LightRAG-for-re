@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "duration": 180,
+  "samples": [
+    {
+      "time": 14.998356,
+      "audioDuration": 180,
+      "timelineTime": 14.980631,
+      "playing": true,
+      "scene": 0,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 30.025787,
+      "audioDuration": 180,
+      "timelineTime": 30.011507,
+      "playing": true,
+      "scene": 2,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 45.052283,
+      "audioDuration": 180,
+      "timelineTime": 45.04148,
+      "playing": true,
+      "scene": 3,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 60.078696,
+      "audioDuration": 180,
+      "timelineTime": 60.072613,
+      "playing": true,
+      "scene": 4,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 75.106555,
+      "audioDuration": 180,
+      "timelineTime": 75.103146,
+      "playing": true,
+      "scene": 5,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 90.135901,
+      "audioDuration": 180,
+      "timelineTime": 90.133797,
+      "playing": true,
+      "scene": 6,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 105.160926,
+      "audioDuration": 180,
+      "timelineTime": 105.146498,
+      "playing": true,
+      "scene": 7,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 120.195579,
+      "audioDuration": 180,
+      "timelineTime": 120.194248,
+      "playing": true,
+      "scene": 8,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 135.226814,
+      "audioDuration": 180,
+      "timelineTime": 135.22531,
+      "playing": true,
+      "scene": 9,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 150.257486,
+      "audioDuration": 180,
+      "timelineTime": 150.255589,
+      "playing": true,
+      "scene": 10,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 165.288752,
+      "audioDuration": 180,
+      "timelineTime": 165.286954,
+      "playing": true,
+      "scene": 11,
+      "cue": -1,
+      "caption": ""
+    },
+    {
+      "time": 180,
+      "audioDuration": 180,
+      "timelineTime": 180,
+      "playing": false,
+      "scene": 11,
+      "cue": -1,
+      "caption": ""
+    }
+  ]
+}
