@@ -3,6 +3,21 @@
   "sourceBaseline": "b9009d237c3b432ea1139fccf1102fa6b9b4247e",
   "files": [
     {
+      "path": "artifacts/evidence/selected_source.tar.gz",
+      "bytes": 82951,
+      "sha256": "dc240db304fe006444de29bf057cb09c715d2270b286f2a004ae6b398f7a4689"
+    },
+    {
+      "path": "artifacts/evidence/观微算法队参赛佐证附件包.zip",
+      "bytes": 47395597,
+      "sha256": "94437697fd115214b8a8418590a7e9fdab0eb10344d98740023729ce97c97f5e"
+    },
+    {
+      "path": "artifacts/evidence/观微证据链项目成果佐证材料.pdf",
+      "bytes": 1448685,
+      "sha256": "a910afc9a6a5c76db0080ed9e6c48e8df6435aa69d1f05a7bd07358ad923caa2"
+    },
+    {
       "path": "artifacts/experiments/20261015/algorithm_v2.patch",
       "bytes": 95546,
       "sha256": "0723049696ed6c6b6736b7ee957c12baf8dbe3ce1e6bbdc9e9e97534221a05be"
@@ -274,8 +289,8 @@
     },
     {
       "path": "artifacts/README.md",
-      "bytes": 2423,
-      "sha256": "cacfc5f1634d3f6a2bfa24a6945a21fa409ccba5975423d30f94299e8b0d6957"
+      "bytes": 2779,
+      "sha256": "d3e0cd90a40a50c68acac18c8a46580e4fb0d2d65f271876582a89b9ec67f778"
     },
     {
       "path": "artifacts/report/source/build_competition_report.cjs",

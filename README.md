@@ -7,6 +7,8 @@
 本次更新包含父文档证据重组、独立原子事实核验、三值逻辑组合和一次有界修复。真实实验使用 DeepSeek API，服务器运行嵌入、重排与检索程序。冻结后的同批 100 题测试中，基础方案完全匹配率为 55%，完整流程为 86%；改进候选分支为 88%。各分支原始结果均保留，便于对照验证器的收益与取舍。
 
 - [参赛成果总览](artifacts/README.md)
+- [成果佐证材料（含核心源码）](artifacts/evidence/观微证据链项目成果佐证材料.pdf)
+- [完整源码压缩包](artifacts/evidence/selected_source.tar.gz)
 - [中文参赛报告（PDF）](artifacts/report/观微证据链参赛报告.pdf)
 - [三分钟项目介绍（MP4）](artifacts/video/观微证据链三分钟项目介绍.mp4)
 - [离线网页演示](artifacts/video/观微证据链三分钟介绍.html)（下载后用浏览器打开）
